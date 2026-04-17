@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#ff6b35" />
+    <meta
+      name="description"
+      content="A mobile-first AniList manhwa ranking site focused on Fan Fav percentage, bucketed by popularity and refreshed weekly."
+    />
+    <title>Manhwa Fan Fav Rankings</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-glow page-glow--one"></div>
+    <div class="page-glow page-glow--two"></div>
+
+    <div class="app-shell">
+      <header class="hero card">
+        <p class="hero__eyebrow">AniList Manhwa Radar</p>
+        <div class="hero__heading">
+          <h1>Find the titles readers love harder than the crowd expects.</h1>
+          <p>
+            Fan Fav % is the lead signal. Mean Score is the supporting read. Everything else stays tucked
+            inside the detail card until you want it.
+          </p>
+        </div>
+
+        <div class="hero__meta">
+          <div class="hero-stat">
+            <span>Default board</span>
+            <strong>5000+</strong>
+          </div>
+          <div class="hero-stat">
+            <span>Snapshot</span>
+            <strong id="snapshot-updated">Loading…</strong>
+          </div>
+        </div>
+      </header>
+
+      <main class="content-stack">
+        <section class="controls card">
+          <div class="section-title-row">
+            <div>
+              <p class="section-kicker">Popularity Buckets</p>
+              <h2>Separate ladders, fair comparisons.</h2>
+            </div>
+          </div>
+
+          <div class="bucket-tabs" id="bucket-tabs" aria-label="Popularity bucket selector"></div>
+
+          <label class="search-field" for="search-input">
+            <span>Search inside the active bucket</span>
+            <div class="search-field__box">
+              <input
+                id="search-input"
+                type="search"
+                autocomplete="off"
+                spellcheck="false"
+                placeholder="Search titles in 5000+"
+              />
+              <button id="search-clear" type="button" class="ghost-button">Clear</button>
+            </div>
+          </label>
+
+          <div class="status-filters" id="status-filters" aria-label="Status filters"></div>
+
+          <div class="bucket-summary">
+            <div>
+              <p class="bucket-summary__label" id="active-bucket-label">5000+</p>
+              <p class="bucket-summary__copy" id="bucket-subtitle">Loading the current bucket…</p>
+            </div>
+            <div class="bucket-summary__count">
+              <strong id="result-count">0</strong>
+              <span>titles</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="rankings">
+          <div class="section-title-row section-title-row--tight">
+            <div>
+              <p class="section-kicker">Ranked Feed</p>
+              <h2>Only the signal up front.</h2>
+            </div>
+            <p class="section-note">Tap a row for cover, synopsis, genres, tags, and live AniList stats.</p>
+          </div>
+
+          <div class="ranking-list" id="ranking-list" aria-live="polite"></div>
+
+          <div class="empty-state hidden" id="empty-state">
+            <p>No titles match the current search and status filter.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="sheet-backdrop hidden" id="sheet-backdrop"></div>
+    <aside class="detail-sheet" id="detail-sheet" aria-hidden="true" aria-label="Entry details">
+      <button class="detail-sheet__close" id="detail-close" type="button" aria-label="Close details">
+        Close
+      </button>
+      <div class="detail-sheet__body" id="detail-body"></div>
+    </aside>
+
+    <template id="ranking-card-template">
+      <button class="ranking-card" type="button">
+        <div class="ranking-card__rank"></div>
+        <div class="ranking-card__main">
+          <h3 class="ranking-card__title"></h3>
+          <p class="ranking-card__hint">Open for cover, synopsis, genres, and tags</p>
+        </div>
+        <div class="ranking-card__stats">
+          <div class="stat-pill stat-pill--fan">
+            <span>Fan Fav</span>
+            <strong></strong>
+          </div>
+          <div class="stat-pill">
+            <span>Mean Score</span>
+            <strong></strong>
+          </div>
+        </div>
+      </button>
+    </template>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
+

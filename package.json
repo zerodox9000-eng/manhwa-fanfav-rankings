@@ -1,0 +1,11 @@
+{
+  "name": "manhwa-fanfav-rankings",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mobile-first AniList manhwa fan-fav rankings site with weekly snapshot refresh.",
+  "scripts": {
+    "refresh:data": "node scripts/refresh-data.mjs",
+    "prepare:data": "node scripts/refresh-data.mjs --skip-fetch"
+  }
+}
+

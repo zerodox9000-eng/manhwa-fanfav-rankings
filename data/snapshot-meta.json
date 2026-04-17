@@ -1,0 +1,35 @@
+{
+  "lastUpdated": "2026-04-17T10:01:33.985Z",
+  "defaultBucket": "5000plus",
+  "source": "Static imported snapshot",
+  "totalEntries": 4218,
+  "bucketOrder": [
+    "5000plus",
+    "1000to5000",
+    "500to1000",
+    "200to500",
+    "50to200"
+  ],
+  "buckets": {
+    "5000plus": {
+      "label": "5000+",
+      "count": 438
+    },
+    "1000to5000": {
+      "label": "1000 - 5000",
+      "count": 1064
+    },
+    "500to1000": {
+      "label": "500 - 1000",
+      "count": 668
+    },
+    "200to500": {
+      "label": "200 - 500",
+      "count": 931
+    },
+    "50to200": {
+      "label": "50 - 200",
+      "count": 1117
+    }
+  }
+}

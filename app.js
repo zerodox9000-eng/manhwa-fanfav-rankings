@@ -298,7 +298,7 @@ function renderRankingList() {
     rank.textContent = `#${entry.rank}`;
     title.textContent = entry.title;
     fanFav.textContent = formatPercent(entry.fanFav);
-    meanScore.textContent = entry.meanScore ? String(entry.meanScore) : "—";
+    meanScore.textContent = entry.meanScore ? String(entry.meanScore) : "-";
 
     button.addEventListener("click", () => {
       void openDetailSheet(entry);
@@ -384,7 +384,7 @@ function renderDetail(entry, options = {}) {
   const synopsis = detail?.description
     ? formatSynopsis(detail.description)
     : options.loading
-      ? "<p>Loading synopsis from AniList…</p>"
+      ? "<p>Loading synopsis from AniList...</p>"
       : "<p>No live synopsis is available for this entry right now.</p>";
   const genres = detail?.genres || [];
   const tags = detail?.tags || [];
@@ -415,7 +415,7 @@ function renderDetail(entry, options = {}) {
           </div>
           <div class="stat-pill">
             <span>Mean Score</span>
-            <strong>${entry.meanScore ? escapeHtml(String(entry.meanScore)) : "—"}</strong>
+            <strong>${entry.meanScore ? escapeHtml(String(entry.meanScore)) : "-"}</strong>
           </div>
         </div>
 
@@ -428,7 +428,7 @@ function renderDetail(entry, options = {}) {
             </div>
             <div>
               <dt>Start year</dt>
-              <dd>${liveStartYear ? escapeHtml(String(liveStartYear)) : "—"}</dd>
+              <dd>${liveStartYear ? escapeHtml(String(liveStartYear)) : "-"}</dd>
             </div>
             <div>
               <dt>Popularity</dt>
@@ -634,12 +634,12 @@ function renderLoadingCards() {
         <div class="ranking-card" aria-hidden="true">
           <div class="ranking-card__rank">#${index + 1}</div>
           <div class="ranking-card__main">
-            <h3 class="ranking-card__title">Loading titles…</h3>
+            <h3 class="ranking-card__title">Loading titles...</h3>
             <p class="ranking-card__hint">Pulling the selected bucket into view.</p>
           </div>
           <div class="ranking-card__stats">
-            <div class="stat-pill stat-pill--fan"><span>Fan Fav</span><strong>—</strong></div>
-            <div class="stat-pill"><span>Mean Score</span><strong>—</strong></div>
+            <div class="stat-pill stat-pill--fan"><span>Fan Fav</span><strong>-</strong></div>
+            <div class="stat-pill"><span>Mean Score</span><strong>-</strong></div>
           </div>
         </div>
       `

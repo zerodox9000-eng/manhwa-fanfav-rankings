@@ -1,11 +1,11 @@
 {
-  "name": "Manhwa Fan Fav Rankings",
-  "short_name": "Fan Fav",
-  "description": "Mobile-first AniList manhwa rankings focused on Fan Fav percentage and weekly snapshot refreshes.",
+  "name": "Peakhwa Discovery",
+  "short_name": "Peakhwa",
+  "description": "Daily glass-style AniList manhwa discovery powered by Fan Fav percentage and growth snapshots.",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f6f0e7",
-  "theme_color": "#ff6b35",
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "icons": [
     {
       "src": "assets/icon.svg",
@@ -15,4 +15,3 @@
     }
   ]
 }
-

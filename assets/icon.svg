@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
-  <title id="title">Manhwa Fan Fav Rankings icon</title>
-  <desc id="desc">A warm orange badge with stacked ranking cards and a small graph accent.</desc>
+  <title id="title">Peakhwa Discovery icon</title>
+  <desc id="desc">A black glass app icon with a bright diamond and discovery signal bars.</desc>
   <defs>
-    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#FF6B35" />
-      <stop offset="55%" stop-color="#FFB84C" />
-      <stop offset="100%" stop-color="#1D8F7A" />
+    <linearGradient id="diamond" x1="30%" x2="80%" y1="10%" y2="100%">
+      <stop offset="0%" stop-color="#F8D66D" />
+      <stop offset="48%" stop-color="#67E8F9" />
+      <stop offset="100%" stop-color="#B7A2FF" />
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1D2433" />
+      <stop offset="100%" stop-color="#050608" />
     </linearGradient>
   </defs>
-  <rect width="256" height="256" rx="56" fill="url(#bg)" />
-  <rect x="44" y="58" width="132" height="140" rx="24" fill="#FFF7EE" opacity="0.95" />
-  <rect x="62" y="82" width="72" height="14" rx="7" fill="#132238" opacity="0.85" />
-  <rect x="62" y="110" width="96" height="12" rx="6" fill="#132238" opacity="0.22" />
-  <rect x="62" y="132" width="84" height="12" rx="6" fill="#132238" opacity="0.22" />
-  <rect x="62" y="162" width="44" height="20" rx="10" fill="#FF6B35" opacity="0.95" />
-  <rect x="114" y="162" width="44" height="20" rx="10" fill="#1D8F7A" opacity="0.92" />
-  <path d="M171 82h26c8.837 0 16 7.163 16 16v63c0 8.837-7.163 16-16 16h-26z" fill="#132238" opacity="0.16" />
-  <path d="M176 156l14-20 12 8 18-32" fill="none" stroke="#FFF7EE" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+  <rect width="256" height="256" rx="58" fill="#000000" />
+  <rect x="28" y="28" width="200" height="200" rx="46" fill="url(#glass)" stroke="rgba(255,255,255,.22)" stroke-width="5" />
+  <path d="M128 48l47 48-47 48-47-48z" fill="url(#diamond)" />
+  <path d="M81 165h94" stroke="#F8FAFC" stroke-width="15" stroke-linecap="round" opacity=".9" />
+  <path d="M91 197h74" stroke="#67E8F9" stroke-width="15" stroke-linecap="round" opacity=".8" />
+  <circle cx="176" cy="167" r="13" fill="#F8D66D" />
 </svg>
-

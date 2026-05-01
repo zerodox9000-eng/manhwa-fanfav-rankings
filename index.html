@@ -4,125 +4,98 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
     />
-    <meta name="theme-color" content="#ff6b35" />
+    <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="A mobile-first AniList manhwa ranking site focused on Fan Fav percentage, bucketed by popularity and refreshed weekly."
+      content="Daily AniList manhwa discovery powered by Fan Fav %, mean score, growth history, and glass-style mobile filters."
     />
-    <title>Manhwa Fan Fav Rankings</title>
+    <title>Peakhwa Discovery</title>
     <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
     <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-glow page-glow--one"></div>
-    <div class="page-glow page-glow--two"></div>
-
-    <div class="app-shell">
-      <header class="hero card">
-        <p class="hero__eyebrow">AniList Manhwa Radar</p>
-        <div class="hero__heading">
-          <h1>Find the titles readers love harder than the crowd expects.</h1>
-          <p>
-            Fan Fav % is the lead signal. Mean Score is the supporting read. Everything else stays tucked
-            inside the detail card until you want it.
-          </p>
+    <div class="app-shell" id="app-shell">
+      <header class="topbar">
+        <div class="brand-row">
+          <div>
+            <p class="eyebrow">Peakhwa</p>
+            <h1>Manhwa discovery</h1>
+          </div>
+          <button class="icon-button" id="theme-button" type="button" aria-label="Change theme">Noir</button>
         </div>
 
-        <div class="hero__meta">
-          <div class="hero-stat">
-            <span>Default board</span>
-            <strong>5000+</strong>
-          </div>
-          <div class="hero-stat">
-            <span>Snapshot</span>
-            <strong id="snapshot-updated">Loading...</strong>
-          </div>
-        </div>
+        <label class="search-box" for="search-input">
+          <span class="search-box__icon" aria-hidden="true">Find</span>
+          <input id="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search titles, tags, genres" />
+        </label>
+
+        <div class="rail rail--tabs" id="discovery-tabs" aria-label="Discovery mode"></div>
+        <div class="rail rail--time" id="time-tabs" aria-label="Growth window"></div>
       </header>
 
-      <main class="content-stack">
-        <section class="controls card">
-          <div class="section-title-row">
-            <div>
-              <p class="section-kicker">Popularity Buckets</p>
-              <h2>Separate ladders, fair comparisons.</h2>
-            </div>
+      <main class="content">
+        <section class="status-strip glass-panel" id="status-strip">
+          <div>
+            <span id="page-label">Discovery</span>
+            <strong id="result-count">Loading</strong>
           </div>
-
-          <div class="bucket-tabs" id="bucket-tabs" aria-label="Popularity bucket selector"></div>
-
-          <label class="search-field" for="search-input">
-            <span>Search inside the active bucket</span>
-            <div class="search-field__box">
-              <input
-                id="search-input"
-                type="search"
-                autocomplete="off"
-                spellcheck="false"
-                placeholder="Search titles in 5000+"
-              />
-              <button id="search-clear" type="button" class="ghost-button">Clear</button>
-            </div>
-          </label>
-
-          <div class="status-filters" id="status-filters" aria-label="Status filters"></div>
-
-          <div class="bucket-summary">
-            <div>
-              <p class="bucket-summary__label" id="active-bucket-label">5000+</p>
-              <p class="bucket-summary__copy" id="bucket-subtitle">Loading the current bucket...</p>
-            </div>
-            <div class="bucket-summary__count">
-              <strong id="result-count">0</strong>
-              <span>titles</span>
-            </div>
+          <div>
+            <span>Snapshot</span>
+            <strong id="snapshot-updated">...</strong>
           </div>
         </section>
 
-        <section class="rankings">
-          <div class="section-title-row section-title-row--tight">
-            <div>
-              <p class="section-kicker">Ranked Feed</p>
-              <h2>Only the signal up front.</h2>
-            </div>
-            <p class="section-note">Tap a row for cover, synopsis, genres, tags, and live AniList stats.</p>
-          </div>
-
-          <div class="ranking-list" id="ranking-list" aria-live="polite"></div>
-
-          <div class="empty-state hidden" id="empty-state">
-            <p>No titles match the current search and status filter.</p>
-          </div>
-        </section>
+        <section class="quick-row" id="quick-row" aria-label="Active quick filters"></section>
+        <section class="feed" id="feed" aria-live="polite"></section>
+        <button class="load-more hidden" id="load-more" type="button">Load more</button>
       </main>
+
+      <nav class="bottom-nav" aria-label="Primary navigation">
+        <button class="nav-item is-active" type="button" data-page="discovery">Discover</button>
+        <button class="nav-item" type="button" data-page="top">Top</button>
+        <button class="nav-item" type="button" data-page="new">New</button>
+        <button class="nav-item" type="button" data-page="saved">Saved</button>
+        <button class="nav-item" type="button" data-action="filters">Filters</button>
+      </nav>
     </div>
 
     <div class="sheet-backdrop hidden" id="sheet-backdrop"></div>
-    <aside class="detail-sheet" id="detail-sheet" aria-hidden="true" aria-label="Entry details">
-      <button class="detail-sheet__close" id="detail-close" type="button" aria-label="Close details">
-        Close
-      </button>
-      <div class="detail-sheet__body" id="detail-body"></div>
+
+    <aside class="sheet detail-sheet" id="detail-sheet" aria-hidden="true" aria-label="Entry details">
+      <div class="sheet__handle"></div>
+      <button class="sheet__close" id="detail-close" type="button" aria-label="Close details">Close</button>
+      <div class="sheet__body" id="detail-body"></div>
     </aside>
 
-    <template id="ranking-card-template">
-      <button class="ranking-card" type="button">
-        <div class="ranking-card__rank"></div>
-        <div class="ranking-card__main">
-          <h3 class="ranking-card__title"></h3>
-          <p class="ranking-card__hint">Open for cover, synopsis, genres, and tags</p>
+    <aside class="sheet filter-sheet" id="filter-sheet" aria-hidden="true" aria-label="Filters">
+      <div class="sheet__handle"></div>
+      <div class="sheet__head">
+        <div>
+          <p class="eyebrow">Filters</p>
+          <h2>Tune discovery</h2>
         </div>
-        <div class="ranking-card__stats">
-          <div class="stat-pill stat-pill--fan">
-            <span>Fan Fav</span>
-            <strong></strong>
+        <button class="sheet__close sheet__close--inline" id="filter-close" type="button">Close</button>
+      </div>
+      <div class="sheet__body" id="filter-body"></div>
+    </aside>
+
+    <template id="card-template">
+      <button class="entry-card glass-panel" type="button">
+        <div class="entry-card__cover"></div>
+        <div class="entry-card__body">
+          <div class="entry-card__top">
+            <span class="rank-pill"></span>
+            <span class="lane-pill"></span>
           </div>
-          <div class="stat-pill">
-            <span>Mean Score</span>
-            <strong></strong>
+          <h3 class="entry-card__title"></h3>
+          <div class="badge-row"></div>
+          <div class="metric-row">
+            <div><span>Fan Fav</span><strong class="metric-fan"></strong></div>
+            <div><span>Mean</span><strong class="metric-score"></strong></div>
+            <div><span>Pop</span><strong class="metric-pop"></strong></div>
           </div>
         </div>
       </button>

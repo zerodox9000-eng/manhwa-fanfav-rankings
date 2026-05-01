@@ -1,51 +1,41 @@
-# Manhwa Fan Fav Rankings
+# Peakhwa Discovery
 
-A public, mobile-first static site for exploring AniList manhwa rankings bucketed by popularity and ordered by Fan Fav percentage.
+A public smartphone-first AniList manhwa discovery app powered by Fan Fav %, mean score, daily snapshots, and growth history.
 
 ## What the site does
 
-- Opens on the `5000plus` leaderboard by default.
-- Keeps every popularity bucket separate so lower-popularity titles are not ranked directly against the biggest titles.
-- Shows only `Fan Fav %` and `Mean Score` on the outside list.
-- Fetches cover image, synopsis, genres, and tags live from AniList when a title is opened.
-- Caches detail responses in-browser for a faster repeat experience.
+- Opens on `Discovery -> Most Relevant -> 7 Days`.
+- Uses a premium glass/OLED mobile interface with bottom navigation.
+- Shows dense cover cards with title, Fan Fav %, mean score, popularity lane, and discovery badges.
+- Supports `Discovery`, `Top Lists`, `New`, `Saved`, and an advanced filter sheet.
+- Saves theme, filters, search, sort, selected page, and saved titles in browser storage.
+- Uses English AniList titles first, then English-looking synonyms, then romaji fallback.
+- Opens a detail sheet with full uncropped cover, synopsis, genres, tags, stats, and AniList link.
 
 ## Data model
 
-The static ranking buckets live in [`data/`](./data):
+The main app reads [`data/catalog.json`](./data/catalog.json). The legacy bucket files are still regenerated for compatibility, but the UI now uses the catalog.
 
-- `5000plus.json`
-- `1000to5000.json`
-- `500to1000.json`
-- `200to500.json`
-- `50to200.json`
-- `snapshot-meta.json`
+Each catalog entry includes:
 
-Each entry is stored in the source-friendly shape:
+- `displayTitle`, `englishTitle`, `romajiTitle`, `synonyms`
+- `coverImage`, `coverImageSmall`, `bannerImage`
+- `genres`, spoiler-safe `tags`
+- `fanFav`, `meanScore`, `popularity`, `favourites`
+- `status`, `startDate`, `chapters`, `volumes`
+- `firstSeen`, `lastUpdated`, and per-window `growth`
 
-```json
-{
-  "Title": "Example Title",
-  "FAN FAV": 12.34,
-  "Mean Score": 87,
-  "Status": "FINISHED",
-  "Start Year": 2020,
-  "Popularity": 7349,
-  "Favourites": 1070,
-  "AniList URL": "https://anilist.co/manga/123456"
-}
-```
+## Daily refresh
 
-## Weekly refresh
+The scheduled workflow runs [`scripts/refresh-data.mjs`](./scripts/refresh-data.mjs) every day. It:
 
-The scheduled workflow runs [`scripts/refresh-data.mjs`](./scripts/refresh-data.mjs) once a week. It:
-
-1. Reads the current bucket files to collect the AniList media IDs.
-2. Fetches fresh AniList ranking fields in batches.
-3. Recalculates `Fan Fav %` as `(favourites / popularity) * 100`.
-4. Rebuilds the bucket files based on the latest popularity.
-5. Writes a fresh `snapshot-meta.json`.
-6. Commits the refreshed snapshot and deploys the site.
+1. Refreshes all known AniList media in batches.
+2. Searches AniList for recent Korean manga/manhwa releases from the last 45 days.
+3. Adds newly discovered entries to the catalog.
+4. Recalculates `Fan Fav %` as `(favourites / popularity) * 100`.
+5. Stores dated history snapshots under `data/history/`.
+6. Computes growth windows for 1 day, 3 days, 7 days, 14 days, 30 days, 90 days, 180 days, 1 year, and all time.
+7. Commits refreshed data and deploys GitHub Pages.
 
 Manual commands:
 
@@ -57,8 +47,8 @@ npm run refresh:data
 ## Hosting
 
 - [`deploy-pages.yml`](./.github/workflows/deploy-pages.yml) deploys the static site to GitHub Pages on push to `main`.
-- [`weekly-refresh.yml`](./.github/workflows/weekly-refresh.yml) performs the weekly refresh and deploys the updated snapshot.
+- [`daily-refresh.yml`](./.github/workflows/daily-refresh.yml) refreshes data daily and deploys the updated catalog.
 
-Once GitHub Pages is enabled for the repository, the expected public URL is:
+Public URL:
 
 `https://zerodox9000-eng.github.io/manhwa-fanfav-rankings/`

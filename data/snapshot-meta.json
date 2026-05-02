@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-05-01T20:24:05.478Z",
-  "source": "Local prepared discovery catalog",
-  "totalEntries": 4403,
+  "lastUpdated": "2026-05-02T08:24:09.572Z",
+  "source": "Daily AniList refresh",
+  "totalEntries": 4424,
   "defaultPage": "discovery",
   "defaultTab": "relevant",
   "defaultWindow": "7d",
@@ -72,6 +72,7 @@
       "Urban",
       "Dragons",
       "Cultivation",
+      "Boys' Love",
       "Maids",
       "Arranged Marriage",
       "Food",
@@ -82,14 +83,13 @@
       "Ghost",
       "Idol",
       "Adoption",
-      "Boys' Love",
       "Coming of Age",
       "Shapeshifting",
       "War",
       "Found Family",
+      "Age Gap",
       "Fake Relationship",
       "Ojou-sama",
-      "Age Gap",
       "Crossdressing",
       "Office Lady",
       "Conspiracy",
@@ -103,9 +103,9 @@
       "Primarily Male Cast",
       "Guns",
       "Tsundere",
+      "Delinquents",
       "Disability",
       "Assassins",
-      "Delinquents",
       "Gangs",
       "Twins",
       "Slavery",
@@ -131,12 +131,12 @@
     "established": 1076,
     "rising": 1220,
     "underground": 1021,
-    "tooEarly": 645
+    "tooEarly": 666
   },
   "statuses": {
-    "FINISHED": 2630,
-    "RELEASING": 1737,
+    "FINISHED": 2639,
+    "RELEASING": 1742,
     "CANCELLED": 34,
-    "NOT_YET_RELEASED": 2
+    "NOT_YET_RELEASED": 9
   }
 }

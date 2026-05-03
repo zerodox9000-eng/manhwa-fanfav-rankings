@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-05-02T08:24:09.572Z",
+  "lastUpdated": "2026-05-03T08:41:38.625Z",
   "source": "Daily AniList refresh",
-  "totalEntries": 4424,
+  "totalEntries": 4425,
   "defaultPage": "discovery",
   "defaultTab": "relevant",
   "defaultWindow": "7d",
@@ -116,9 +116,9 @@
       "Kuudere",
       "Rehabilitation",
       "Curses",
+      "Nudity",
       "Witch",
       "Mythology",
-      "Nudity",
       "Parenthood",
       "Body Swapping",
       "Chibi",
@@ -129,14 +129,14 @@
   "lanes": {
     "mainstream": 441,
     "established": 1076,
-    "rising": 1220,
-    "underground": 1021,
+    "rising": 1224,
+    "underground": 1018,
     "tooEarly": 666
   },
   "statuses": {
-    "FINISHED": 2639,
+    "FINISHED": 2641,
     "RELEASING": 1742,
     "CANCELLED": 34,
-    "NOT_YET_RELEASED": 9
+    "NOT_YET_RELEASED": 8
   }
 }

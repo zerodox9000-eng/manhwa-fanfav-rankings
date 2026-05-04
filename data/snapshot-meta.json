@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-05-03T08:41:38.625Z",
+  "lastUpdated": "2026-05-04T10:39:40.546Z",
   "source": "Daily AniList refresh",
-  "totalEntries": 4425,
+  "totalEntries": 4427,
   "defaultPage": "discovery",
   "defaultTab": "relevant",
   "defaultWindow": "7d",
@@ -77,8 +77,8 @@
       "Arranged Marriage",
       "Food",
       "Animals",
-      "Acting",
       "Yandere",
+      "Acting",
       "Virtual World",
       "Ghost",
       "Idol",
@@ -117,9 +117,9 @@
       "Rehabilitation",
       "Curses",
       "Nudity",
+      "Parenthood",
       "Witch",
       "Mythology",
-      "Parenthood",
       "Body Swapping",
       "Chibi",
       "Death Game",
@@ -128,14 +128,14 @@
   },
   "lanes": {
     "mainstream": 441,
-    "established": 1076,
-    "rising": 1224,
-    "underground": 1018,
-    "tooEarly": 666
+    "established": 1078,
+    "rising": 1223,
+    "underground": 1024,
+    "tooEarly": 661
   },
   "statuses": {
     "FINISHED": 2641,
-    "RELEASING": 1742,
+    "RELEASING": 1744,
     "CANCELLED": 34,
     "NOT_YET_RELEASED": 8
   }

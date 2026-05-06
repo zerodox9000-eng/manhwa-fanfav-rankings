@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-05T09:42:51.113Z",
+  "lastUpdated": "2026-05-06T10:41:29.560Z",
   "source": "Daily AniList refresh",
   "totalEntries": 4431,
   "defaultPage": "discovery",
@@ -128,14 +128,14 @@
   },
   "lanes": {
     "mainstream": 442,
-    "established": 1077,
-    "rising": 1224,
-    "underground": 1027,
+    "established": 1080,
+    "rising": 1222,
+    "underground": 1026,
     "tooEarly": 661
   },
   "statuses": {
-    "FINISHED": 2645,
-    "RELEASING": 1745,
+    "FINISHED": 2646,
+    "RELEASING": 1744,
     "CANCELLED": 34,
     "NOT_YET_RELEASED": 7
   }

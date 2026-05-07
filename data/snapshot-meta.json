@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-05-06T10:41:29.560Z",
+  "lastUpdated": "2026-05-07T10:52:45.086Z",
   "source": "Daily AniList refresh",
-  "totalEntries": 4431,
+  "totalEntries": 4433,
   "defaultPage": "discovery",
   "defaultTab": "relevant",
   "defaultWindow": "7d",
@@ -70,8 +70,8 @@
       "Gore",
       "Crime",
       "Urban",
-      "Dragons",
       "Boys' Love",
+      "Dragons",
       "Cultivation",
       "Maids",
       "Arranged Marriage",
@@ -85,8 +85,8 @@
       "Adoption",
       "Coming of Age",
       "Shapeshifting",
-      "War",
       "Found Family",
+      "War",
       "Age Gap",
       "Fake Relationship",
       "Ojou-sama",
@@ -114,9 +114,9 @@
       "Female Harem",
       "Military",
       "Kuudere",
+      "Nudity",
       "Rehabilitation",
       "Curses",
-      "Nudity",
       "Parenthood",
       "Witch",
       "Mythology",
@@ -127,16 +127,16 @@
     ]
   },
   "lanes": {
-    "mainstream": 442,
+    "mainstream": 444,
     "established": 1080,
-    "rising": 1222,
+    "rising": 1221,
     "underground": 1026,
-    "tooEarly": 661
+    "tooEarly": 662
   },
   "statuses": {
     "FINISHED": 2646,
-    "RELEASING": 1744,
-    "CANCELLED": 34,
-    "NOT_YET_RELEASED": 7
+    "RELEASING": 1745,
+    "NOT_YET_RELEASED": 8,
+    "CANCELLED": 34
   }
 }

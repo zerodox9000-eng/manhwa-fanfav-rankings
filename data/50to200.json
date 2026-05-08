@@ -450,6 +450,16 @@
     "AniList URL": "https://anilist.co/manga/177659"
   },
   {
+    "Title": "Wild Dogs Dream of Feasting",
+    "FAN FAV": 3.85,
+    "Mean Score": 83,
+    "Status": "RELEASING",
+    "Start Year": 2026,
+    "Popularity": 52,
+    "Favourites": 2,
+    "AniList URL": "https://anilist.co/manga/210985"
+  },
+  {
     "Title": "The Dream Atelier",
     "FAN FAV": 3.85,
     "Mean Score": 77,
@@ -1620,6 +1630,16 @@
     "AniList URL": "https://anilist.co/manga/192382"
   },
   {
+    "Title": "The Little Witch and Her Dad",
+    "FAN FAV": 2.76,
+    "Mean Score": 56,
+    "Status": "FINISHED",
+    "Start Year": 2023,
+    "Popularity": 145,
+    "Favourites": 4,
+    "AniList URL": "https://anilist.co/manga/188959"
+  },
+  {
     "Title": "Becoming the Lady of the Cursed Ducal House",
     "FAN FAV": 2.74,
     "Mean Score": 62,
@@ -2130,16 +2150,6 @@
     "AniList URL": "https://anilist.co/manga/198567"
   },
   {
-    "Title": "Vampire Academy",
-    "FAN FAV": 2.42,
-    "Mean Score": 68,
-    "Status": "FINISHED",
-    "Start Year": 2018,
-    "Popularity": 165,
-    "Favourites": 4,
-    "AniList URL": "https://anilist.co/manga/110162"
-  },
-  {
     "Title": "The Thorned Flower of Adinmir",
     "FAN FAV": 2.42,
     "Mean Score": 61,
@@ -2168,6 +2178,16 @@
     "Popularity": 83,
     "Favourites": 2,
     "AniList URL": "https://anilist.co/manga/153878"
+  },
+  {
+    "Title": "Vampire Academy",
+    "FAN FAV": 2.41,
+    "Mean Score": 68,
+    "Status": "FINISHED",
+    "Start Year": 2018,
+    "Popularity": 166,
+    "Favourites": 4,
+    "AniList URL": "https://anilist.co/manga/110162"
   },
   {
     "Title": "Whatever You Say, I Won't!",
@@ -2860,16 +2880,6 @@
     "AniList URL": "https://anilist.co/manga/193148"
   },
   {
-    "Title": "The Little Witch and Her Dad",
-    "FAN FAV": 2.07,
-    "Mean Score": 56,
-    "Status": "FINISHED",
-    "Start Year": 2023,
-    "Popularity": 145,
-    "Favourites": 3,
-    "AniList URL": "https://anilist.co/manga/188959"
-  },
-  {
     "Title": "The Taming of the Hellcat",
     "FAN FAV": 2.06,
     "Mean Score": 67,
@@ -3198,16 +3208,6 @@
     "Popularity": 155,
     "Favourites": 3,
     "AniList URL": "https://anilist.co/manga/164449"
-  },
-  {
-    "Title": "Wild Dogs Dream of Feasting",
-    "FAN FAV": 1.92,
-    "Mean Score": 83,
-    "Status": "RELEASING",
-    "Start Year": 2026,
-    "Popularity": 52,
-    "Favourites": 1,
-    "AniList URL": "https://anilist.co/manga/210985"
   },
   {
     "Title": "Visions of the Night",
@@ -4350,16 +4350,6 @@
     "AniList URL": "https://anilist.co/manga/126420"
   },
   {
-    "Title": "The Year we Turned 29",
-    "FAN FAV": 1.57,
-    "Mean Score": 75,
-    "Status": "RELEASING",
-    "Start Year": 2019,
-    "Popularity": 127,
-    "Favourites": 2,
-    "AniList URL": "https://anilist.co/manga/118565"
-  },
-  {
     "Title": "Guardian of the Dragon",
     "FAN FAV": 1.57,
     "Mean Score": 73,
@@ -4398,6 +4388,16 @@
     "Popularity": 191,
     "Favourites": 3,
     "AniList URL": "https://anilist.co/manga/153079"
+  },
+  {
+    "Title": "The Year we Turned 29",
+    "FAN FAV": 1.56,
+    "Mean Score": 75,
+    "Status": "RELEASING",
+    "Start Year": 2019,
+    "Popularity": 128,
+    "Favourites": 2,
+    "AniList URL": "https://anilist.co/manga/118565"
   },
   {
     "Title": "Call My Name!",
@@ -5328,16 +5328,6 @@
     "Popularity": 152,
     "Favourites": 2,
     "AniList URL": "https://anilist.co/manga/175557"
-  },
-  {
-    "Title": "Hoodwinked into Her First Kiss",
-    "FAN FAV": 1.32,
-    "Mean Score": 56,
-    "Status": "FINISHED",
-    "Start Year": 2023,
-    "Popularity": 152,
-    "Favourites": 2,
-    "AniList URL": "https://anilist.co/manga/184586"
   },
   {
     "Title": "My 1.5-Billion-Won Item",
@@ -7588,6 +7578,16 @@
     "Popularity": 151,
     "Favourites": 1,
     "AniList URL": "https://anilist.co/manga/177265"
+  },
+  {
+    "Title": "Hoodwinked into Her First Kiss",
+    "FAN FAV": 0.66,
+    "Mean Score": 56,
+    "Status": "FINISHED",
+    "Start Year": 2023,
+    "Popularity": 152,
+    "Favourites": 1,
+    "AniList URL": "https://anilist.co/manga/184586"
   },
   {
     "Title": "Festival of Warriors",

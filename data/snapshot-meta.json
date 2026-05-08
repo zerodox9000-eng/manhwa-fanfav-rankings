@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-05-07T10:52:45.086Z",
+  "lastUpdated": "2026-05-08T07:23:51.365Z",
   "source": "Daily AniList refresh",
-  "totalEntries": 4433,
+  "totalEntries": 4438,
   "defaultPage": "discovery",
   "defaultTab": "relevant",
   "defaultWindow": "7d",
@@ -87,8 +87,8 @@
       "Shapeshifting",
       "Found Family",
       "War",
-      "Age Gap",
       "Fake Relationship",
+      "Age Gap",
       "Ojou-sama",
       "Crossdressing",
       "Office Lady",
@@ -131,11 +131,11 @@
     "established": 1080,
     "rising": 1221,
     "underground": 1026,
-    "tooEarly": 662
+    "tooEarly": 667
   },
   "statuses": {
-    "FINISHED": 2646,
-    "RELEASING": 1745,
+    "FINISHED": 2647,
+    "RELEASING": 1749,
     "NOT_YET_RELEASED": 8,
     "CANCELLED": 34
   }

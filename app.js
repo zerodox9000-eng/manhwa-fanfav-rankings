@@ -1,1159 +1,1081 @@
-const DATA_FILES = [
-  ["5000plus", "./data/5000plus.json"],
-  ["1000to5000", "./data/1000to5000.json"],
-  ["500to1000", "./data/500to1000.json"],
-  ["200to500", "./data/200to500.json"],
-  ["50to200", "./data/50to200.json"],
-];
-
-const STORAGE_KEY = "peakhwa-discovery-state-v1";
-const SAVED_KEY = "peakhwa-saved-media-v1";
-const DETAIL_CACHE_PREFIX = "peakhwa-detail-v2:";
+const CATALOG_URL = "./data/catalog.json";
+const PAGE_SIZE = 36;
+const APP_STATE_KEY = "manhwalens-state-v1";
+const DETAIL_CACHE_PREFIX = "manhwalens-detail-v1:";
 const DETAIL_CACHE_TTL = 1000 * 60 * 60 * 24 * 7;
-const PAGE_SIZE = 64;
 
-const THEMES = [
-  { key: "noir", label: "Noir" },
-  { key: "aurora", label: "Aurora" },
-  { key: "light", label: "Light" },
+const DEFAULT_EXCLUDED_TAGS = ["Adult", "Boys' Love", "Yuri"];
+const CONTENT_RESTRICTION_TAGS = ["Adult", "Boys' Love", "Yuri", "Hentai"];
+
+const RELEASE_WINDOWS = [
+  { key: "all", label: "All releases", days: Infinity },
+  { key: "30d", label: "Last 30d", days: 30 },
+  { key: "90d", label: "Last 90d", days: 90 },
+  { key: "1y", label: "This year", mode: "year" },
+  { key: "3y", label: "1-3 years", minYears: 1, maxYears: 3 },
+  { key: "10y", label: "3-10 years", minYears: 3, maxYears: 10 },
+  { key: "legacy", label: "10+ years", minYears: 10, maxYears: Infinity },
 ];
 
-const PAGES = {
-  discovery: "Discovery",
-  top: "Top Lists",
-  new: "New",
-  saved: "Saved",
-};
-
-const DISCOVERY_TABS = [
-  { key: "relevant", label: "Most Relevant" },
-  { key: "newly", label: "Newly Added" },
-  { key: "fresh", label: "Fresh Releases" },
-  { key: "hot", label: "Hot" },
-  { key: "fanRising", label: "Fan Fav Rising" },
-  { key: "hidden", label: "Hidden Gems" },
-  { key: "mainstream", label: "Mainstream" },
-  { key: "legacy", label: "Legacy Picks" },
+const GROWTH_WINDOWS = [
+  { key: "1d", label: "Growth 1D" },
+  { key: "3d", label: "Growth 3D" },
+  { key: "7d", label: "Growth 1W" },
+  { key: "14d", label: "Growth 2W" },
+  { key: "30d", label: "Growth 1M" },
+  { key: "90d", label: "Growth 3M" },
+  { key: "365d", label: "Growth 1Y" },
 ];
 
-const TIME_WINDOWS = [
-  { key: "1d", label: "1 Day", days: 1 },
-  { key: "3d", label: "3 Days", days: 3 },
-  { key: "7d", label: "7 Days", days: 7 },
-  { key: "14d", label: "14 Days", days: 14 },
-  { key: "30d", label: "30 Days", days: 30 },
-  { key: "90d", label: "90 Days", days: 90 },
-  { key: "180d", label: "180 Days", days: 180 },
-  { key: "365d", label: "1 Year", days: 365 },
-  { key: "all", label: "All Time", days: Infinity },
+const GROWTH_TYPES = [
+  { key: "raw", label: "Raw Growth" },
+  { key: "percentage", label: "Percentage Growth" },
+  { key: "normalized", label: "Normalized Growth" },
+  { key: "ageAdjusted", label: "Age-adjusted Growth" },
 ];
 
-const AGE_FILTERS = [
-  { key: "all", label: "All Ages" },
-  { key: "7d", label: "Last 7 Days", days: 7 },
-  { key: "30d", label: "Last 30 Days", days: 30 },
-  { key: "90d", label: "Last 90 Days", days: 90 },
-  { key: "year", label: "This Year" },
-  { key: "1to3", label: "1-3 Years" },
-  { key: "3to10", label: "3-10 Years" },
-  { key: "10plus", label: "10+ Years" },
-];
-
-const LANES = [
-  { key: "all", label: "All Lanes", min: 0, max: Infinity },
-  { key: "mainstream", label: "Mainstream", min: 5000, max: Infinity },
-  { key: "established", label: "Established", min: 1000, max: 4999 },
-  { key: "rising", label: "Rising", min: 300, max: 999 },
-  { key: "underground", label: "Underground", min: 100, max: 299 },
-  { key: "tooEarly", label: "Too Early", min: 0, max: 99 },
-];
-
-const SORTS = [
-  { key: "smart", label: "Smart Rank" },
-  { key: "fanFav", label: "Fan Fav" },
+const SORT_OPTIONS = [
+  { key: "fanFav", label: "Fan Fav %" },
   { key: "meanScore", label: "Mean Score" },
   { key: "popularity", label: "Popularity" },
-  { key: "growth", label: "Growth" },
-  { key: "newest", label: "Newest" },
+  { key: "popGrowth", label: "Popularity Growth" },
+  { key: "fanGrowth", label: "Fan Fav Growth" },
+  { key: "meanGrowth", label: "Mean Growth" },
+  { key: "favourites", label: "Favorites" },
+  { key: "releaseDate", label: "Release Date" },
+  { key: "chapters", label: "Chapter Count" },
 ];
 
-const STATUS_LABELS = {
-  ALL: "All",
-  RELEASING: "Releasing",
-  FINISHED: "Finished",
-  HIATUS: "Hiatus",
-  CANCELLED: "Cancelled",
-  NOT_YET_RELEASED: "Not Yet",
-  UNKNOWN: "Unknown",
-};
-
-const TIER_ORDER = [
-  "Peak",
-  "Almost Peak",
-  "Hidden Gem+",
-  "Hidden Gem",
-  "Great",
-  "Good",
-  "Decent",
-  "Fair",
-  "Meh",
+const DEFAULT_FEEDS = [
+  {
+    id: "hidden-gems",
+    name: "Hidden Gems",
+    description: "",
+    cover: "",
+    criteria: {
+      popularity: [100, 3000],
+      meanScore: [75, 100],
+      fanFav: [3, 100],
+      favourites: [0, Infinity],
+      releaseWindow: "90d",
+      growthWindow: "7d",
+      growthType: "raw",
+      includeGenres: [],
+      excludeGenres: [],
+      includeTags: [],
+      excludeTags: DEFAULT_EXCLUDED_TAGS,
+      allowRestricted: false,
+    },
+    sort: { primary: "fanFav", secondary: "meanScore", direction: "desc" },
+    labelId: "hidden-gem",
+  },
+  {
+    id: "rising-fast",
+    name: "Rising Fast",
+    description: "",
+    cover: "",
+    criteria: {
+      popularity: [100, 10000],
+      meanScore: [65, 100],
+      fanFav: [0, 100],
+      favourites: [0, Infinity],
+      releaseWindow: "all",
+      growthWindow: "7d",
+      growthType: "raw",
+      includeGenres: [],
+      excludeGenres: [],
+      includeTags: [],
+      excludeTags: DEFAULT_EXCLUDED_TAGS,
+      allowRestricted: false,
+    },
+    sort: { primary: "popGrowth", secondary: "fanFav", direction: "desc" },
+    labelId: "breakout",
+  },
+  {
+    id: "fresh-finds",
+    name: "Fresh Finds",
+    description: "",
+    cover: "",
+    criteria: {
+      popularity: [30, 3000],
+      meanScore: [0, 100],
+      fanFav: [0, 100],
+      favourites: [0, Infinity],
+      releaseWindow: "30d",
+      growthWindow: "3d",
+      growthType: "raw",
+      includeGenres: [],
+      excludeGenres: [],
+      includeTags: [],
+      excludeTags: DEFAULT_EXCLUDED_TAGS,
+      allowRestricted: false,
+    },
+    sort: { primary: "releaseDate", secondary: "popularity", direction: "desc" },
+    labelId: "fresh",
+  },
+  {
+    id: "mainstream",
+    name: "Mainstream",
+    description: "",
+    cover: "",
+    criteria: {
+      popularity: [10000, Infinity],
+      meanScore: [65, 100],
+      fanFav: [0, 100],
+      favourites: [0, Infinity],
+      releaseWindow: "all",
+      growthWindow: "30d",
+      growthType: "raw",
+      includeGenres: [],
+      excludeGenres: [],
+      includeTags: [],
+      excludeTags: DEFAULT_EXCLUDED_TAGS,
+      allowRestricted: false,
+    },
+    sort: { primary: "meanScore", secondary: "fanFav", direction: "desc" },
+    labelId: "mainstream",
+  },
 ];
 
-const DEFAULT_UI = {
-  page: "discovery",
-  discoveryTab: "relevant",
-  timeWindow: "7d",
-  theme: "noir",
-  search: "",
-  releaseAge: "all",
-  lane: "all",
-  status: "ALL",
-  sort: "smart",
-  popMin: 100,
-  popMax: "",
-  scoreMin: "",
-  scoreMax: "",
-  fanMin: "",
-  fanMax: "",
-  favouritesMin: "",
-  favouritesMax: "",
-  includeGenres: [],
-  rejectGenres: [],
-  includeTags: [],
-  rejectTags: [],
-  showTooEarly: false,
-};
+const DEFAULT_LABELS = [
+  { id: "hidden-gem", name: "Hidden Gem", color: "#54d68a", icon: "Gem", criteria: "Pop 100-3000 / Mean 75+ / Fan Fav 3%+" },
+  { id: "breakout", name: "Breakout", color: "#ffb65c", icon: "Rise", criteria: "Growth focused" },
+  { id: "fresh", name: "Fresh", color: "#8f7cff", icon: "New", criteria: "Recent releases" },
+  { id: "mainstream", name: "Mainstream", color: "#a6a6ad", icon: "Known", criteria: "Pop 10000+" },
+];
+
+const DEFAULT_VIBES = [
+  { id: "atmospheric", name: "Atmospheric", color: "#8f7cff", icon: "Moon", mediaIds: [] },
+  { id: "hype", name: "Hype", color: "#ffb65c", icon: "Bolt", mediaIds: [] },
+  { id: "melancholic", name: "Melancholic", color: "#7aa2ff", icon: "Rain", mediaIds: [] },
+];
 
 const state = {
-  ui: loadUiState(),
-  entries: [],
+  catalog: [],
   meta: null,
-  visibleEntries: [],
-  renderEntries: [],
+  view: "home",
+  activeFeedId: "hidden-gems",
   renderLimit: PAGE_SIZE,
-  savedIds: new Set(loadSavedIds()),
-  detailMemoryCache: new Map(),
-  detailAbortController: null,
-  filterIndexes: {
-    genres: [],
-    tags: [],
-  },
+  searchQuery: "",
+  feeds: structuredClone(DEFAULT_FEEDS),
+  labels: structuredClone(DEFAULT_LABELS),
+  vibes: structuredClone(DEFAULT_VIBES),
+  library: [],
+  builder: null,
+  builderStep: 0,
+  scrollY: 0,
+  activeSheet: null,
+  detailCache: new Map(),
 };
 
-const elements = {
-  appShell: document.getElementById("app-shell"),
-  themeButton: document.getElementById("theme-button"),
-  searchInput: document.getElementById("search-input"),
-  discoveryTabs: document.getElementById("discovery-tabs"),
-  timeTabs: document.getElementById("time-tabs"),
-  statusStrip: document.getElementById("status-strip"),
-  pageLabel: document.getElementById("page-label"),
-  resultCount: document.getElementById("result-count"),
-  snapshotUpdated: document.getElementById("snapshot-updated"),
-  quickRow: document.getElementById("quick-row"),
-  feed: document.getElementById("feed"),
+const els = {
+  body: document.body,
+  activeFeedName: document.getElementById("active-feed-name"),
+  feedTitle: document.getElementById("feed-title"),
+  feedDescription: document.getElementById("feed-description"),
+  feedSelect: document.getElementById("feed-select"),
+  feedMenu: document.getElementById("feed-menu"),
+  searchOpen: document.getElementById("search-open"),
+  quickControls: document.getElementById("quick-controls"),
+  ruleRow: document.getElementById("rule-row"),
+  feedList: document.getElementById("feed-list"),
   loadMore: document.getElementById("load-more"),
-  navItems: document.querySelectorAll(".nav-item"),
-  sheetBackdrop: document.getElementById("sheet-backdrop"),
+  navButtons: document.querySelectorAll(".nav-btn[data-view]"),
+  createFeed: document.getElementById("create-feed"),
+  backdrop: document.getElementById("backdrop"),
   detailSheet: document.getElementById("detail-sheet"),
-  detailBody: document.getElementById("detail-body"),
-  detailClose: document.getElementById("detail-close"),
-  filterSheet: document.getElementById("filter-sheet"),
-  filterBody: document.getElementById("filter-body"),
-  filterClose: document.getElementById("filter-close"),
-  cardTemplate: document.getElementById("card-template"),
+  detailContent: document.getElementById("detail-content"),
+  pickerSheet: document.getElementById("picker-sheet"),
+  pickerContent: document.getElementById("picker-content"),
+  feedFlow: document.getElementById("feed-flow"),
+  flowClose: document.getElementById("flow-close"),
+  flowTitle: document.getElementById("flow-title"),
+  flowSave: document.getElementById("flow-save"),
+  flowSteps: document.getElementById("flow-steps"),
+  flowBody: document.getElementById("flow-body"),
+  entryTemplate: document.getElementById("entry-template"),
 };
 
 init();
 
 async function init() {
-  applyTheme();
-  bindEvents();
-  renderChrome();
-  renderLoadingState();
+  restoreState();
+  bindGlobalEvents();
+  renderLoading();
 
   try {
-    const { entries, meta } = await loadCatalog();
-    state.entries = entries.map(normalizeEntry).filter((entry) => entry.mediaId || entry.aniListUrl);
-    state.meta = meta;
-    state.filterIndexes = buildFilterIndexes(state.entries, meta);
-    renderChrome();
-    applyFiltersAndRender();
+    const response = await fetch(CATALOG_URL, { cache: "no-store" });
+    const catalog = await response.json();
+    state.meta = catalog.meta || null;
+    state.catalog = (catalog.entries || []).map(normalizeEntry);
+    render();
   } catch (error) {
-    renderEmptyState(`Unable to load the catalog. ${error instanceof Error ? error.message : ""}`);
+    renderEmpty(`Catalog could not load. ${error instanceof Error ? error.message : ""}`);
   }
 }
 
-function bindEvents() {
-  elements.themeButton.addEventListener("click", () => {
-    const currentIndex = THEMES.findIndex((theme) => theme.key === state.ui.theme);
-    state.ui.theme = THEMES[(currentIndex + 1) % THEMES.length].key;
-    persistUi();
-    applyTheme();
-  });
-
-  elements.searchInput.value = state.ui.search || "";
-  elements.searchInput.addEventListener("input", () => {
-    state.ui.search = elements.searchInput.value.trim();
-    state.renderLimit = PAGE_SIZE;
-    persistUi();
-    applyFiltersAndRender();
-  });
-
-  elements.loadMore.addEventListener("click", () => {
+function bindGlobalEvents() {
+  els.feedSelect.addEventListener("click", () => openFeedPicker());
+  els.feedMenu.addEventListener("click", () => openFeedActions());
+  els.searchOpen.addEventListener("click", () => openSearch());
+  els.loadMore.addEventListener("click", () => {
     state.renderLimit += PAGE_SIZE;
-    renderFeed();
+    renderFeedList();
   });
+  els.createFeed.addEventListener("click", () => startFeedFlow());
+  els.backdrop.addEventListener("click", closeSheet);
+  els.flowClose.addEventListener("click", closeFeedFlow);
+  els.flowSave.addEventListener("click", saveBuilderFeed);
 
-  for (const item of elements.navItems) {
-    item.addEventListener("click", () => {
-      const action = item.dataset.action;
-      if (action === "filters") {
-        openFilterSheet();
-        return;
-      }
-
-      state.ui.page = item.dataset.page || "discovery";
+  for (const button of els.navButtons) {
+    button.addEventListener("click", () => {
+      state.view = button.dataset.view;
       state.renderLimit = PAGE_SIZE;
-      persistUi();
-      renderChrome();
-      applyFiltersAndRender();
+      persistState();
+      render();
     });
   }
 
-  elements.sheetBackdrop.addEventListener("click", closeSheets);
-  elements.detailClose.addEventListener("click", closeSheets);
-  elements.filterClose.addEventListener("click", closeSheets);
+  setupSheetGesture(els.detailSheet);
+  setupSheetGesture(els.pickerSheet);
+
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
-      closeSheets();
+      if (!els.feedFlow.classList.contains("hidden")) closeFeedFlow();
+      closeSheet();
     }
   });
 }
 
-async function loadCatalog() {
-  const catalogResponse = await fetch("./data/catalog.json", { cache: "no-store" });
-  if (catalogResponse.ok) {
-    const catalog = await catalogResponse.json();
-    return {
-      entries: Array.isArray(catalog.entries) ? catalog.entries : [],
-      meta: catalog.meta || null,
-    };
+function render() {
+  updateNav();
+  const feed = getActiveFeed();
+  els.activeFeedName.textContent = feed.name;
+  els.feedTitle.textContent = state.view === "home" ? feed.name : titleForView(state.view);
+  els.feedDescription.textContent = state.view === "home" ? feed.description || "" : "";
+  els.feedMenu.classList.toggle("hidden", state.view !== "home");
+  renderRules(feed);
+  renderQuickControls(feed);
+  renderFeedList();
+}
+
+function updateNav() {
+  for (const button of els.navButtons) {
+    button.classList.toggle("is-active", button.dataset.view === state.view);
   }
+}
 
-  const [bucketResponses, metaResponse] = await Promise.all([
-    Promise.all(
-      DATA_FILES.map(async ([bucketKey, url]) => {
-        const response = await fetch(url, { cache: "no-store" });
-        if (!response.ok) return [];
-        const entries = await response.json();
-        return entries.map((entry) => ({ ...entry, bucketKey }));
-      })
-    ),
-    fetch("./data/snapshot-meta.json", { cache: "no-store" }).catch(() => null),
-  ]);
-
-  const meta = metaResponse?.ok ? await metaResponse.json() : null;
+function titleForView(view) {
   return {
-    entries: bucketResponses.flat(),
-    meta,
-  };
+    feeds: "Feeds",
+    library: "Library",
+    search: "Search",
+  }[view] || getActiveFeed().name;
 }
 
-function normalizeEntry(rawEntry) {
-  const aniListUrl = rawEntry.aniListUrl || rawEntry["AniList URL"] || rawEntry.url || "";
-  const mediaId = Number(rawEntry.mediaId || rawEntry.id || parseAniListId(aniListUrl) || 0);
-  const rawTitle = rawEntry.displayTitle || rawEntry.title || rawEntry.Title || "";
-  const synonyms = normalizeStringArray(rawEntry.synonyms);
-  const romajiTitle = rawEntry.romajiTitle || rawEntry.romaji || "";
-  const englishTitle = rawEntry.englishTitle || "";
-  const displayTitle = chooseDisplayTitle({
-    english: englishTitle,
-    synonyms,
-    snapshotTitle: rawTitle,
-    romaji: romajiTitle,
-    userPreferred: rawEntry.userPreferredTitle || rawEntry.userPreferred || "",
-    native: rawEntry.nativeTitle || "",
-  });
-  const popularity = Number(rawEntry.popularity ?? rawEntry.Popularity ?? 0);
-  const favourites = Number(rawEntry.favourites ?? rawEntry.Favourites ?? 0);
-  const fanFav = Number(rawEntry.fanFav ?? rawEntry["FAN FAV"] ?? calculateFanFav(favourites, popularity));
-  const startDate = normalizeStartDate(rawEntry.startDate, rawEntry["Start Year"] || rawEntry.startYear);
-  const startYear = Number(rawEntry.startYear || rawEntry["Start Year"] || startDate?.year || 0);
-  const meanScore = numberOrNull(rawEntry.meanScore ?? rawEntry["Mean Score"]);
-  const growth = rawEntry.growth && typeof rawEntry.growth === "object" ? rawEntry.growth : {};
-  const firstSeen = rawEntry.firstSeen || "";
-
-  return {
-    id: String(mediaId || aniListUrl || displayTitle),
-    mediaId,
-    aniListUrl,
-    displayTitle,
-    title: displayTitle,
-    romajiTitle,
-    englishTitle,
-    nativeTitle: rawEntry.nativeTitle || "",
-    synonyms,
-    coverImage: rawEntry.coverImage || rawEntry.coverImageLarge || rawEntry.cover || "",
-    coverImageSmall: rawEntry.coverImageSmall || rawEntry.coverImageMedium || rawEntry.coverImage || "",
-    bannerImage: rawEntry.bannerImage || "",
-    genres: normalizeStringArray(rawEntry.genres),
-    tags: normalizeStringArray(rawEntry.tags),
-    fanFav,
-    meanScore,
-    averageScore: numberOrNull(rawEntry.averageScore),
-    status: String(rawEntry.status || rawEntry.Status || "UNKNOWN"),
-    startDate,
-    startYear,
-    popularity,
-    favourites,
-    chapters: numberOrNull(rawEntry.chapters),
-    volumes: numberOrNull(rawEntry.volumes),
-    firstSeen,
-    lastUpdated: rawEntry.lastUpdated || state.meta?.lastUpdated || "",
-    growth,
-    lane: getLane(popularity).key,
-  };
+function getActiveFeed() {
+  return state.feeds.find((feed) => feed.id === state.activeFeedId) || state.feeds[0] || DEFAULT_FEEDS[0];
 }
 
-function renderChrome() {
-  elements.discoveryTabs.innerHTML = "";
-  for (const tab of DISCOVERY_TABS) {
-    const button = makeChip(tab.label, state.ui.discoveryTab === tab.key);
-    button.addEventListener("click", () => {
-      state.ui.discoveryTab = tab.key;
-      state.ui.page = tab.key === "newly" || tab.key === "fresh" ? "new" : "discovery";
-      state.renderLimit = PAGE_SIZE;
-      persistUi();
-      renderChrome();
-      applyFiltersAndRender();
-    });
-    elements.discoveryTabs.appendChild(button);
-  }
-
-  elements.timeTabs.innerHTML = "";
-  for (const windowOption of TIME_WINDOWS) {
-    const button = makeChip(windowOption.label, state.ui.timeWindow === windowOption.key);
-    button.addEventListener("click", () => {
-      state.ui.timeWindow = windowOption.key;
-      state.renderLimit = PAGE_SIZE;
-      persistUi();
-      renderChrome();
-      applyFiltersAndRender();
-    });
-    elements.timeTabs.appendChild(button);
-  }
-
-  for (const item of elements.navItems) {
-    const page = item.dataset.page;
-    item.classList.toggle("is-active", Boolean(page && page === state.ui.page));
-  }
-
-  const theme = THEMES.find((item) => item.key === state.ui.theme) || THEMES[0];
-  elements.themeButton.textContent = theme.label;
-  elements.pageLabel.textContent = PAGES[state.ui.page] || "Discovery";
-  elements.snapshotUpdated.textContent = formatSnapshotDate(state.meta?.lastUpdated);
-  renderQuickRow();
+function renderRules(feed) {
+  const criteria = feed.criteria;
+  const rules = [
+    `Pop ${formatRange(criteria.popularity)}`,
+    `Mean ${criteria.meanScore[0]}+`,
+    `Fan Fav ${criteria.fanFav[0]}%+`,
+    getReleaseWindow(criteria.releaseWindow).label,
+  ];
+  els.ruleRow.innerHTML = rules.map((rule) => `<span class="pill">${escapeHtml(rule)}</span>`).join("");
 }
 
-function renderQuickRow() {
-  const chips = [
-    getActiveDiscoveryTab().label,
-    getActiveTimeWindow().label,
-    getLane(Number(state.ui.popMin || 0)).label,
+function renderQuickControls(feed) {
+  const criteria = feed.criteria;
+  const controls = [
+    { label: getReleaseWindow(criteria.releaseWindow).label, action: () => openQuickPicker("Release Window", RELEASE_WINDOWS, criteria.releaseWindow, (value) => updateActiveFeed({ releaseWindow: value })) },
+    { label: getGrowthWindow(criteria.growthWindow).label, action: () => openQuickPicker("Growth Window", GROWTH_WINDOWS, criteria.growthWindow, (value) => updateActiveFeed({ growthWindow: value })) },
+    { label: `Sort ${getSort(feed.sort.primary).label}`, action: () => openQuickPicker("Sort By", SORT_OPTIONS, feed.sort.primary, (value) => updateActiveFeedSort(value)) },
   ];
 
-  if (state.ui.releaseAge !== "all") {
-    chips.push(getReleaseAgeOption().label);
+  els.quickControls.innerHTML = "";
+  for (const control of controls) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "pill is-active";
+    button.textContent = control.label;
+    button.addEventListener("click", control.action);
+    els.quickControls.appendChild(button);
   }
-  if (state.ui.status !== "ALL") {
-    chips.push(STATUS_LABELS[state.ui.status] || state.ui.status);
+}
+
+function renderFeedList() {
+  if (state.view === "feeds") {
+    renderFeedManager();
+    return;
   }
-  if (state.ui.includeGenres.length) {
-    chips.push(`Genres +${state.ui.includeGenres.length}`);
+  if (state.view === "library") {
+    renderLibrary();
+    return;
   }
-  if (state.ui.includeTags.length) {
-    chips.push(`Tags +${state.ui.includeTags.length}`);
-  }
-  if (state.ui.rejectGenres.length || state.ui.rejectTags.length) {
-    chips.push("Reject rules on");
-  }
-
-  elements.quickRow.innerHTML = chips.map((chip) => `<span class="quick-chip">${escapeHtml(chip)}</span>`).join("");
-}
-
-function applyFiltersAndRender() {
-  const filtered = state.entries.filter(matchesFilters);
-  let entries = filtered;
-
-  if (state.ui.page === "saved") {
-    entries = entries.filter((entry) => state.savedIds.has(String(entry.mediaId)));
-  } else if (state.ui.page === "new") {
-    entries = entries.filter((entry) => isNewlyAdded(entry) || isFreshRelease(entry));
-  } else if (state.ui.page !== "top") {
-    entries = entries.filter(matchesDiscoveryTab);
-  }
-
-  state.visibleEntries = sortEntries(entries);
-  state.renderEntries = state.visibleEntries;
-  renderFeed();
-}
-
-function matchesFilters(entry) {
-  const query = state.ui.search.trim().toLowerCase();
-  if (query && !getSearchHaystack(entry).includes(query)) return false;
-
-  if (state.ui.status !== "ALL" && entry.status !== state.ui.status) return false;
-  if (!matchesRange(entry.popularity, state.ui.popMin, state.ui.popMax)) return false;
-  if (!matchesRange(entry.meanScore ?? 0, state.ui.scoreMin, state.ui.scoreMax)) return false;
-  if (!matchesRange(entry.fanFav, state.ui.fanMin, state.ui.fanMax)) return false;
-  if (!matchesRange(entry.favourites, state.ui.favouritesMin, state.ui.favouritesMax)) return false;
-  if (!matchesReleaseAge(entry)) return false;
-
-  const lane = getLane(entry.popularity);
-  if (state.ui.lane !== "all" && lane.key !== state.ui.lane) return false;
-  if (!state.ui.showTooEarly && lane.key === "tooEarly" && state.ui.page !== "new") return false;
-
-  if (!containsEvery(entry.genres, state.ui.includeGenres)) return false;
-  if (containsAny(entry.genres, state.ui.rejectGenres)) return false;
-  if (!containsEvery(entry.tags, state.ui.includeTags)) return false;
-  if (containsAny(entry.tags, state.ui.rejectTags)) return false;
-
-  return true;
-}
-
-function matchesDiscoveryTab(entry) {
-  const tab = state.ui.discoveryTab;
-
-  if (tab === "newly") return isNewlyAdded(entry);
-  if (tab === "fresh") return isFreshRelease(entry);
-  if (tab === "hot") return getGrowth(entry, "popularity") > 0 || eligibleForMainFeed(entry);
-  if (tab === "fanRising") return getGrowth(entry, "fanFav") > 0 || entry.fanFav >= 3;
-  if (tab === "hidden") return entry.popularity < 5000 && (entry.meanScore ?? 0) >= 75 && (entry.fanFav >= 3 || (entry.meanScore ?? 0) >= 80);
-  if (tab === "mainstream") return entry.popularity >= 5000;
-  if (tab === "legacy") return isLegacy(entry) && (entry.meanScore ?? 0) >= 72;
-
-  return eligibleForMainFeed(entry);
-}
-
-function eligibleForMainFeed(entry) {
-  if (entry.popularity < 100) return false;
-  if (entry.meanScore === null) return entry.popularity >= 300;
-  return entry.meanScore >= 65;
-}
-
-function sortEntries(entries) {
-  const sort = state.ui.page === "top" && state.ui.sort === "smart" ? "fanFav" : state.ui.sort;
-  const sorted = [...entries];
-
-  sorted.sort((left, right) => {
-    if (sort === "fanFav") return compareDesc(left.fanFav, right.fanFav) || commonTieBreak(left, right);
-    if (sort === "meanScore") return compareDesc(left.meanScore ?? -1, right.meanScore ?? -1) || commonTieBreak(left, right);
-    if (sort === "popularity") return compareDesc(left.popularity, right.popularity) || commonTieBreak(left, right);
-    if (sort === "growth") return compareDesc(growthScore(left), growthScore(right)) || commonTieBreak(left, right);
-    if (sort === "newest") return compareDesc(getDateValue(left.startDate), getDateValue(right.startDate)) || commonTieBreak(left, right);
-    return compareDesc(relevanceScore(left), relevanceScore(right)) || commonTieBreak(left, right);
-  });
-
-  return sorted.map((entry, index) => ({ ...entry, rank: index + 1 }));
-}
-
-function commonTieBreak(left, right) {
-  return (
-    compareDesc(left.favourites, right.favourites) ||
-    compareDesc(left.popularity, right.popularity) ||
-    left.displayTitle.localeCompare(right.displayTitle)
-  );
-}
-
-function relevanceScore(entry) {
-  const popGrowth = normalizeGrowth(getGrowth(entry, "popularity"), Math.max(entry.popularity, 1));
-  const favGrowth = normalizeGrowth(getGrowth(entry, "favourites"), Math.max(entry.favourites, 1));
-  const fanGrowth = Math.max(getGrowth(entry, "fanFav"), 0) / 8;
-  const mean = (entry.meanScore ?? 0) / 100;
-  const fan = Math.min(entry.fanFav / 12, 1);
-  const recency = releaseRecencyScore(entry);
-  const confidencePenalty = entry.popularity < 100 ? 0.22 : entry.meanScore === null ? 0.14 : 0;
-
-  return popGrowth * 0.28 + favGrowth * 0.18 + fanGrowth * 0.16 + mean * 0.22 + fan * 0.1 + recency * 0.06 - confidencePenalty;
-}
-
-function growthScore(entry) {
-  return getGrowth(entry, "popularity") * 0.55 + getGrowth(entry, "favourites") * 2 + getGrowth(entry, "fanFav") * 30;
-}
-
-function renderFeed() {
-  elements.resultCount.textContent = `${formatInteger(state.visibleEntries.length)} titles`;
-  elements.feed.innerHTML = "";
-
-  if (!state.visibleEntries.length) {
-    renderEmptyState(state.ui.page === "saved" ? "No saved titles yet. Open a title and save it from the detail sheet." : "Nothing matches the current discovery setup.");
-    elements.loadMore.classList.add("hidden");
+  if (state.view === "search") {
+    renderSearchView();
     return;
   }
 
-  if (state.ui.page === "top") {
-    renderTierSections();
-  } else {
-    renderEntryList(state.renderEntries.slice(0, state.renderLimit));
-  }
-
-  elements.loadMore.classList.toggle("hidden", state.renderLimit >= state.renderEntries.length);
-}
-
-function renderTierSections() {
-  const visible = state.renderEntries.slice(0, state.renderLimit);
-  let rendered = 0;
-
-  for (const tier of TIER_ORDER) {
-    const tierEntries = visible.filter((entry) => getTier(entry) === tier);
-    if (!tierEntries.length) continue;
-
-    const title = document.createElement("h2");
-    title.className = "section-title";
-    title.textContent = `${tier} (${tierEntries.length})`;
-    elements.feed.appendChild(title);
-    renderEntryList(tierEntries);
-    rendered += tierEntries.length;
-  }
-
-  if (!rendered) {
-    renderEmptyState("No tier sections match this setup.");
-  }
+  const feed = getActiveFeed();
+  const entries = getFeedEntries(feed);
+  renderEntryList(entries);
 }
 
 function renderEntryList(entries) {
+  els.feedList.innerHTML = "";
+  els.loadMore.classList.toggle("hidden", entries.length <= state.renderLimit);
+
+  if (!entries.length) {
+    renderEmpty("Nothing matches this feed. Edit the rules or loosen a range.");
+    return;
+  }
+
   const fragment = document.createDocumentFragment();
+  for (const entry of entries.slice(0, state.renderLimit)) {
+    fragment.appendChild(renderEntryCard(entry));
+  }
+  els.feedList.appendChild(fragment);
+}
 
-  for (const entry of entries) {
-    const node = elements.cardTemplate.content.cloneNode(true);
-    const card = node.querySelector(".entry-card");
-    const cover = node.querySelector(".entry-card__cover");
-    const rank = node.querySelector(".rank-pill");
-    const lane = node.querySelector(".lane-pill");
-    const title = node.querySelector(".entry-card__title");
-    const badgeRow = node.querySelector(".badge-row");
-    const fan = node.querySelector(".metric-fan");
-    const score = node.querySelector(".metric-score");
-    const pop = node.querySelector(".metric-pop");
+function renderEntryCard(entry) {
+  const node = els.entryTemplate.content.cloneNode(true);
+  const card = node.querySelector(".entry-card");
+  const cover = node.querySelector(".entry-card__cover");
+  const rank = node.querySelector(".entry-card__rank");
+  const label = node.querySelector(".entry-card__label");
+  const save = node.querySelector(".entry-card__save");
+  const title = node.querySelector("h3");
+  const meta = node.querySelector(".entry-card__meta");
 
-    cover.innerHTML = entry.coverImageSmall || entry.coverImage
-      ? `<img src="${escapeAttribute(entry.coverImageSmall || entry.coverImage)}" alt="${escapeAttribute(entry.displayTitle)} cover" loading="lazy" decoding="async" width="148" height="222" />`
-      : `<span>No cover</span>`;
-    rank.textContent = `#${entry.rank}`;
-    lane.textContent = getLane(entry.popularity).label;
-    title.textContent = entry.displayTitle;
-    badgeRow.innerHTML = getBadges(entry).map(renderBadge).join("");
-    fan.textContent = formatPercent(entry.fanFav);
-    score.textContent = entry.meanScore === null ? "-" : String(entry.meanScore);
-    pop.textContent = compactNumber(entry.popularity);
+  cover.innerHTML = entry.coverImageSmall
+    ? `<img src="${escapeAttr(entry.coverImageSmall)}" alt="${escapeAttr(entry.displayTitle)} cover" loading="lazy" decoding="async" width="184" height="276" />`
+    : "<span>No cover</span>";
+  rank.textContent = entry.feedRank ? String(entry.feedRank) : "";
+  title.textContent = entry.displayTitle;
+  meta.textContent = compactMeta(entry);
+  node.querySelector(".metric-mean").textContent = entry.meanScore || "-";
+  node.querySelector(".metric-fan").textContent = `${formatNumber(entry.fanFav)}%`;
+  node.querySelector(".metric-pop").textContent = compactNumber(entry.popularity);
+  save.textContent = state.library.includes(entry.id) ? "Saved" : "";
 
-    card.addEventListener("click", () => openDetailSheet(entry));
-    fragment.appendChild(node);
+  const labelMatch = getLabelForEntry(entry);
+  if (labelMatch) {
+    label.textContent = labelMatch.name;
+    label.classList.remove("hidden");
   }
 
-  elements.feed.appendChild(fragment);
+  card.addEventListener("click", () => openDetail(entry));
+  return node;
 }
 
-function renderBadge(badge) {
-  return `<span class="badge badge--${escapeAttribute(badge.key)}">${escapeHtml(badge.label)}</span>`;
+function getFeedEntries(feed) {
+  const criteria = feed.criteria;
+  const entries = state.catalog
+    .filter((entry) => matchesFeed(entry, feed))
+    .map((entry) => ({ ...entry, feedReasons: reasonsForEntry(entry, feed) }))
+    .sort((a, b) => compareByFeed(a, b, feed))
+    .map((entry, index) => ({ ...entry, feedRank: index + 1 }));
+  return entries;
 }
 
-function renderEmptyState(message) {
-  elements.feed.innerHTML = `<div class="empty-state glass-panel">${escapeHtml(message)}</div>`;
-}
-
-function renderLoadingState() {
-  elements.feed.innerHTML = Array.from({ length: 5 }, (_, index) => `
-    <div class="entry-card glass-panel" aria-hidden="true">
-      <div class="entry-card__cover"><span>${index + 1}</span></div>
-      <div class="entry-card__body">
-        <div class="entry-card__top"><span class="rank-pill">...</span><span class="lane-pill">Loading</span></div>
-        <h3 class="entry-card__title">Building discovery feed</h3>
-        <div class="badge-row"><span class="badge">Daily snapshot</span></div>
-        <div class="metric-row"><div><span>Fan Fav</span><strong>-</strong></div><div><span>Mean</span><strong>-</strong></div><div><span>Pop</span><strong>-</strong></div></div>
-      </div>
-    </div>
-  `).join("");
-}
-
-async function openDetailSheet(entry) {
-  if (state.detailAbortController) {
-    state.detailAbortController.abort();
-  }
-
-  elements.sheetBackdrop.classList.remove("hidden");
-  elements.detailSheet.classList.add("is-open");
-  elements.detailSheet.setAttribute("aria-hidden", "false");
-  document.body.classList.add("sheet-open");
-
-  const cachedDetail = getCachedDetail(entry.mediaId);
-  renderDetail(entry, cachedDetail, { loading: !cachedDetail });
-
-  if (!entry.mediaId || cachedDetail) return;
-
-  const abortController = new AbortController();
-  state.detailAbortController = abortController;
-
-  try {
-    const detail = await fetchAniListDetail(entry.mediaId, abortController.signal);
-    cacheDetail(entry.mediaId, detail);
-    renderDetail(entry, detail, { loading: false });
-  } catch (error) {
-    if (!abortController.signal.aborted) {
-      renderDetail(entry, null, { loading: false, error: error instanceof Error ? error.message : "AniList detail failed." });
-    }
-  } finally {
-    if (state.detailAbortController === abortController) {
-      state.detailAbortController = null;
-    }
-  }
-}
-
-function renderDetail(entry, detail, options = {}) {
-  const title = detail?.displayTitle || entry.displayTitle;
-  const cover = detail?.coverImage || entry.coverImage || entry.coverImageSmall;
-  const synopsis = detail?.description
-    ? formatSynopsis(detail.description)
-    : options.loading
-      ? "<p>Loading synopsis from AniList...</p>"
-      : `<p>${escapeHtml(options.error || "No synopsis is available right now.")}</p>`;
-  const genres = detail?.genres?.length ? detail.genres : entry.genres;
-  const tags = detail?.tags?.length ? detail.tags : entry.tags;
-  const livePopularity = detail?.popularity ?? entry.popularity;
-  const liveFavourites = detail?.favourites ?? entry.favourites;
-  const liveMean = detail?.meanScore ?? entry.meanScore;
-  const saved = state.savedIds.has(String(entry.mediaId));
-
-  elements.detailBody.innerHTML = `
-    <section class="detail-hero">
-      <div class="detail-cover">
-        ${
-          cover
-            ? `<img src="${escapeAttribute(cover)}" alt="${escapeAttribute(title)} cover" decoding="async" />`
-            : `<div class="empty-state">No cover available</div>`
-        }
-      </div>
-      <div class="detail-title">
-        <p class="eyebrow">${escapeHtml(getLane(livePopularity).label)} / ${escapeHtml(getTier({ ...entry, popularity: livePopularity, meanScore: liveMean }))}</p>
-        <h2>${escapeHtml(title)}</h2>
-        <p class="detail-subtitle">${escapeHtml(getBadges(entry).map((badge) => badge.label).join(" / ") || "AniList snapshot")}</p>
-      </div>
-    </section>
-
-    <section class="detail-grid">
-      ${renderDetailBox("Fan Fav", formatPercent(entry.fanFav))}
-      ${renderDetailBox("Mean Score", liveMean === null ? "-" : String(liveMean))}
-      ${renderDetailBox("Popularity", formatInteger(livePopularity))}
-      ${renderDetailBox("Favourites", formatInteger(liveFavourites))}
-      ${renderDetailBox("Status", STATUS_LABELS[detail?.status || entry.status] || entry.status)}
-      ${renderDetailBox("Start", formatStartDate(detail?.startDate || entry.startDate, entry.startYear))}
-      ${renderDetailBox("Chapters", detail?.chapters || entry.chapters || "-")}
-      ${renderDetailBox("Volumes", detail?.volumes || entry.volumes || "-")}
-    </section>
-
-    <section class="detail-block">
-      <h3>Synopsis</h3>
-      <div class="detail-text">${synopsis}</div>
-    </section>
-
-    <section class="detail-block">
-      <h3>Genres</h3>
-      <div class="tag-cloud">${genres.length ? genres.map((genre) => `<span class="tag">${escapeHtml(genre)}</span>`).join("") : `<span class="tag">No genres</span>`}</div>
-    </section>
-
-    <section class="detail-block">
-      <h3>Tags</h3>
-      <div class="tag-cloud">${tags.length ? tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("") : `<span class="tag">No tags</span>`}</div>
-    </section>
-
-    <div class="detail-actions">
-      <button class="action-button" id="save-toggle" type="button">${saved ? "Saved" : "Save"}</button>
-      <a class="action-button action-button--primary" href="${escapeAttribute(detail?.siteUrl || entry.aniListUrl)}" target="_blank" rel="noreferrer">AniList</a>
-    </div>
-  `;
-
-  document.getElementById("save-toggle")?.addEventListener("click", () => {
-    toggleSaved(entry);
-    renderDetail(entry, detail, options);
-  });
-}
-
-function renderDetailBox(label, value) {
-  return `<div class="detail-box"><span>${escapeHtml(label)}</span><strong>${escapeHtml(String(value))}</strong></div>`;
-}
-
-async function fetchAniListDetail(mediaId, signal) {
-  const query = `
-    query ($id: Int) {
-      Media(id: $id, type: MANGA) {
-        id
-        siteUrl
-        title { english romaji userPreferred native }
-        synonyms
-        description
-        coverImage { extraLarge large medium color }
-        bannerImage
-        genres
-        tags { name rank isMediaSpoiler }
-        status
-        popularity
-        favourites
-        meanScore
-        averageScore
-        startDate { year month day }
-        chapters
-        volumes
-      }
-    }
-  `;
-
-  const response = await fetch("https://graphql.anilist.co", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-    body: JSON.stringify({ query, variables: { id: mediaId } }),
-    signal,
-  });
-  const payload = await response.json();
-
-  if (!response.ok || payload.errors?.length) {
-    throw new Error(payload.errors?.[0]?.message || `AniList request failed (${response.status})`);
-  }
-
-  return normalizeDetail(payload.data?.Media);
-}
-
-function normalizeDetail(media) {
-  if (!media) throw new Error("AniList did not return this entry.");
-  const synonyms = normalizeStringArray(media.synonyms);
-  const tags = (media.tags || [])
-    .filter((tag) => !tag.isMediaSpoiler)
-    .sort((left, right) => (right.rank || 0) - (left.rank || 0))
-    .slice(0, 16)
-    .map((tag) => tag.name);
-
-  return {
-    displayTitle: chooseDisplayTitle({
-      english: media.title?.english,
-      synonyms,
-      romaji: media.title?.romaji,
-      userPreferred: media.title?.userPreferred,
-      native: media.title?.native,
-    }),
-    description: stripHtml(media.description || ""),
-    coverImage: media.coverImage?.extraLarge || media.coverImage?.large || media.coverImage?.medium || "",
-    bannerImage: media.bannerImage || "",
-    genres: normalizeStringArray(media.genres),
-    tags,
-    status: media.status || "UNKNOWN",
-    popularity: Number(media.popularity || 0),
-    favourites: Number(media.favourites || 0),
-    meanScore: numberOrNull(media.meanScore),
-    averageScore: numberOrNull(media.averageScore),
-    startDate: normalizeStartDate(media.startDate),
-    chapters: numberOrNull(media.chapters),
-    volumes: numberOrNull(media.volumes),
-    siteUrl: media.siteUrl || "",
-  };
-}
-
-function openFilterSheet() {
-  elements.sheetBackdrop.classList.remove("hidden");
-  elements.filterSheet.classList.add("is-open");
-  elements.filterSheet.setAttribute("aria-hidden", "false");
-  document.body.classList.add("sheet-open");
-  renderFilterSheet();
-}
-
-function renderFilterSheet() {
-  elements.filterBody.innerHTML = `
-    <div class="filter-grid">
-      ${renderChipGroup("Discovery", DISCOVERY_TABS, state.ui.discoveryTab, "discoveryTab")}
-      ${renderChipGroup("Growth Window", TIME_WINDOWS, state.ui.timeWindow, "timeWindow")}
-      ${renderChipGroup("Release Age", AGE_FILTERS, state.ui.releaseAge, "releaseAge")}
-      ${renderChipGroup("Lane", LANES, state.ui.lane, "lane")}
-      ${renderChipGroup("Status", Object.keys(STATUS_LABELS).map((key) => ({ key, label: STATUS_LABELS[key] })), state.ui.status, "status")}
-      ${renderChipGroup("Sort", SORTS, state.ui.sort, "sort")}
-      ${renderRangeGroup("Popularity", "popMin", "popMax", "100", "5000+")}
-      ${renderRangeGroup("Mean Score", "scoreMin", "scoreMax", "65", "100")}
-      ${renderRangeGroup("Fan Fav %", "fanMin", "fanMax", "3", "15")}
-      ${renderRangeGroup("Favourites", "favouritesMin", "favouritesMax", "0", "5000")}
-      ${renderRuleGroup("Genres", state.filterIndexes.genres.slice(0, 32), "genre")}
-      ${renderRuleGroup("Tags", state.filterIndexes.tags.slice(0, 42), "tag")}
-      <div class="filter-group">
-        <h3>Early Entries</h3>
-        <button class="filter-chip ${state.ui.showTooEarly ? "is-active" : ""}" data-toggle="showTooEarly" type="button">Show Too Early</button>
-      </div>
-    </div>
-    <div class="filter-actions">
-      <button class="action-button" id="filter-reset" type="button">Reset</button>
-      <button class="action-button action-button--primary" id="filter-apply" type="button">Apply</button>
-    </div>
-  `;
-
-  elements.filterBody.querySelectorAll("[data-field]").forEach((button) => {
-    button.addEventListener("click", () => {
-      state.ui[button.dataset.field] = button.dataset.value;
-      if (button.dataset.field === "discoveryTab") state.ui.page = "discovery";
-      state.renderLimit = PAGE_SIZE;
-      persistUi();
-      renderChrome();
-      applyFiltersAndRender();
-      renderFilterSheet();
-    });
-  });
-
-  elements.filterBody.querySelectorAll("[data-range]").forEach((input) => {
-    input.addEventListener("input", () => {
-      state.ui[input.dataset.range] = input.value.trim();
-      state.renderLimit = PAGE_SIZE;
-      persistUi();
-      applyFiltersAndRender();
-      renderChrome();
-    });
-  });
-
-  elements.filterBody.querySelectorAll("[data-rule-type]").forEach((button) => {
-    button.addEventListener("click", () => {
-      cycleRule(button.dataset.ruleType, button.dataset.value);
-      state.renderLimit = PAGE_SIZE;
-      persistUi();
-      applyFiltersAndRender();
-      renderChrome();
-      renderFilterSheet();
-    });
-  });
-
-  elements.filterBody.querySelector("[data-toggle='showTooEarly']")?.addEventListener("click", () => {
-    state.ui.showTooEarly = !state.ui.showTooEarly;
-    state.renderLimit = PAGE_SIZE;
-    persistUi();
-    applyFiltersAndRender();
-    renderChrome();
-    renderFilterSheet();
-  });
-
-  document.getElementById("filter-reset")?.addEventListener("click", () => {
-    state.ui = { ...DEFAULT_UI, theme: state.ui.theme };
-    elements.searchInput.value = "";
-    state.renderLimit = PAGE_SIZE;
-    persistUi();
-    renderChrome();
-    applyFiltersAndRender();
-    renderFilterSheet();
-  });
-
-  document.getElementById("filter-apply")?.addEventListener("click", closeSheets);
-}
-
-function renderChipGroup(title, options, activeValue, field) {
-  return `
-    <div class="filter-group">
-      <h3>${escapeHtml(title)}</h3>
-      <div class="chip-grid">
-        ${options
-          .map((option) => `<button class="filter-chip ${activeValue === option.key ? "is-active" : ""}" data-field="${field}" data-value="${escapeAttribute(option.key)}" type="button">${escapeHtml(option.label)}</button>`)
-          .join("")}
-      </div>
-    </div>
-  `;
-}
-
-function renderRangeGroup(title, minField, maxField, minPlaceholder, maxPlaceholder) {
-  return `
-    <div class="filter-group">
-      <h3>${escapeHtml(title)}</h3>
-      <div class="range-grid">
-        <label><span class="range-label">Min</span><input data-range="${minField}" inputmode="decimal" value="${escapeAttribute(state.ui[minField])}" placeholder="${escapeAttribute(minPlaceholder)}" /></label>
-        <label><span class="range-label">Max</span><input data-range="${maxField}" inputmode="decimal" value="${escapeAttribute(state.ui[maxField])}" placeholder="${escapeAttribute(maxPlaceholder)}" /></label>
-      </div>
-    </div>
-  `;
-}
-
-function renderRuleGroup(title, values, type) {
-  return `
-    <div class="filter-group">
-      <h3>${escapeHtml(title)}</h3>
-      <div class="chip-grid">
-        ${values.map((value) => {
-          const stateClass = getRuleState(type, value);
-          return `<button class="filter-chip ${stateClass}" data-rule-type="${type}" data-value="${escapeAttribute(value)}" type="button">${escapeHtml(value)}</button>`;
-        }).join("")}
-      </div>
-    </div>
-  `;
-}
-
-function getRuleState(type, value) {
-  const includeKey = type === "genre" ? "includeGenres" : "includeTags";
-  const rejectKey = type === "genre" ? "rejectGenres" : "rejectTags";
-  if (state.ui.includeGenres.includes(value) && includeKey === "includeGenres") return "is-active";
-  if (state.ui.rejectGenres.includes(value) && rejectKey === "rejectGenres") return "is-reject";
-  if (state.ui.includeTags.includes(value) && includeKey === "includeTags") return "is-active";
-  if (state.ui.rejectTags.includes(value) && rejectKey === "rejectTags") return "is-reject";
-  return "";
-}
-
-function cycleRule(type, value) {
-  const includeKey = type === "genre" ? "includeGenres" : "includeTags";
-  const rejectKey = type === "genre" ? "rejectGenres" : "rejectTags";
-  const include = new Set(state.ui[includeKey]);
-  const reject = new Set(state.ui[rejectKey]);
-
-  if (!include.has(value) && !reject.has(value)) {
-    include.add(value);
-  } else if (include.has(value)) {
-    include.delete(value);
-    reject.add(value);
-  } else {
-    reject.delete(value);
-  }
-
-  state.ui[includeKey] = Array.from(include);
-  state.ui[rejectKey] = Array.from(reject);
-}
-
-function closeSheets() {
-  if (state.detailAbortController) {
-    state.detailAbortController.abort();
-    state.detailAbortController = null;
-  }
-
-  elements.sheetBackdrop.classList.add("hidden");
-  elements.detailSheet.classList.remove("is-open");
-  elements.filterSheet.classList.remove("is-open");
-  elements.detailSheet.setAttribute("aria-hidden", "true");
-  elements.filterSheet.setAttribute("aria-hidden", "true");
-  document.body.classList.remove("sheet-open");
-}
-
-function getBadges(entry) {
-  const badges = [];
-  if (isNewlyAdded(entry)) badges.push({ key: "new", label: "New" });
-  if (isFreshRelease(entry)) badges.push({ key: "fresh", label: "Fresh" });
-  if (getGrowth(entry, "popularity") >= 50) badges.push({ key: "hot", label: "Hot" });
-  if (getGrowth(entry, "fanFav") >= 0.5 || getGrowth(entry, "favourites") >= 10) badges.push({ key: "rise", label: "Rising" });
-  if (isBreakout(entry)) badges.push({ key: "hot", label: "Breakout" });
-  if (entry.popularity < 5000 && (entry.meanScore ?? 0) >= 78 && entry.fanFav >= 3) badges.push({ key: "hidden", label: "Hidden Gem" });
-  if (isLegacy(entry)) badges.push({ key: "legacy", label: "Legacy" });
-  if (getLane(entry.popularity).key === "tooEarly" || entry.meanScore === null) badges.push({ key: "early", label: "Too Early" });
-  return badges.slice(0, 4);
-}
-
-function getTier(entry) {
-  const mean = entry.meanScore ?? 0;
-  const fanHigh = entry.fanFav >= 3;
-  if (mean >= 80) return fanHigh ? "Peak" : "Hidden Gem+";
-  if (mean >= 75) return fanHigh ? "Almost Peak" : "Hidden Gem";
-  if (mean >= 70) return fanHigh ? "Great" : "Good";
-  if (mean >= 65) return fanHigh ? "Decent" : "Fair";
-  return "Meh";
-}
-
-function getLane(popularity) {
-  return LANES.find((lane) => popularity >= lane.min && popularity <= lane.max && lane.key !== "all") || LANES[4];
-}
-
-function getActiveDiscoveryTab() {
-  return DISCOVERY_TABS.find((tab) => tab.key === state.ui.discoveryTab) || DISCOVERY_TABS[0];
-}
-
-function getActiveTimeWindow() {
-  return TIME_WINDOWS.find((windowOption) => windowOption.key === state.ui.timeWindow) || TIME_WINDOWS[2];
-}
-
-function getReleaseAgeOption() {
-  return AGE_FILTERS.find((option) => option.key === state.ui.releaseAge) || AGE_FILTERS[0];
-}
-
-function getGrowth(entry, metric) {
-  const windowKey = state.ui.timeWindow;
-  const windowGrowth = entry.growth?.[windowKey] || entry.growth?.all || {};
-  return Number(windowGrowth[metric] || 0);
-}
-
-function isNewlyAdded(entry) {
-  if (!entry.firstSeen) return false;
-  return daysSince(entry.firstSeen) <= getActiveTimeWindow().days;
-}
-
-function isFreshRelease(entry) {
-  if (!entry.startDate) return false;
-  const age = daysSinceDateObject(entry.startDate);
-  return age >= -14 && age <= 30;
-}
-
-function isLegacy(entry) {
-  if (!entry.startYear) return false;
-  return new Date().getFullYear() - entry.startYear >= 10;
-}
-
-function isBreakout(entry) {
-  const popGrowth = getGrowth(entry, "popularity");
-  return popGrowth >= 1000 || (entry.popularity >= 1000 && entry.popularity - popGrowth < 1000);
-}
-
-function matchesReleaseAge(entry) {
-  const option = getReleaseAgeOption();
-  if (option.key === "all") return true;
-  if (!entry.startDate && !entry.startYear) return false;
-
-  const now = new Date();
-  const ageDays = entry.startDate ? daysSinceDateObject(entry.startDate) : Infinity;
-  const ageYears = entry.startYear ? now.getFullYear() - entry.startYear : Infinity;
-
-  if (option.days) return ageDays >= 0 && ageDays <= option.days;
-  if (option.key === "year") return entry.startYear === now.getFullYear();
-  if (option.key === "1to3") return ageYears >= 1 && ageYears <= 3;
-  if (option.key === "3to10") return ageYears > 3 && ageYears < 10;
-  if (option.key === "10plus") return ageYears >= 10;
+function matchesFeed(entry, feed) {
+  const c = feed.criteria;
+  if (!between(entry.popularity, c.popularity)) return false;
+  if (!between(entry.meanScore || 0, c.meanScore)) return false;
+  if (!between(entry.fanFav || 0, c.fanFav)) return false;
+  if (!between(entry.favourites || 0, c.favourites)) return false;
+  if (!matchesRelease(entry, c.releaseWindow)) return false;
+  if (!c.allowRestricted && containsAny([...entry.genres, ...entry.tags], CONTENT_RESTRICTION_TAGS)) return false;
+  if (!containsEvery(entry.genres, c.includeGenres)) return false;
+  if (containsAny(entry.genres, c.excludeGenres)) return false;
+  if (!containsEvery(entry.tags, c.includeTags)) return false;
+  if (containsAny(entry.tags, c.excludeTags)) return false;
   return true;
 }
 
-function releaseRecencyScore(entry) {
-  if (!entry.startDate) return 0;
-  const days = daysSinceDateObject(entry.startDate);
-  if (days < -14) return 0;
-  if (days <= 30) return 1;
-  if (days <= 90) return 0.65;
-  if (days <= 365) return 0.25;
+function compareByFeed(a, b, feed) {
+  const direction = feed.sort.direction === "asc" ? 1 : -1;
+  const primary = compareMetric(a, b, feed.sort.primary) * direction;
+  if (primary) return primary;
+  const secondary = compareMetric(a, b, feed.sort.secondary || "meanScore") * direction;
+  if (secondary) return secondary;
+  return b.popularity - a.popularity || a.displayTitle.localeCompare(b.displayTitle);
+}
+
+function compareMetric(a, b, metric) {
+  return metricValue(a, metric, getActiveFeed()) - metricValue(b, metric, getActiveFeed());
+}
+
+function metricValue(entry, metric, feed) {
+  if (metric === "fanFav") return entry.fanFav || 0;
+  if (metric === "meanScore") return entry.meanScore || 0;
+  if (metric === "popularity") return entry.popularity || 0;
+  if (metric === "popGrowth") return growth(entry, "popularity", feed.criteria.growthWindow);
+  if (metric === "fanGrowth") return growth(entry, "fanFav", feed.criteria.growthWindow);
+  if (metric === "meanGrowth") return growth(entry, "meanScore", feed.criteria.growthWindow);
+  if (metric === "favourites") return entry.favourites || 0;
+  if (metric === "releaseDate") return dateValue(entry.startDate);
+  if (metric === "chapters") return entry.chapters || 0;
   return 0;
 }
 
-function normalizeGrowth(value, base) {
-  if (!value || !base) return 0;
-  return Math.min(Math.max(value / base, 0), 1);
+function renderFeedManager() {
+  els.ruleRow.innerHTML = "";
+  els.quickControls.innerHTML = `<button class="pill is-active" type="button" id="new-feed-inline">Create Feed</button>`;
+  document.getElementById("new-feed-inline")?.addEventListener("click", () => startFeedFlow());
+
+  els.feedList.innerHTML = `<div class="feed-manager"></div>`;
+  const manager = els.feedList.querySelector(".feed-manager");
+  for (const feed of state.feeds) {
+    const row = document.createElement("div");
+    row.className = "feed-row";
+    row.innerHTML = `<div><strong>${escapeHtml(feed.name)}</strong><small>${escapeHtml(summaryForFeed(feed))}</small></div><button class="ghost-btn" type="button">Open</button>`;
+    row.querySelector("button").addEventListener("click", () => {
+      state.activeFeedId = feed.id;
+      state.view = "home";
+      persistState();
+      render();
+    });
+    row.addEventListener("dblclick", () => startFeedFlow(feed));
+    manager.appendChild(row);
+  }
+  els.loadMore.classList.add("hidden");
 }
 
-function buildFilterIndexes(entries, meta) {
-  if (meta?.indexes?.genres?.length || meta?.indexes?.tags?.length) {
-    return {
-      genres: meta.indexes.genres || [],
-      tags: meta.indexes.tags || [],
-    };
+function renderLibrary() {
+  els.ruleRow.innerHTML = "";
+  els.quickControls.innerHTML = "";
+  const entries = state.catalog.filter((entry) => state.library.includes(entry.id)).map((entry, index) => ({ ...entry, feedRank: index + 1 }));
+  renderEntryList(entries);
+}
+
+function renderSearchView() {
+  els.ruleRow.innerHTML = "";
+  els.quickControls.innerHTML = `
+    <input class="search-input" id="search-input" value="${escapeAttr(state.searchQuery)}" placeholder="Search titles, genres, tags" />
+  `;
+  const input = document.getElementById("search-input");
+  input?.addEventListener("input", () => {
+    state.searchQuery = input.value.trim();
+    persistState();
+    renderSearchView();
+  });
+  const query = state.searchQuery.toLowerCase();
+  const entries = query
+    ? state.catalog
+        .filter((entry) => searchText(entry).includes(query))
+        .sort((a, b) => b.popularity - a.popularity)
+        .map((entry, index) => ({ ...entry, feedRank: index + 1 }))
+    : [];
+  renderEntryList(entries);
+  if (!query) renderEmpty("Search by title, genre, tag, or AniList ID.");
+}
+
+function renderEmpty(message) {
+  els.feedList.innerHTML = `<div class="empty-state">${escapeHtml(message)}</div>`;
+  els.loadMore.classList.add("hidden");
+}
+
+function renderLoading() {
+  els.feedList.innerHTML = `<div class="empty-state">Loading discovery catalog...</div>`;
+}
+
+function openDetail(entry) {
+  const feed = getActiveFeed();
+  const reasons = entry.feedReasons || reasonsForEntry(entry, feed);
+  openSheet(els.detailSheet, els.detailContent);
+  renderDetail(entry, reasons);
+  hydrateDetail(entry.id, entry);
+}
+
+function renderDetail(entry, reasons, detail = null) {
+  const title = detail?.displayTitle || entry.displayTitle;
+  const cover = detail?.coverImage || entry.coverImage || entry.coverImageSmall;
+  const genres = detail?.genres?.length ? detail.genres : entry.genres;
+  const tags = detail?.tags?.length ? detail.tags : entry.tags;
+  const saved = state.library.includes(entry.id);
+
+  els.detailContent.innerHTML = `
+    <section class="detail-hero">
+      <div class="detail-cover">${cover ? `<img src="${escapeAttr(cover)}" alt="${escapeAttr(title)} cover" decoding="async" />` : "No cover"}</div>
+      <div class="detail-title">
+        <p class="detail-kicker">${escapeHtml(compactMeta(entry))}</p>
+        <h2>${escapeHtml(title)}</h2>
+      </div>
+    </section>
+    <section class="metric-grid">
+      ${metricBox("Mean", entry.meanScore || "-")}
+      ${metricBox("Fan Fav", `${formatNumber(entry.fanFav)}%`)}
+      ${metricBox("Popularity", compactNumber(entry.popularity))}
+      ${metricBox("Favorites", compactNumber(entry.favourites))}
+    </section>
+    <section class="detail-section">
+      <h3>Why this appeared</h3>
+      <div class="reason-list">${reasons.map((reason) => `<div class="reason-item">${escapeHtml(reason)}</div>`).join("") || `<div class="reason-item">Matches the active feed rules.</div>`}</div>
+    </section>
+    <section class="detail-section"><h3>Synopsis</h3><div class="detail-text">${formatSynopsis(detail?.description || "Open AniList for the full synopsis while live details load.")}</div></section>
+    <section class="detail-section"><h3>Genres</h3><div class="tag-cloud">${renderTags(genres)}</div></section>
+    <section class="detail-section"><h3>Tags</h3><div class="tag-cloud">${renderTags(tags.slice(0, 18))}</div></section>
+    <section class="detail-section"><h3>Release Info</h3><p class="detail-text">${escapeHtml(formatRelease(entry))}</p></section>
+    <section class="detail-section"><h3>Chapter Info</h3><p class="detail-text">${escapeHtml(`${entry.chapters || "-"} chapters / ${entry.volumes || "-"} volumes`)}</p></section>
+    <section class="detail-section"><h3>User Vibes</h3><div class="tag-cloud">${renderVibes(entry)}</div></section>
+    <div class="detail-actions">
+      <button class="action-btn" id="toggle-library" type="button">${saved ? "Saved" : "Add to Library"}</button>
+      <button class="action-btn" id="add-vibe" type="button">Vibe</button>
+      <a class="action-btn action-btn--primary" href="${escapeAttr(entry.aniListUrl)}" target="_blank" rel="noreferrer">AniList</a>
+    </div>
+  `;
+
+  document.getElementById("toggle-library")?.addEventListener("click", () => {
+    toggleLibrary(entry.id);
+    renderDetail(entry, reasons, detail);
+  });
+  document.getElementById("add-vibe")?.addEventListener("click", () => openVibePicker(entry));
+}
+
+async function hydrateDetail(mediaId, fallbackEntry) {
+  const cached = getCachedDetail(mediaId);
+  if (cached) {
+    renderDetail(fallbackEntry, reasonsForEntry(fallbackEntry, getActiveFeed()), cached);
+    return;
   }
 
+  try {
+    const query = `
+      query ($id: Int) {
+        Media(id: $id, type: MANGA) {
+          id siteUrl description
+          title { english romaji userPreferred native }
+          synonyms
+          coverImage { extraLarge large medium }
+          genres
+          tags { name rank isMediaSpoiler }
+          chapters volumes
+        }
+      }
+    `;
+    const response = await fetch("https://graphql.anilist.co", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({ query, variables: { id: Number(mediaId) } }),
+    });
+    const payload = await response.json();
+    const media = payload.data?.Media;
+    if (!media) return;
+    const detail = {
+      displayTitle: chooseTitle(media, fallbackEntry),
+      description: stripHtml(media.description || ""),
+      coverImage: media.coverImage?.extraLarge || media.coverImage?.large || media.coverImage?.medium || "",
+      genres: media.genres || [],
+      tags: (media.tags || []).filter((tag) => !tag.isMediaSpoiler).sort((a, b) => (b.rank || 0) - (a.rank || 0)).map((tag) => tag.name),
+    };
+    cacheDetail(mediaId, detail);
+    renderDetail(fallbackEntry, reasonsForEntry(fallbackEntry, getActiveFeed()), detail);
+  } catch {
+    // Detail enrichment is optional; the snapshot card remains usable.
+  }
+}
+
+function openFeedPicker() {
+  openSheet(els.pickerSheet, els.pickerContent);
+  els.pickerContent.innerHTML = `
+    <h2 class="picker-title">Choose Feed</h2>
+    <div class="feed-strip">${state.feeds.map((feed) => `<button class="pill ${feed.id === state.activeFeedId ? "is-active" : ""}" data-feed="${feed.id}" type="button">${escapeHtml(feed.name)}</button>`).join("")}</div>
+    <div class="detail-actions"><button class="action-btn action-btn--primary" id="picker-create" type="button">Create Feed</button></div>
+  `;
+  els.pickerContent.querySelectorAll("[data-feed]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.activeFeedId = button.dataset.feed;
+      state.view = "home";
+      closeSheet();
+      persistState();
+      render();
+    });
+  });
+  document.getElementById("picker-create")?.addEventListener("click", () => {
+    closeSheet();
+    startFeedFlow();
+  });
+}
+
+function openFeedActions() {
+  const feed = getActiveFeed();
+  openSheet(els.pickerSheet, els.pickerContent);
+  els.pickerContent.innerHTML = `
+    <h2 class="picker-title">${escapeHtml(feed.name)}</h2>
+    <div class="picker-list">
+      <button class="action-btn" id="edit-feed" type="button">Edit Feed</button>
+      <button class="action-btn" id="duplicate-feed" type="button">Duplicate Feed</button>
+      <button class="action-btn" id="delete-feed" type="button">Delete Custom Feed</button>
+    </div>
+  `;
+  document.getElementById("edit-feed")?.addEventListener("click", () => {
+    closeSheet();
+    startFeedFlow(feed);
+  });
+  document.getElementById("duplicate-feed")?.addEventListener("click", () => {
+    const copy = structuredClone(feed);
+    copy.id = createId(copy.name);
+    copy.name = `${copy.name} Copy`;
+    state.feeds.push(copy);
+    state.activeFeedId = copy.id;
+    closeSheet();
+    persistState();
+    render();
+  });
+  document.getElementById("delete-feed")?.addEventListener("click", () => {
+    if (DEFAULT_FEEDS.some((item) => item.id === feed.id)) return;
+    state.feeds = state.feeds.filter((item) => item.id !== feed.id);
+    state.activeFeedId = state.feeds[0].id;
+    closeSheet();
+    persistState();
+    render();
+  });
+}
+
+function openSearch() {
+  state.view = "search";
+  persistState();
+  render();
+  setTimeout(() => document.getElementById("search-input")?.focus(), 0);
+}
+
+function openQuickPicker(title, options, active, onPick) {
+  openSheet(els.pickerSheet, els.pickerContent);
+  els.pickerContent.innerHTML = `<h2 class="picker-title">${escapeHtml(title)}</h2><div class="picker-list"></div>`;
+  const list = els.pickerContent.querySelector(".picker-list");
+  for (const option of options) {
+    const row = document.createElement("button");
+    row.className = "feed-row";
+    row.type = "button";
+    row.innerHTML = `<strong>${escapeHtml(option.label)}</strong>${option.key === active ? "<small>Selected</small>" : ""}`;
+    row.addEventListener("click", () => {
+      onPick(option.key);
+      closeSheet();
+    });
+    list.appendChild(row);
+  }
+}
+
+function openVibePicker(entry) {
+  openSheet(els.pickerSheet, els.pickerContent);
+  els.pickerContent.innerHTML = `<h2 class="picker-title">Vibes</h2><div class="chip-grid">${state.vibes.map((vibe) => `<button class="choice-chip ${vibe.mediaIds.includes(entry.id) ? "is-active" : ""}" data-vibe="${vibe.id}" type="button">${escapeHtml(vibe.icon)} ${escapeHtml(vibe.name)}</button>`).join("")}</div>`;
+  els.pickerContent.querySelectorAll("[data-vibe]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const vibe = state.vibes.find((item) => item.id === button.dataset.vibe);
+      if (!vibe) return;
+      vibe.mediaIds = toggleArray(vibe.mediaIds, entry.id);
+      persistState();
+      renderDetail(entry, reasonsForEntry(entry, getActiveFeed()));
+    });
+  });
+}
+
+function openSheet(sheet, scroller) {
+  if (state.activeSheet) closeSheet(false);
+  state.scrollY = window.scrollY;
+  document.body.style.top = `-${state.scrollY}px`;
+  document.body.classList.add("sheet-open");
+  els.backdrop.classList.remove("hidden");
+  state.activeSheet = sheet;
+  scroller.scrollTop = 0;
+  sheet.classList.add("is-open");
+  sheet.setAttribute("aria-hidden", "false");
+}
+
+function closeSheet(restore = true) {
+  if (!state.activeSheet) return;
+  state.activeSheet.classList.remove("is-open", "is-dragging");
+  state.activeSheet.style.transform = "";
+  state.activeSheet.setAttribute("aria-hidden", "true");
+  els.backdrop.classList.add("hidden");
+  state.activeSheet = null;
+  document.body.classList.remove("sheet-open");
+  const top = Math.abs(parseInt(document.body.style.top || "0", 10)) || state.scrollY;
+  document.body.style.top = "";
+  if (restore) window.scrollTo(0, top);
+}
+
+function setupSheetGesture(sheet) {
+  const grabber = sheet.querySelector(".sheet__grabber");
+  let startY = 0;
+  let currentY = 0;
+  let dragging = false;
+  let moved = false;
+
+  grabber.addEventListener("pointerdown", (event) => {
+    dragging = true;
+    moved = false;
+    startY = event.clientY;
+    currentY = 0;
+    sheet.classList.add("is-dragging");
+    grabber.setPointerCapture(event.pointerId);
+  });
+
+  grabber.addEventListener("pointermove", (event) => {
+    if (!dragging) return;
+    currentY = Math.max(0, event.clientY - startY);
+    if (currentY > 8) moved = true;
+    sheet.style.transform = `translate(-50%, ${currentY}px)`;
+  });
+
+  grabber.addEventListener("pointerup", () => {
+    if (!dragging) return;
+    dragging = false;
+    sheet.classList.remove("is-dragging");
+    if (!moved || currentY > 90) closeSheet();
+    else sheet.style.transform = "";
+  });
+}
+
+function startFeedFlow(feed = null) {
+  state.builder = structuredClone(feed || DEFAULT_FEEDS[0]);
+  if (!feed) {
+    state.builder.id = createId("Custom Feed");
+    state.builder.name = "Custom Feed";
+  }
+  state.builderStep = 0;
+  document.body.classList.add("flow-open");
+  els.feedFlow.classList.remove("hidden");
+  els.feedFlow.setAttribute("aria-hidden", "false");
+  renderFlow();
+}
+
+function closeFeedFlow() {
+  state.builder = null;
+  document.body.classList.remove("flow-open");
+  els.feedFlow.classList.add("hidden");
+  els.feedFlow.setAttribute("aria-hidden", "true");
+}
+
+function renderFlow() {
+  const steps = ["Basics", "Criteria", "Content", "Sorting", "Preview"];
+  els.flowTitle.textContent = state.builder?.id && state.feeds.some((feed) => feed.id === state.builder.id) ? "Edit Feed" : "Create Feed";
+  els.flowSteps.innerHTML = steps.map((step, index) => `<button class="pill ${index === state.builderStep ? "is-active" : ""}" data-step="${index}" type="button">${index + 1}. ${step}</button>`).join("");
+  els.flowSteps.querySelectorAll("[data-step]").forEach((button) => button.addEventListener("click", () => {
+    syncBuilderFromDom();
+    state.builderStep = Number(button.dataset.step);
+    renderFlow();
+  }));
+
+  els.flowBody.innerHTML = renderFlowStep();
+  bindFlowStep();
+}
+
+function renderFlowStep() {
+  const b = state.builder;
+  if (state.builderStep === 0) {
+    return `
+      <section class="form-section">
+        <h3>Feed Basics</h3>
+        ${field("Feed Name", "name", b.name)}
+        ${textarea("Description", "description", b.description || "")}
+        ${field("Cover / background image URL", "cover", b.cover || "")}
+      </section>
+      ${builderNav()}
+    `;
+  }
+  if (state.builderStep === 1) {
+    return `
+      <section class="form-section">
+        <h3>Discovery Criteria</h3>
+        ${rangeControl("Popularity Range", "popularity", b.criteria.popularity, 0, 10000, 100)}
+        ${rangeControl("Mean Score", "meanScore", b.criteria.meanScore, 0, 100, 1)}
+        ${rangeControl("Fan Fav %", "fanFav", b.criteria.fanFav, 0, 20, 0.1)}
+        ${rangeControl("Favorites", "favourites", b.criteria.favourites, 0, 10000, 50)}
+        ${selectField("Release Period", "releaseWindow", RELEASE_WINDOWS, b.criteria.releaseWindow)}
+        ${selectField("Growth Window", "growthWindow", GROWTH_WINDOWS, b.criteria.growthWindow)}
+        ${selectField("Growth Type", "growthType", GROWTH_TYPES, b.criteria.growthType)}
+      </section>
+      ${builderNav()}
+    `;
+  }
+  if (state.builderStep === 2) {
+    const genres = state.meta?.indexes?.genres || [];
+    const tags = state.meta?.indexes?.tags || [];
+    return `
+      <section class="form-section">
+        <h3>Content Filters</h3>
+        <p class="form-hint">Tap once to include, twice to exclude, third tap clears.</p>
+        <h3>Genres</h3>
+        <div class="chip-grid">${genres.map((value) => ruleChip("genre", value)).join("")}</div>
+        <h3>Tags</h3>
+        <div class="chip-grid">${tags.slice(0, 64).map((value) => ruleChip("tag", value)).join("")}</div>
+        <div class="field"><label><input id="allowRestricted" type="checkbox" ${b.criteria.allowRestricted ? "checked" : ""} /> Allow Adult / BL / Yuri</label></div>
+      </section>
+      ${builderNav()}
+    `;
+  }
+  if (state.builderStep === 3) {
+    return `
+      <section class="form-section">
+        <h3>Sorting</h3>
+        ${selectField("Primary Sort", "primary", SORT_OPTIONS, b.sort.primary)}
+        ${selectField("Secondary Sort", "secondary", SORT_OPTIONS, b.sort.secondary || "meanScore")}
+        ${selectField("Order", "direction", [{ key: "desc", label: "Descending" }, { key: "asc", label: "Ascending" }], b.sort.direction)}
+      </section>
+      ${builderNav()}
+    `;
+  }
+  const preview = getFeedEntries(b).slice(0, 6);
+  return `
+    <section class="form-section">
+      <h3>Preview</h3>
+      <p class="form-hint">${getFeedEntries(b).length} matching titles</p>
+      <div class="picker-list">${preview.map((entry) => `<div class="feed-row"><div><strong>${escapeHtml(entry.displayTitle)}</strong><small>Mean ${entry.meanScore || "-"} / Fan Fav ${formatNumber(entry.fanFav)}% / Pop ${compactNumber(entry.popularity)}</small></div></div>`).join("") || `<p class="form-hint">No matches yet.</p>`}</div>
+    </section>
+    ${builderNav("Save Feed")}
+  `;
+}
+
+function bindFlowStep() {
+  els.flowBody.querySelectorAll("[data-input]").forEach((input) => input.addEventListener("input", syncBuilderFromDom));
+  els.flowBody.querySelectorAll("[data-select]").forEach((input) => input.addEventListener("change", syncBuilderFromDom));
+  els.flowBody.querySelectorAll("[data-rule]").forEach((button) => {
+    button.addEventListener("click", () => {
+      cycleBuilderRule(button.dataset.kind, button.dataset.value);
+      renderFlow();
+    });
+  });
+  document.getElementById("allowRestricted")?.addEventListener("change", syncBuilderFromDom);
+  els.flowBody.querySelector("[data-prev]")?.addEventListener("click", () => {
+    syncBuilderFromDom();
+    state.builderStep = Math.max(0, state.builderStep - 1);
+    renderFlow();
+  });
+  els.flowBody.querySelector("[data-next]")?.addEventListener("click", () => {
+    syncBuilderFromDom();
+    if (state.builderStep >= 4) saveBuilderFeed();
+    else {
+      state.builderStep += 1;
+      renderFlow();
+    }
+  });
+}
+
+function syncBuilderFromDom() {
+  if (!state.builder) return;
+  const b = state.builder;
+  els.flowBody.querySelectorAll("[data-input]").forEach((input) => {
+    if (input.dataset.input === "name") b.name = input.value.trim() || "Untitled Feed";
+    if (input.dataset.input === "description") b.description = input.value.trim();
+    if (input.dataset.input === "cover") b.cover = input.value.trim();
+  });
+  els.flowBody.querySelectorAll("[data-range]").forEach((input) => {
+    const [key, index] = input.dataset.range.split(":");
+    const next = [...b.criteria[key]];
+    next[Number(index)] = input.value === "" ? Infinity : Number(input.value);
+    b.criteria[key] = next;
+  });
+  els.flowBody.querySelectorAll("[data-select]").forEach((input) => {
+    const key = input.dataset.select;
+    if (key in b.criteria) b.criteria[key] = input.value;
+    if (key in b.sort) b.sort[key] = input.value;
+  });
+  const allowRestricted = document.getElementById("allowRestricted");
+  if (allowRestricted) {
+    b.criteria.allowRestricted = allowRestricted.checked;
+  }
+}
+
+function saveBuilderFeed() {
+  syncBuilderFromDom();
+  const existingIndex = state.feeds.findIndex((feed) => feed.id === state.builder.id);
+  if (existingIndex >= 0) state.feeds[existingIndex] = state.builder;
+  else state.feeds.push(state.builder);
+  state.activeFeedId = state.builder.id;
+  state.view = "home";
+  closeFeedFlow();
+  persistState();
+  render();
+}
+
+function updateActiveFeed(patch) {
+  const feed = getActiveFeed();
+  Object.assign(feed.criteria, patch);
+  persistState();
+  render();
+}
+
+function updateActiveFeedSort(primary) {
+  getActiveFeed().sort.primary = primary;
+  persistState();
+  render();
+}
+
+function field(label, key, value) {
+  return `<div class="field"><label>${escapeHtml(label)}</label><input data-input="${key}" value="${escapeAttr(value)}" /></div>`;
+}
+
+function textarea(label, key, value) {
+  return `<div class="field"><label>${escapeHtml(label)}</label><textarea data-input="${key}">${escapeHtml(value)}</textarea></div>`;
+}
+
+function rangeControl(label, key, value, min, max, step) {
+  const high = Number.isFinite(value[1]) ? value[1] : "";
+  return `
+    <div class="range-control">
+      <span class="mini-label">${escapeHtml(label)}</span>
+      <div class="range-pair">
+        <input data-range="${key}:0" type="number" step="${step}" min="${min}" max="${max}" value="${escapeAttr(value[0])}" />
+        <input data-range="${key}:1" type="number" step="${step}" min="${min}" max="${max}" value="${escapeAttr(high)}" placeholder="Max" />
+      </div>
+      <div class="slider-pair">
+        <input data-range="${key}:0" type="range" step="${step}" min="${min}" max="${max}" value="${escapeAttr(value[0])}" />
+        <input data-range="${key}:1" type="range" step="${step}" min="${min}" max="${max}" value="${escapeAttr(high || max)}" />
+      </div>
+    </div>
+  `;
+}
+
+function selectField(label, key, options, active) {
+  return `
+    <div class="field">
+      <label>${escapeHtml(label)}</label>
+      <select data-select="${key}">
+        ${options.map((option) => `<option value="${escapeAttr(option.key)}" ${option.key === active ? "selected" : ""}>${escapeHtml(option.label)}</option>`).join("")}
+      </select>
+    </div>
+  `;
+}
+
+function builderNav(finalLabel = "Next") {
+  return `
+    <div class="builder-actions">
+      <button class="builder-btn" data-prev type="button">Back</button>
+      <button class="builder-btn builder-btn--primary" data-next type="button">${escapeHtml(state.builderStep >= 4 ? finalLabel : "Next")}</button>
+    </div>
+  `;
+}
+
+function ruleChip(kind, value) {
+  const b = state.builder;
+  const includeKey = kind === "genre" ? "includeGenres" : "includeTags";
+  const excludeKey = kind === "genre" ? "excludeGenres" : "excludeTags";
+  const active = b.criteria[includeKey].includes(value);
+  const excluded = b.criteria[excludeKey].includes(value);
+  return `<button class="choice-chip ${active ? "is-active" : ""} ${excluded ? "is-excluded" : ""}" data-rule data-kind="${kind}" data-value="${escapeAttr(value)}" type="button">${escapeHtml(value)}</button>`;
+}
+
+function cycleBuilderRule(kind, value) {
+  const c = state.builder.criteria;
+  const includeKey = kind === "genre" ? "includeGenres" : "includeTags";
+  const excludeKey = kind === "genre" ? "excludeGenres" : "excludeTags";
+  if (!c[includeKey].includes(value) && !c[excludeKey].includes(value)) c[includeKey].push(value);
+  else if (c[includeKey].includes(value)) {
+    c[includeKey] = c[includeKey].filter((item) => item !== value);
+    c[excludeKey].push(value);
+  } else {
+    c[excludeKey] = c[excludeKey].filter((item) => item !== value);
+  }
+}
+
+function reasonsForEntry(entry, feed) {
+  const c = feed.criteria;
+  const reasons = [];
+  if (between(entry.popularity, c.popularity)) reasons.push(`Popularity between ${formatRange(c.popularity)}`);
+  if (entry.meanScore >= c.meanScore[0]) reasons.push(`Mean Score is ${entry.meanScore}, above ${c.meanScore[0]}`);
+  if (entry.fanFav >= c.fanFav[0]) reasons.push(`Fan Fav is ${formatNumber(entry.fanFav)}%, above ${c.fanFav[0]}%`);
+  if (matchesRelease(entry, c.releaseWindow)) reasons.push(`Matches ${getReleaseWindow(c.releaseWindow).label}`);
+  const popGrowth = growth(entry, "popularity", c.growthWindow);
+  if (popGrowth > 0) reasons.push(`Popularity grew by ${compactNumber(popGrowth)} in ${getGrowthWindow(c.growthWindow).label.replace("Growth ", "")}`);
+  return reasons.slice(0, 5);
+}
+
+function getLabelForEntry(entry) {
+  if (entry.popularity >= 100 && entry.popularity <= 3000 && entry.meanScore >= 75 && entry.fanFav >= 3) return state.labels.find((label) => label.id === "hidden-gem");
+  if (growth(entry, "popularity", getActiveFeed().criteria.growthWindow) >= 100) return state.labels.find((label) => label.id === "breakout");
+  return null;
+}
+
+function renderTags(values) {
+  return values.length ? values.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("") : `<span class="tag">None</span>`;
+}
+
+function renderVibes(entry) {
+  const active = state.vibes.filter((vibe) => vibe.mediaIds.includes(entry.id));
+  return active.length ? active.map((vibe) => `<span class="tag">${escapeHtml(vibe.icon)} ${escapeHtml(vibe.name)}</span>`).join("") : `<span class="tag">No vibes yet</span>`;
+}
+
+function metricBox(label, value) {
+  return `<span class="metric-box"><b>${escapeHtml(String(value))}</b><small>${escapeHtml(label)}</small></span>`;
+}
+
+function normalizeEntry(raw) {
   return {
-    genres: topValues(entries.flatMap((entry) => entry.genres), 48),
-    tags: topValues(entries.flatMap((entry) => entry.tags), 64),
+    ...raw,
+    id: String(raw.mediaId),
+    displayTitle: raw.displayTitle || raw.englishTitle || raw.romajiTitle || "Untitled",
+    genres: Array.isArray(raw.genres) ? raw.genres : [],
+    tags: Array.isArray(raw.tags) ? raw.tags : [],
+    synonyms: Array.isArray(raw.synonyms) ? raw.synonyms : [],
+    meanScore: Number(raw.meanScore || 0),
+    fanFav: Number(raw.fanFav || 0),
+    popularity: Number(raw.popularity || 0),
+    favourites: Number(raw.favourites || 0),
+    chapters: Number(raw.chapters || 0),
+    volumes: Number(raw.volumes || 0),
   };
 }
 
-function topValues(values, limit) {
-  const counts = new Map();
-  for (const value of values) {
-    if (!value) continue;
-    counts.set(value, (counts.get(value) || 0) + 1);
+function restoreState() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(APP_STATE_KEY) || "{}");
+    state.view = saved.view || state.view;
+    state.activeFeedId = saved.activeFeedId || state.activeFeedId;
+    state.feeds = Array.isArray(saved.feeds) && saved.feeds.length ? saved.feeds : structuredClone(DEFAULT_FEEDS);
+    state.labels = Array.isArray(saved.labels) && saved.labels.length ? saved.labels : structuredClone(DEFAULT_LABELS);
+    state.vibes = Array.isArray(saved.vibes) && saved.vibes.length ? saved.vibes : structuredClone(DEFAULT_VIBES);
+    state.library = Array.isArray(saved.library) ? saved.library : [];
+    state.searchQuery = saved.searchQuery || "";
+  } catch {
+    persistState();
   }
-
-  return Array.from(counts.entries())
-    .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]))
-    .slice(0, limit)
-    .map(([value]) => value);
 }
 
-function chooseDisplayTitle({ english, synonyms = [], snapshotTitle, romaji, userPreferred, native }) {
-  if (isUsableTitle(english)) return cleanTitle(english);
-
-  const englishSynonym = chooseEnglishSynonym(synonyms);
-  if (englishSynonym) return englishSynonym;
-
-  if (looksEnglish(snapshotTitle)) return cleanTitle(snapshotTitle);
-  if (isUsableTitle(romaji)) return cleanTitle(romaji);
-  if (isUsableTitle(userPreferred)) return cleanTitle(userPreferred);
-  if (isUsableTitle(native)) return cleanTitle(native);
-  return "Untitled";
+function persistState() {
+  localStorage.setItem(APP_STATE_KEY, JSON.stringify({
+    view: state.view,
+    activeFeedId: state.activeFeedId,
+    feeds: state.feeds,
+    labels: state.labels,
+    vibes: state.vibes,
+    library: state.library,
+    searchQuery: state.searchQuery,
+  }));
 }
 
-function chooseEnglishSynonym(synonyms) {
-  return synonyms
-    .map((synonym) => ({ synonym: cleanTitle(synonym), score: englishTitleScore(synonym) }))
-    .filter((item) => item.score > 0)
-    .sort((left, right) => right.score - left.score || left.synonym.length - right.synonym.length)[0]?.synonym || "";
+function toggleLibrary(id) {
+  state.library = toggleArray(state.library, id);
+  persistState();
+  render();
 }
 
-function englishTitleScore(value) {
-  const text = cleanTitle(value);
-  if (!looksLatin(text)) return 0;
-  const lower = text.toLowerCase();
-  const words = lower.match(/[a-z]+/g) || [];
-  if (!words.length) return 0;
-
-  const common = new Set([
-    "a", "an", "and", "are", "back", "best", "blade", "day", "developer", "estate", "family", "field",
-    "forgotten", "god", "gods", "greatest", "home", "homeless", "i", "level", "love", "magic", "max",
-    "my", "newbie", "no", "of", "only", "princess", "reader", "return", "school", "solo", "star", "the",
-    "to", "up", "with", "world"
-  ]);
-  const commonHits = words.filter((word) => common.has(word)).length;
-  const hasSpace = /\s/.test(text);
-  const romanizationPenalty = words.filter((word) => ["na", "ni", "ga", "wa", "wo", "ui", "eopseo", "dake", "ken"].includes(word)).length;
-  return commonHits * 3 + (hasSpace ? 1 : 0) + (text.length <= 34 ? 1 : 0) - romanizationPenalty * 2;
+function toggleArray(values, value) {
+  return values.includes(value) ? values.filter((item) => item !== value) : [...values, value];
 }
 
-function looksEnglish(value) {
-  return englishTitleScore(value) >= 2;
+function between(value, range) {
+  const max = Number.isFinite(range[1]) ? range[1] : Infinity;
+  return value >= range[0] && value <= max;
 }
 
-function looksLatin(value) {
-  const text = cleanTitle(value);
-  return Boolean(text) && /^[\u0000-\u007f]+$/.test(text) && /[a-z]/i.test(text);
-}
-
-function isUsableTitle(value) {
-  return Boolean(cleanTitle(value));
-}
-
-function cleanTitle(value) {
-  return String(value || "").replace(/\s+/g, " ").trim();
-}
-
-function normalizeStringArray(value) {
-  if (!Array.isArray(value)) return [];
-  return Array.from(new Set(value.map(cleanTitle).filter(Boolean)));
-}
-
-function normalizeStartDate(startDate, startYearFallback) {
-  if (startDate && typeof startDate === "object") {
-    const year = Number(startDate.year || 0);
-    if (!year) return null;
-    return {
-      year,
-      month: Number(startDate.month || 1),
-      day: Number(startDate.day || 1),
-    };
+function matchesRelease(entry, releaseWindowKey) {
+  const option = getReleaseWindow(releaseWindowKey);
+  if (option.key === "all") return true;
+  if (!entry.startDate && !entry.startYear) return false;
+  const years = entry.startYear ? new Date().getFullYear() - entry.startYear : Infinity;
+  if (option.mode === "year") return entry.startYear === new Date().getFullYear();
+  if (Number.isFinite(option.days)) {
+    const age = daysSinceStart(entry.startDate);
+    return age >= -14 && age <= option.days;
   }
-
-  const year = Number(startYearFallback || 0);
-  return year ? { year, month: 1, day: 1 } : null;
-}
-
-function daysSince(value) {
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return Infinity;
-  return Math.floor((Date.now() - date.getTime()) / 86400000);
-}
-
-function daysSinceDateObject(startDate) {
-  const date = new Date(Date.UTC(startDate.year, (startDate.month || 1) - 1, startDate.day || 1));
-  if (Number.isNaN(date.getTime())) return Infinity;
-  return Math.floor((Date.now() - date.getTime()) / 86400000);
-}
-
-function getDateValue(startDate) {
-  if (!startDate) return 0;
-  return Number(`${startDate.year}${String(startDate.month || 1).padStart(2, "0")}${String(startDate.day || 1).padStart(2, "0")}`);
-}
-
-function matchesRange(value, min, max) {
-  const number = Number(value || 0);
-  const minNumber = min === "" || min === null || min === undefined ? -Infinity : Number(min);
-  const maxNumber = max === "" || max === null || max === undefined ? Infinity : Number(max);
-  return number >= minNumber && number <= maxNumber;
+  return years >= option.minYears && years <= option.maxYears;
 }
 
 function containsEvery(values, selected) {
@@ -1163,175 +1085,125 @@ function containsEvery(values, selected) {
 }
 
 function containsAny(values, selected) {
-  if (!selected.length) return false;
   const normalized = new Set(values.map((value) => value.toLowerCase()));
   return selected.some((value) => normalized.has(value.toLowerCase()));
 }
 
-function getSearchHaystack(entry) {
-  return [
-    entry.displayTitle,
-    entry.romajiTitle,
-    entry.englishTitle,
-    entry.nativeTitle,
-    ...entry.synonyms,
-    ...entry.genres,
-    ...entry.tags,
-    entry.mediaId,
-  ]
-    .join(" ")
-    .toLowerCase();
+function growth(entry, metric, windowKey) {
+  return Number(entry.growth?.[windowKey]?.[metric] || 0);
 }
 
-function toggleSaved(entry) {
-  const key = String(entry.mediaId);
-  if (state.savedIds.has(key)) {
-    state.savedIds.delete(key);
-  } else {
-    state.savedIds.add(key);
-  }
-  localStorage.setItem(SAVED_KEY, JSON.stringify(Array.from(state.savedIds)));
-  if (state.ui.page === "saved") applyFiltersAndRender();
+function dateValue(date) {
+  if (!date) return 0;
+  return Number(`${date.year || 0}${String(date.month || 1).padStart(2, "0")}${String(date.day || 1).padStart(2, "0")}`);
 }
 
-function getCachedDetail(mediaId) {
-  if (!mediaId) return null;
-  if (state.detailMemoryCache.has(mediaId)) return state.detailMemoryCache.get(mediaId);
+function daysSinceStart(date) {
+  if (!date?.year) return Infinity;
+  const start = new Date(Date.UTC(date.year, (date.month || 1) - 1, date.day || 1));
+  return Math.floor((Date.now() - start.getTime()) / 86400000);
+}
 
+function compactMeta(entry) {
+  return [entry.statusLabel || statusLabel(entry.status), entry.startYear || "", exposureStage(entry.popularity)].filter(Boolean).join(" / ");
+}
+
+function formatRelease(entry) {
+  return `${statusLabel(entry.status)} / ${entry.startYear || "Unknown year"} / ${exposureStage(entry.popularity)}`;
+}
+
+function exposureStage(popularity) {
+  if (popularity < 100) return "Unstable";
+  if (popularity < 300) return "Hidden";
+  if (popularity < 1000) return "Emerging";
+  if (popularity < 3000) return "Breakout";
+  if (popularity < 10000) return "Established";
+  return "Mainstream";
+}
+
+function statusLabel(status) {
+  return String(status || "Unknown").replaceAll("_", " ").toLowerCase().replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+function getReleaseWindow(key) {
+  return RELEASE_WINDOWS.find((item) => item.key === key) || RELEASE_WINDOWS[0];
+}
+
+function getGrowthWindow(key) {
+  return GROWTH_WINDOWS.find((item) => item.key === key) || GROWTH_WINDOWS[2];
+}
+
+function getSort(key) {
+  return SORT_OPTIONS.find((item) => item.key === key) || SORT_OPTIONS[0];
+}
+
+function formatRange(range) {
+  return `${compactNumber(range[0])}-${Number.isFinite(range[1]) ? compactNumber(range[1]) : "Max"}`;
+}
+
+function summaryForFeed(feed) {
+  return `Pop ${formatRange(feed.criteria.popularity)} / Mean ${feed.criteria.meanScore[0]}+ / Fan Fav ${feed.criteria.fanFav[0]}%+`;
+}
+
+function searchText(entry) {
+  return [entry.displayTitle, entry.romajiTitle, entry.englishTitle, entry.nativeTitle, entry.mediaId, ...entry.synonyms, ...entry.genres, ...entry.tags].join(" ").toLowerCase();
+}
+
+function chooseTitle(media, fallback) {
+  return media.title?.english || chooseEnglishSynonym(media.synonyms || []) || fallback.displayTitle || media.title?.romaji || media.title?.userPreferred || "Untitled";
+}
+
+function chooseEnglishSynonym(values) {
+  return values.find((value) => /^[\x00-\x7F]+$/.test(value) && /[a-z]/i.test(value)) || "";
+}
+
+function getCachedDetail(id) {
+  if (state.detailCache.has(id)) return state.detailCache.get(id);
   try {
-    const rawValue = localStorage.getItem(`${DETAIL_CACHE_PREFIX}${mediaId}`);
-    if (!rawValue) return null;
-    const parsed = JSON.parse(rawValue);
-    if (!parsed.savedAt || Date.now() - parsed.savedAt > DETAIL_CACHE_TTL) {
-      localStorage.removeItem(`${DETAIL_CACHE_PREFIX}${mediaId}`);
-      return null;
-    }
-    state.detailMemoryCache.set(mediaId, parsed.detail);
+    const parsed = JSON.parse(localStorage.getItem(`${DETAIL_CACHE_PREFIX}${id}`) || "null");
+    if (!parsed || Date.now() - parsed.savedAt > DETAIL_CACHE_TTL) return null;
+    state.detailCache.set(id, parsed.detail);
     return parsed.detail;
   } catch {
     return null;
   }
 }
 
-function cacheDetail(mediaId, detail) {
-  if (!mediaId || !detail) return;
-  state.detailMemoryCache.set(mediaId, detail);
+function cacheDetail(id, detail) {
+  state.detailCache.set(id, detail);
   try {
-    localStorage.setItem(`${DETAIL_CACHE_PREFIX}${mediaId}`, JSON.stringify({ savedAt: Date.now(), detail }));
+    localStorage.setItem(`${DETAIL_CACHE_PREFIX}${id}`, JSON.stringify({ savedAt: Date.now(), detail }));
   } catch {
-    // Browser storage can be full; memory cache still handles the current session.
+    // Cache is best-effort.
   }
 }
 
-function loadUiState() {
-  try {
-    const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
-    return sanitizeUiState({ ...DEFAULT_UI, ...parsed });
-  } catch {
-    return { ...DEFAULT_UI };
-  }
-}
-
-function sanitizeUiState(ui) {
-  return {
-    ...DEFAULT_UI,
-    ...ui,
-    includeGenres: Array.isArray(ui.includeGenres) ? ui.includeGenres : [],
-    rejectGenres: Array.isArray(ui.rejectGenres) ? ui.rejectGenres : [],
-    includeTags: Array.isArray(ui.includeTags) ? ui.includeTags : [],
-    rejectTags: Array.isArray(ui.rejectTags) ? ui.rejectTags : [],
-  };
-}
-
-function persistUi() {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state.ui));
-}
-
-function loadSavedIds() {
-  try {
-    const parsed = JSON.parse(localStorage.getItem(SAVED_KEY) || "[]");
-    return Array.isArray(parsed) ? parsed : [];
-  } catch {
-    return [];
-  }
-}
-
-function applyTheme() {
-  document.documentElement.dataset.theme = state.ui.theme === "noir" ? "" : state.ui.theme;
-}
-
-function makeChip(label, active) {
-  const button = document.createElement("button");
-  button.type = "button";
-  button.className = `chip${active ? " is-active" : ""}`;
-  button.textContent = label;
-  return button;
-}
-
-function calculateFanFav(favourites, popularity) {
-  if (!popularity) return 0;
-  return (Number(favourites || 0) / Number(popularity)) * 100;
-}
-
-function compareDesc(left, right) {
-  return (right || 0) - (left || 0);
-}
-
-function numberOrNull(value) {
-  const number = Number(value);
-  return Number.isFinite(number) && number > 0 ? number : null;
-}
-
-function parseAniListId(url) {
-  const match = String(url || "").match(/\/manga\/(\d+)/i);
-  return match ? Number(match[1]) : 0;
-}
-
-function formatPercent(value) {
-  return `${Number(value || 0).toFixed(2)}%`;
-}
-
-function formatInteger(value) {
-  return new Intl.NumberFormat("en-US").format(Number(value || 0));
+function createId(name) {
+  return `${name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}-${Date.now().toString(36)}`;
 }
 
 function compactNumber(value) {
   return new Intl.NumberFormat("en-US", { notation: "compact", maximumFractionDigits: 1 }).format(Number(value || 0));
 }
 
-function formatSnapshotDate(value) {
-  if (!value) return "...";
-  return new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric" }).format(new Date(value));
-}
-
-function formatStartDate(startDate, fallbackYear) {
-  if (!startDate) return fallbackYear || "-";
-  return [startDate.year, startDate.month, startDate.day].filter(Boolean).join("-");
+function formatNumber(value) {
+  return Number(value || 0).toFixed(1).replace(/\.0$/, "");
 }
 
 function formatSynopsis(text) {
-  const safe = escapeHtml(stripHtml(text));
-  if (!safe) return "<p>No synopsis is available.</p>";
-  return safe
-    .split(/\n{2,}/)
-    .map((paragraph) => `<p>${paragraph.replace(/\n/g, "<br>")}</p>`)
-    .join("");
+  const clean = escapeHtml(stripHtml(text || ""));
+  if (!clean) return "No synopsis available.";
+  return clean.split(/\n{2,}/).map((paragraph) => `<p>${paragraph.replace(/\n/g, "<br>")}</p>`).join("");
 }
 
 function stripHtml(value) {
-  const parser = new DOMParser();
-  return parser.parseFromString(String(value || ""), "text/html").body.textContent.trim();
+  return String(value).replace(/<br\s*\/?>/gi, "\n").replace(/<[^>]+>/g, "").trim();
 }
 
 function escapeHtml(value) {
-  return String(value ?? "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
+  return String(value ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
 }
 
-function escapeAttribute(value) {
+function escapeAttr(value) {
   return escapeHtml(value);
 }

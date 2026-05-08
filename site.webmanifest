@@ -1,7 +1,7 @@
 {
-  "name": "Peakhwa Discovery",
-  "short_name": "Peakhwa",
-  "description": "Daily glass-style AniList manhwa discovery powered by Fan Fav percentage and growth snapshots.",
+  "name": "ManhwaLens",
+  "short_name": "Lens",
+  "description": "A calm mobile-first manhwa discovery app powered by AniList mean score, Fan Fav percentage, popularity, and growth.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#000000",

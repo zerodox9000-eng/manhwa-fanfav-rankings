@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-05-08T07:23:51.365Z",
+  "lastUpdated": "2026-05-09T08:34:48.983Z",
   "source": "Daily AniList refresh",
-  "totalEntries": 4438,
+  "totalEntries": 4448,
   "defaultPage": "discovery",
   "defaultTab": "relevant",
   "defaultWindow": "7d",
   "indexes": {
     "genres": [
-      "Fantasy",
       "Romance",
+      "Fantasy",
       "Drama",
       "Action",
       "Comedy",
@@ -66,11 +66,11 @@
       "Primarily Teen Cast",
       "Marriage",
       "Wuxia",
+      "Boys' Love",
       "Video Games",
       "Gore",
       "Crime",
       "Urban",
-      "Boys' Love",
       "Dragons",
       "Cultivation",
       "Maids",
@@ -87,8 +87,8 @@
       "Shapeshifting",
       "Found Family",
       "War",
-      "Fake Relationship",
       "Age Gap",
+      "Fake Relationship",
       "Ojou-sama",
       "Crossdressing",
       "Office Lady",
@@ -113,8 +113,8 @@
       "Zombie",
       "Female Harem",
       "Military",
-      "Kuudere",
       "Nudity",
+      "Kuudere",
       "Rehabilitation",
       "Curses",
       "Parenthood",
@@ -128,14 +128,14 @@
   },
   "lanes": {
     "mainstream": 444,
-    "established": 1080,
-    "rising": 1221,
-    "underground": 1026,
-    "tooEarly": 667
+    "established": 1082,
+    "rising": 1223,
+    "underground": 1024,
+    "tooEarly": 675
   },
   "statuses": {
-    "FINISHED": 2647,
-    "RELEASING": 1749,
+    "FINISHED": 2652,
+    "RELEASING": 1754,
     "NOT_YET_RELEASED": 8,
     "CANCELLED": 34
   }

@@ -21,21 +21,21 @@
   },
   {
     "Title": "Footsteps in the Snow",
-    "FAN FAV": 6.43,
+    "FAN FAV": 6.41,
     "Mean Score": 85,
     "Status": "FINISHED",
     "Start Year": 2025,
-    "Popularity": 715,
+    "Popularity": 718,
     "Favourites": 46,
     "AniList URL": "https://anilist.co/manga/188768"
   },
   {
     "Title": "A Mark Against Thee",
-    "FAN FAV": 6.31,
+    "FAN FAV": 6.29,
     "Mean Score": 83,
     "Status": "FINISHED",
     "Start Year": 2019,
-    "Popularity": 650,
+    "Popularity": 652,
     "Favourites": 41,
     "AniList URL": "https://anilist.co/manga/134385"
   },
@@ -50,42 +50,42 @@
     "AniList URL": "https://anilist.co/manga/178743"
   },
   {
-    "Title": "The Law of Immutability",
-    "FAN FAV": 5.33,
-    "Mean Score": 75,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 845,
-    "Favourites": 45,
-    "AniList URL": "https://anilist.co/manga/186961"
-  },
-  {
     "Title": "My Daughter is a Zombie",
-    "FAN FAV": 5.21,
+    "FAN FAV": 5.31,
     "Mean Score": 76,
     "Status": "FINISHED",
     "Start Year": 2018,
     "Popularity": 979,
-    "Favourites": 51,
+    "Favourites": 52,
     "AniList URL": "https://anilist.co/manga/125767"
   },
   {
+    "Title": "The Law of Immutability",
+    "FAN FAV": 5.31,
+    "Mean Score": 76,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 848,
+    "Favourites": 45,
+    "AniList URL": "https://anilist.co/manga/186961"
+  },
+  {
     "Title": "Proof of Dignity",
-    "FAN FAV": 5.2,
+    "FAN FAV": 5.17,
     "Mean Score": 82,
     "Status": "RELEASING",
     "Start Year": 2025,
-    "Popularity": 615,
+    "Popularity": 619,
     "Favourites": 32,
     "AniList URL": "https://anilist.co/manga/188304"
   },
   {
     "Title": "The Password Is 002!",
-    "FAN FAV": 5.05,
+    "FAN FAV": 5.04,
     "Mean Score": 78,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 792,
+    "Popularity": 793,
     "Favourites": 40,
     "AniList URL": "https://anilist.co/manga/181523"
   },
@@ -101,11 +101,11 @@
   },
   {
     "Title": "Classmate",
-    "FAN FAV": 4.54,
+    "FAN FAV": 4.48,
     "Mean Score": 79,
     "Status": "RELEASING",
     "Start Year": 2025,
-    "Popularity": 705,
+    "Popularity": 715,
     "Favourites": 32,
     "AniList URL": "https://anilist.co/manga/197889"
   },
@@ -120,12 +120,22 @@
     "AniList URL": "https://anilist.co/manga/159535"
   },
   {
+    "Title": "44th Period: Survival Class",
+    "FAN FAV": 4.42,
+    "Mean Score": 81,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 611,
+    "Favourites": 27,
+    "AniList URL": "https://anilist.co/manga/186952"
+  },
+  {
     "Title": "Secretary's Escape",
-    "FAN FAV": 4.41,
+    "FAN FAV": 4.4,
     "Mean Score": 70,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 658,
+    "Popularity": 659,
     "Favourites": 29,
     "AniList URL": "https://anilist.co/manga/162368"
   },
@@ -138,16 +148,6 @@
     "Popularity": 537,
     "Favourites": 23,
     "AniList URL": "https://anilist.co/manga/155299"
-  },
-  {
-    "Title": "44th Period: Survival Class",
-    "FAN FAV": 4.27,
-    "Mean Score": 81,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 609,
-    "Favourites": 26,
-    "AniList URL": "https://anilist.co/manga/186952"
   },
   {
     "Title": "Be RF Savvy or Die",
@@ -170,6 +170,16 @@
     "AniList URL": "https://anilist.co/manga/198397"
   },
   {
+    "Title": "The Vampire's Sons",
+    "FAN FAV": 3.79,
+    "Mean Score": 80,
+    "Status": "RELEASING",
+    "Start Year": 2022,
+    "Popularity": 501,
+    "Favourites": 19,
+    "AniList URL": "https://anilist.co/manga/162012"
+  },
+  {
     "Title": "Daily Jojo",
     "FAN FAV": 3.75,
     "Mean Score": 73,
@@ -185,7 +195,7 @@
     "Mean Score": 78,
     "Status": "RELEASING",
     "Start Year": 2025,
-    "Popularity": 690,
+    "Popularity": 691,
     "Favourites": 25,
     "AniList URL": "https://anilist.co/manga/188541"
   },
@@ -201,23 +211,13 @@
   },
   {
     "Title": "CASTLE II",
-    "FAN FAV": 3.46,
+    "FAN FAV": 3.45,
     "Mean Score": 80,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 868,
+    "Popularity": 870,
     "Favourites": 30,
     "AniList URL": "https://anilist.co/manga/166651"
-  },
-  {
-    "Title": "Life Reboot for a Gaming Addict",
-    "FAN FAV": 3.45,
-    "Mean Score": 69,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 521,
-    "Favourites": 18,
-    "AniList URL": "https://anilist.co/manga/192856"
   },
   {
     "Title": "Tomorrow's #1",
@@ -230,14 +230,14 @@
     "AniList URL": "https://anilist.co/manga/143108"
   },
   {
-    "Title": "Hello, Mr. Veterinarian!",
-    "FAN FAV": 3.43,
-    "Mean Score": 79,
+    "Title": "Life Reboot for a Gaming Addict",
+    "FAN FAV": 3.44,
+    "Mean Score": 69,
     "Status": "RELEASING",
-    "Start Year": 2023,
-    "Popularity": 728,
-    "Favourites": 25,
-    "AniList URL": "https://anilist.co/manga/172371"
+    "Start Year": 2025,
+    "Popularity": 523,
+    "Favourites": 18,
+    "AniList URL": "https://anilist.co/manga/192856"
   },
   {
     "Title": "My Three Annoying Brothers",
@@ -250,13 +250,23 @@
     "AniList URL": "https://anilist.co/manga/139659"
   },
   {
+    "Title": "Hello, Mr. Veterinarian!",
+    "FAN FAV": 3.42,
+    "Mean Score": 79,
+    "Status": "RELEASING",
+    "Start Year": 2023,
+    "Popularity": 730,
+    "Favourites": 25,
+    "AniList URL": "https://anilist.co/manga/172371"
+  },
+  {
     "Title": "Welcome to Rose Manor",
-    "FAN FAV": 3.31,
+    "FAN FAV": 3.4,
     "Mean Score": 81,
     "Status": "RELEASING",
     "Start Year": 2025,
-    "Popularity": 846,
-    "Favourites": 28,
+    "Popularity": 852,
+    "Favourites": 29,
     "AniList URL": "https://anilist.co/manga/196510"
   },
   {
@@ -265,7 +275,7 @@
     "Mean Score": 66,
     "Status": "FINISHED",
     "Start Year": 2025,
-    "Popularity": 636,
+    "Popularity": 637,
     "Favourites": 21,
     "AniList URL": "https://anilist.co/manga/188539"
   },
@@ -275,27 +285,27 @@
     "Mean Score": 78,
     "Status": "FINISHED",
     "Start Year": 2024,
-    "Popularity": 607,
+    "Popularity": 608,
     "Favourites": 20,
     "AniList URL": "https://anilist.co/manga/179570"
   },
   {
     "Title": "How To Ride the Hero's Coattails",
-    "FAN FAV": 3.26,
+    "FAN FAV": 3.25,
     "Mean Score": 79,
     "Status": "RELEASING",
     "Start Year": 2025,
-    "Popularity": 858,
+    "Popularity": 862,
     "Favourites": 28,
     "AniList URL": "https://anilist.co/manga/199642"
   },
   {
     "Title": "Can I Borrow the Fire?",
-    "FAN FAV": 3.26,
+    "FAN FAV": 3.25,
     "Mean Score": 80,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 644,
+    "Popularity": 647,
     "Favourites": 21,
     "AniList URL": "https://anilist.co/manga/188466"
   },
@@ -311,11 +321,11 @@
   },
   {
     "Title": "The Black Serpent",
-    "FAN FAV": 3.24,
+    "FAN FAV": 3.22,
     "Mean Score": 79,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 802,
+    "Popularity": 807,
     "Favourites": 26,
     "AniList URL": "https://anilist.co/manga/179658"
   },
@@ -330,74 +340,64 @@
     "AniList URL": "https://anilist.co/manga/141199"
   },
   {
+    "Title": "The Crown I Will Seize",
+    "FAN FAV": 3.19,
+    "Mean Score": 78,
+    "Status": "RELEASING",
+    "Start Year": 2026,
+    "Popularity": 627,
+    "Favourites": 20,
+    "AniList URL": "https://anilist.co/manga/207170"
+  },
+  {
     "Title": "Meet Me in the Middle",
     "FAN FAV": 3.17,
     "Mean Score": 75,
     "Status": "RELEASING",
     "Start Year": 2023,
-    "Popularity": 662,
+    "Popularity": 663,
     "Favourites": 21,
     "AniList URL": "https://anilist.co/manga/168689"
   },
   {
-    "Title": "Can I Cry Now?",
-    "FAN FAV": 3.16,
-    "Mean Score": 81,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 760,
-    "Favourites": 24,
-    "AniList URL": "https://anilist.co/manga/204589"
-  },
-  {
-    "Title": "For Your Perfect Ending",
-    "FAN FAV": 3.15,
-    "Mean Score": 70,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 952,
-    "Favourites": 30,
-    "AniList URL": "https://anilist.co/manga/201591"
-  },
-  {
     "Title": "Degree of Love",
-    "FAN FAV": 3.13,
+    "FAN FAV": 3.12,
     "Mean Score": 75,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 831,
+    "Popularity": 833,
     "Favourites": 26,
     "AniList URL": "https://anilist.co/manga/178196"
   },
   {
-    "Title": "The Archduke's Magical Business Partner",
+    "Title": "For Your Perfect Ending",
     "FAN FAV": 3.11,
+    "Mean Score": 70,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 964,
+    "Favourites": 30,
+    "AniList URL": "https://anilist.co/manga/201591"
+  },
+  {
+    "Title": "Can I Cry Now?",
+    "FAN FAV": 3.1,
+    "Mean Score": 81,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 773,
+    "Favourites": 24,
+    "AniList URL": "https://anilist.co/manga/204589"
+  },
+  {
+    "Title": "The Archduke's Magical Business Partner",
+    "FAN FAV": 3.1,
     "Mean Score": 74,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 901,
+    "Popularity": 902,
     "Favourites": 28,
     "AniList URL": "https://anilist.co/manga/182594"
-  },
-  {
-    "Title": "The Crown I Will Seize",
-    "FAN FAV": 3.09,
-    "Mean Score": 78,
-    "Status": "RELEASING",
-    "Start Year": 2026,
-    "Popularity": 614,
-    "Favourites": 19,
-    "AniList URL": "https://anilist.co/manga/207170"
-  },
-  {
-    "Title": "To Drown In You",
-    "FAN FAV": 3.09,
-    "Mean Score": 75,
-    "Status": "FINISHED",
-    "Start Year": 2024,
-    "Popularity": 905,
-    "Favourites": 28,
-    "AniList URL": "https://anilist.co/manga/182513"
   },
   {
     "Title": "The Problem of My Love Affair",
@@ -405,9 +405,19 @@
     "Mean Score": 70,
     "Status": "FINISHED",
     "Start Year": 2017,
-    "Popularity": 776,
+    "Popularity": 777,
     "Favourites": 24,
     "AniList URL": "https://anilist.co/manga/110109"
+  },
+  {
+    "Title": "To Drown In You",
+    "FAN FAV": 3.08,
+    "Mean Score": 75,
+    "Status": "FINISHED",
+    "Start Year": 2024,
+    "Popularity": 910,
+    "Favourites": 28,
+    "AniList URL": "https://anilist.co/manga/182513"
   },
   {
     "Title": "Take Me, I'm Yours",
@@ -431,11 +441,11 @@
   },
   {
     "Title": "Imperfect Cinderella Story",
-    "FAN FAV": 3.06,
+    "FAN FAV": 3.05,
     "Mean Score": 74,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 654,
+    "Popularity": 655,
     "Favourites": 20,
     "AniList URL": "https://anilist.co/manga/181984"
   },
@@ -450,16 +460,6 @@
     "AniList URL": "https://anilist.co/manga/104310"
   },
   {
-    "Title": "I Got Engaged To The Blind Duke",
-    "FAN FAV": 3.01,
-    "Mean Score": 77,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 698,
-    "Favourites": 21,
-    "AniList URL": "https://anilist.co/manga/203198"
-  },
-  {
     "Title": "That Which Flows By",
     "FAN FAV": 3.01,
     "Mean Score": 78,
@@ -470,54 +470,54 @@
     "AniList URL": "https://anilist.co/manga/152615"
   },
   {
-    "Title": "Daytime in the Bunker",
-    "FAN FAV": 3,
-    "Mean Score": 76,
-    "Status": "RELEASING",
-    "Start Year": 2026,
-    "Popularity": 899,
-    "Favourites": 27,
-    "AniList URL": "https://anilist.co/manga/205969"
-  },
-  {
-    "Title": "The End Has Come",
-    "FAN FAV": 3,
-    "Mean Score": 71,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 999,
-    "Favourites": 30,
-    "AniList URL": "https://anilist.co/manga/189981"
-  },
-  {
-    "Title": "Wrecker Driver",
-    "FAN FAV": 3,
-    "Mean Score": 62,
-    "Status": "CANCELLED",
-    "Start Year": 2025,
-    "Popularity": 534,
-    "Favourites": 16,
-    "AniList URL": "https://anilist.co/manga/192592"
-  },
-  {
     "Title": "A Savage Proposal",
     "FAN FAV": 2.99,
     "Mean Score": 66,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 501,
+    "Popularity": 502,
     "Favourites": 15,
     "AniList URL": "https://anilist.co/manga/189853"
   },
   {
-    "Title": "My Clueless Love Diary",
+    "Title": "Daytime in the Bunker",
     "FAN FAV": 2.99,
+    "Mean Score": 76,
+    "Status": "RELEASING",
+    "Start Year": 2026,
+    "Popularity": 938,
+    "Favourites": 28,
+    "AniList URL": "https://anilist.co/manga/205969"
+  },
+  {
+    "Title": "Wrecker Driver",
+    "FAN FAV": 2.99,
+    "Mean Score": 62,
+    "Status": "CANCELLED",
+    "Start Year": 2025,
+    "Popularity": 536,
+    "Favourites": 16,
+    "AniList URL": "https://anilist.co/manga/192592"
+  },
+  {
+    "Title": "My Clueless Love Diary",
+    "FAN FAV": 2.98,
     "Mean Score": 73,
     "Status": "FINISHED",
     "Start Year": 2024,
-    "Popularity": 702,
+    "Popularity": 705,
     "Favourites": 21,
     "AniList URL": "https://anilist.co/manga/185913"
+  },
+  {
+    "Title": "I Got Engaged To The Blind Duke",
+    "FAN FAV": 2.96,
+    "Mean Score": 77,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 710,
+    "Favourites": 21,
+    "AniList URL": "https://anilist.co/manga/203198"
   },
   {
     "Title": "The Uncanny Counter",
@@ -571,21 +571,21 @@
   },
   {
     "Title": "Teach Me How to Desire",
-    "FAN FAV": 2.88,
+    "FAN FAV": 2.87,
     "Mean Score": 66,
     "Status": "FINISHED",
     "Start Year": 2024,
-    "Popularity": 521,
+    "Popularity": 522,
     "Favourites": 15,
     "AniList URL": "https://anilist.co/manga/186189"
   },
   {
     "Title": "Two Weeks and Counting",
-    "FAN FAV": 2.86,
+    "FAN FAV": 2.85,
     "Mean Score": 78,
     "Status": "FINISHED",
     "Start Year": 2021,
-    "Popularity": 910,
+    "Popularity": 912,
     "Favourites": 26,
     "AniList URL": "https://anilist.co/manga/176024"
   },
@@ -681,11 +681,11 @@
   },
   {
     "Title": "High Class",
-    "FAN FAV": 2.77,
+    "FAN FAV": 2.76,
     "Mean Score": 82,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 758,
+    "Popularity": 760,
     "Favourites": 21,
     "AniList URL": "https://anilist.co/manga/188699"
   },
@@ -700,26 +700,6 @@
     "AniList URL": "https://anilist.co/manga/121564"
   },
   {
-    "Title": "Born to be the Grand Duchess",
-    "FAN FAV": 2.76,
-    "Mean Score": 76,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 652,
-    "Favourites": 18,
-    "AniList URL": "https://anilist.co/manga/196558"
-  },
-  {
-    "Title": "The 100 Curses of Illeston Manor",
-    "FAN FAV": 2.76,
-    "Mean Score": 75,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 834,
-    "Favourites": 23,
-    "AniList URL": "https://anilist.co/manga/198020"
-  },
-  {
     "Title": "Absolute Obedience",
     "FAN FAV": 2.76,
     "Mean Score": 62,
@@ -730,12 +710,32 @@
     "AniList URL": "https://anilist.co/manga/155966"
   },
   {
-    "Title": "The Genius Spirited Streamer",
+    "Title": "The 100 Curses of Illeston Manor",
     "FAN FAV": 2.75,
+    "Mean Score": 75,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 835,
+    "Favourites": 23,
+    "AniList URL": "https://anilist.co/manga/198020"
+  },
+  {
+    "Title": "Born to be the Grand Duchess",
+    "FAN FAV": 2.75,
+    "Mean Score": 76,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 655,
+    "Favourites": 18,
+    "AniList URL": "https://anilist.co/manga/196558"
+  },
+  {
+    "Title": "The Genius Spirited Streamer",
+    "FAN FAV": 2.74,
     "Mean Score": 69,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 655,
+    "Popularity": 657,
     "Favourites": 18,
     "AniList URL": "https://anilist.co/manga/178296"
   },
@@ -760,22 +760,12 @@
     "AniList URL": "https://anilist.co/manga/120491"
   },
   {
-    "Title": "A Tidal Wave of Glory",
-    "FAN FAV": 2.71,
-    "Mean Score": 76,
-    "Status": "FINISHED",
-    "Start Year": 2024,
-    "Popularity": 663,
-    "Favourites": 18,
-    "AniList URL": "https://anilist.co/manga/182681"
-  },
-  {
     "Title": "Mr. Delivery Knight",
     "FAN FAV": 2.71,
     "Mean Score": 79,
     "Status": "FINISHED",
     "Start Year": 2024,
-    "Popularity": 774,
+    "Popularity": 775,
     "Favourites": 21,
     "AniList URL": "https://anilist.co/manga/188430"
   },
@@ -790,6 +780,16 @@
     "AniList URL": "https://anilist.co/manga/166885"
   },
   {
+    "Title": "A Tidal Wave of Glory",
+    "FAN FAV": 2.7,
+    "Mean Score": 76,
+    "Status": "FINISHED",
+    "Start Year": 2024,
+    "Popularity": 666,
+    "Favourites": 18,
+    "AniList URL": "https://anilist.co/manga/182681"
+  },
+  {
     "Title": "Dealing with Demons",
     "FAN FAV": 2.7,
     "Mean Score": 73,
@@ -801,11 +801,11 @@
   },
   {
     "Title": "In the Sunshower",
-    "FAN FAV": 2.69,
+    "FAN FAV": 2.67,
     "Mean Score": 76,
     "Status": "FINISHED",
     "Start Year": 2021,
-    "Popularity": 595,
+    "Popularity": 599,
     "Favourites": 16,
     "AniList URL": "https://anilist.co/manga/145684"
   },
@@ -825,7 +825,7 @@
     "Mean Score": 67,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 827,
+    "Popularity": 828,
     "Favourites": 22,
     "AniList URL": "https://anilist.co/manga/156489"
   },
@@ -850,26 +850,6 @@
     "AniList URL": "https://anilist.co/manga/155226"
   },
   {
-    "Title": "The Rogue Producer Survives as an Idol",
-    "FAN FAV": 2.65,
-    "Mean Score": 72,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 793,
-    "Favourites": 21,
-    "AniList URL": "https://anilist.co/manga/190365"
-  },
-  {
-    "Title": "The Youngest Has Much To Hide",
-    "FAN FAV": 2.64,
-    "Mean Score": 77,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 605,
-    "Favourites": 16,
-    "AniList URL": "https://anilist.co/manga/203960"
-  },
-  {
     "Title": "Run, Meil",
     "FAN FAV": 2.64,
     "Mean Score": 68,
@@ -880,22 +860,32 @@
     "AniList URL": "https://anilist.co/manga/155461"
   },
   {
+    "Title": "The Rogue Producer Survives as an Idol",
+    "FAN FAV": 2.63,
+    "Mean Score": 72,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 798,
+    "Favourites": 21,
+    "AniList URL": "https://anilist.co/manga/190365"
+  },
+  {
     "Title": "Combat Ward",
     "FAN FAV": 2.62,
     "Mean Score": 64,
     "Status": "FINISHED",
     "Start Year": 2024,
-    "Popularity": 648,
+    "Popularity": 649,
     "Favourites": 17,
     "AniList URL": "https://anilist.co/manga/189361"
   },
   {
     "Title": "I Became the Duke’s Male Servant",
-    "FAN FAV": 2.62,
+    "FAN FAV": 2.61,
     "Mean Score": 67,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 802,
+    "Popularity": 804,
     "Favourites": 21,
     "AniList URL": "https://anilist.co/manga/186729"
   },
@@ -910,6 +900,16 @@
     "AniList URL": "https://anilist.co/manga/167581"
   },
   {
+    "Title": "The Youngest Has Much To Hide",
+    "FAN FAV": 2.6,
+    "Mean Score": 77,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 615,
+    "Favourites": 16,
+    "AniList URL": "https://anilist.co/manga/203960"
+  },
+  {
     "Title": "Four Ways to Find a Wife",
     "FAN FAV": 2.6,
     "Mean Score": 73,
@@ -921,11 +921,11 @@
   },
   {
     "Title": "The Cruelty of Salvation",
-    "FAN FAV": 2.58,
+    "FAN FAV": 2.57,
     "Mean Score": 78,
     "Status": "RELEASING",
     "Start Year": 2025,
-    "Popularity": 542,
+    "Popularity": 544,
     "Favourites": 14,
     "AniList URL": "https://anilist.co/manga/198022"
   },
@@ -935,17 +935,27 @@
     "Mean Score": 69,
     "Status": "FINISHED",
     "Start Year": 2021,
-    "Popularity": 585,
+    "Popularity": 586,
     "Favourites": 15,
     "AniList URL": "https://anilist.co/manga/135964"
   },
   {
+    "Title": "The Perfect Contract",
+    "FAN FAV": 2.53,
+    "Mean Score": 72,
+    "Status": "FINISHED",
+    "Start Year": 2024,
+    "Popularity": 554,
+    "Favourites": 14,
+    "AniList URL": "https://anilist.co/manga/186311"
+  },
+  {
     "Title": "Shards of a Broken Glass Slipper",
-    "FAN FAV": 2.55,
+    "FAN FAV": 2.51,
     "Mean Score": 78,
     "Status": "RELEASING",
     "Start Year": 2025,
-    "Popularity": 666,
+    "Popularity": 676,
     "Favourites": 17,
     "AniList URL": "https://anilist.co/manga/201025"
   },
@@ -980,16 +990,6 @@
     "AniList URL": "https://anilist.co/manga/159395"
   },
   {
-    "Title": "ShaMONEYism",
-    "FAN FAV": 2.5,
-    "Mean Score": 78,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 560,
-    "Favourites": 14,
-    "AniList URL": "https://anilist.co/manga/195257"
-  },
-  {
     "Title": "You Can’t Kill Me: The Secret Bride of the Black Wolf",
     "FAN FAV": 2.5,
     "Mean Score": 70,
@@ -1011,11 +1011,11 @@
   },
   {
     "Title": "Vows and Vendettas",
-    "FAN FAV": 2.5,
+    "FAN FAV": 2.49,
     "Mean Score": 70,
     "Status": "RELEASING",
     "Start Year": 2025,
-    "Popularity": 681,
+    "Popularity": 683,
     "Favourites": 17,
     "AniList URL": "https://anilist.co/manga/194050"
   },
@@ -1040,14 +1040,14 @@
     "AniList URL": "https://anilist.co/manga/183239"
   },
   {
-    "Title": "Cat in the Chrysalis",
+    "Title": "ShaMONEYism",
     "FAN FAV": 2.46,
-    "Mean Score": 74,
-    "Status": "FINISHED",
-    "Start Year": 2023,
-    "Popularity": 773,
-    "Favourites": 19,
-    "AniList URL": "https://anilist.co/manga/167390"
+    "Mean Score": 79,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 570,
+    "Favourites": 14,
+    "AniList URL": "https://anilist.co/manga/195257"
   },
   {
     "Title": "Never-Ending Darling",
@@ -1060,6 +1060,16 @@
     "AniList URL": "https://anilist.co/manga/151370"
   },
   {
+    "Title": "Cat in the Chrysalis",
+    "FAN FAV": 2.45,
+    "Mean Score": 74,
+    "Status": "FINISHED",
+    "Start Year": 2023,
+    "Popularity": 774,
+    "Favourites": 19,
+    "AniList URL": "https://anilist.co/manga/167390"
+  },
+  {
     "Title": "Marriage of Convenience 2: The Unforgettable Song",
     "FAN FAV": 2.45,
     "Mean Score": 76,
@@ -1070,12 +1080,22 @@
     "AniList URL": "https://anilist.co/manga/196873"
   },
   {
+    "Title": "The Tears of a Jester",
+    "FAN FAV": 2.42,
+    "Mean Score": 74,
+    "Status": "FINISHED",
+    "Start Year": 2021,
+    "Popularity": 662,
+    "Favourites": 16,
+    "AniList URL": "https://anilist.co/manga/144658"
+  },
+  {
     "Title": "A Single Dad in Another World",
-    "FAN FAV": 2.43,
+    "FAN FAV": 2.42,
     "Mean Score": 71,
     "Status": "RELEASING",
     "Start Year": 2025,
-    "Popularity": 658,
+    "Popularity": 662,
     "Favourites": 16,
     "AniList URL": "https://anilist.co/manga/196120"
   },
@@ -1085,19 +1105,9 @@
     "Mean Score": 73,
     "Status": "FINISHED",
     "Start Year": 2021,
-    "Popularity": 619,
+    "Popularity": 621,
     "Favourites": 15,
     "AniList URL": "https://anilist.co/manga/145528"
-  },
-  {
-    "Title": "The Tears of a Jester",
-    "FAN FAV": 2.42,
-    "Mean Score": 74,
-    "Status": "FINISHED",
-    "Start Year": 2021,
-    "Popularity": 661,
-    "Favourites": 16,
-    "AniList URL": "https://anilist.co/manga/144658"
   },
   {
     "Title": "Escape Devildom",
@@ -1110,12 +1120,22 @@
     "AniList URL": "https://anilist.co/manga/100443"
   },
   {
+    "Title": "A Butterfly Through the Mist",
+    "FAN FAV": 2.39,
+    "Mean Score": 79,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 627,
+    "Favourites": 15,
+    "AniList URL": "https://anilist.co/manga/203419"
+  },
+  {
     "Title": "Celestial Bride",
-    "FAN FAV": 2.4,
+    "FAN FAV": 2.39,
     "Mean Score": 72,
     "Status": "FINISHED",
     "Start Year": 2020,
-    "Popularity": 835,
+    "Popularity": 836,
     "Favourites": 20,
     "AniList URL": "https://anilist.co/manga/124815"
   },
@@ -1140,16 +1160,6 @@
     "AniList URL": "https://anilist.co/manga/167580"
   },
   {
-    "Title": "The Golden Light of Dawn",
-    "FAN FAV": 2.39,
-    "Mean Score": 61,
-    "Status": "RELEASING",
-    "Start Year": 2021,
-    "Popularity": 837,
-    "Favourites": 20,
-    "AniList URL": "https://anilist.co/manga/145548"
-  },
-  {
     "Title": "Hawar in the Winter Garden",
     "FAN FAV": 2.39,
     "Mean Score": 73,
@@ -1160,32 +1170,42 @@
     "AniList URL": "https://anilist.co/manga/159394"
   },
   {
+    "Title": "The Golden Light of Dawn",
+    "FAN FAV": 2.39,
+    "Mean Score": 61,
+    "Status": "RELEASING",
+    "Start Year": 2021,
+    "Popularity": 838,
+    "Favourites": 20,
+    "AniList URL": "https://anilist.co/manga/145548"
+  },
+  {
+    "Title": "The Thousand-Faced Actor",
+    "FAN FAV": 2.38,
+    "Mean Score": 71,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 923,
+    "Favourites": 22,
+    "AniList URL": "https://anilist.co/manga/193298"
+  },
+  {
     "Title": "The Cup of Vengeance Is in Your Hands",
     "FAN FAV": 2.38,
     "Mean Score": 64,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 630,
+    "Popularity": 631,
     "Favourites": 15,
     "AniList URL": "https://anilist.co/manga/181991"
   },
   {
-    "Title": "All I Want is My Dream Home",
-    "FAN FAV": 2.38,
-    "Mean Score": 72,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 547,
-    "Favourites": 13,
-    "AniList URL": "https://anilist.co/manga/191701"
-  },
-  {
     "Title": "Must the Reincarnated Mother Always Die?",
-    "FAN FAV": 2.38,
+    "FAN FAV": 2.37,
     "Mean Score": 67,
     "Status": "RELEASING",
     "Start Year": 2025,
-    "Popularity": 926,
+    "Popularity": 927,
     "Favourites": 22,
     "AniList URL": "https://anilist.co/manga/188258"
   },
@@ -1195,7 +1215,7 @@
     "Mean Score": 68,
     "Status": "RELEASING",
     "Start Year": 2022,
-    "Popularity": 674,
+    "Popularity": 675,
     "Favourites": 16,
     "AniList URL": "https://anilist.co/manga/152214"
   },
@@ -1210,24 +1230,34 @@
     "AniList URL": "https://anilist.co/manga/186964"
   },
   {
+    "Title": "All I Want is My Dream Home",
+    "FAN FAV": 2.36,
+    "Mean Score": 72,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 550,
+    "Favourites": 13,
+    "AniList URL": "https://anilist.co/manga/191701"
+  },
+  {
+    "Title": "The Resurrection Boy",
+    "FAN FAV": 2.36,
+    "Mean Score": 74,
+    "Status": "RELEASING",
+    "Start Year": 2026,
+    "Popularity": 509,
+    "Favourites": 12,
+    "AniList URL": "https://anilist.co/manga/208091"
+  },
+  {
     "Title": "Ugly Duckling Complex",
     "FAN FAV": 2.35,
     "Mean Score": 68,
     "Status": "FINISHED",
     "Start Year": 2024,
-    "Popularity": 595,
+    "Popularity": 596,
     "Favourites": 14,
     "AniList URL": "https://anilist.co/manga/192680"
-  },
-  {
-    "Title": "The Perfect Contract",
-    "FAN FAV": 2.35,
-    "Mean Score": 72,
-    "Status": "FINISHED",
-    "Start Year": 2024,
-    "Popularity": 553,
-    "Favourites": 13,
-    "AniList URL": "https://anilist.co/manga/186311"
   },
   {
     "Title": "The Forbidden Marriage",
@@ -1270,12 +1300,22 @@
     "AniList URL": "https://anilist.co/manga/109439"
   },
   {
+    "Title": "The Forgotten Field",
+    "FAN FAV": 2.31,
+    "Mean Score": 80,
+    "Status": "RELEASING",
+    "Start Year": 2026,
+    "Popularity": 563,
+    "Favourites": 13,
+    "AniList URL": "https://anilist.co/manga/211558"
+  },
+  {
     "Title": "Not Your Monster-In-Law",
     "FAN FAV": 2.31,
     "Mean Score": 74,
     "Status": "RELEASING",
     "Start Year": 2025,
-    "Popularity": 821,
+    "Popularity": 823,
     "Favourites": 19,
     "AniList URL": "https://anilist.co/manga/188382"
   },
@@ -1310,26 +1350,6 @@
     "AniList URL": "https://anilist.co/manga/153860"
   },
   {
-    "Title": "Moralless Scandal",
-    "FAN FAV": 2.28,
-    "Mean Score": 75,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 701,
-    "Favourites": 16,
-    "AniList URL": "https://anilist.co/manga/192079"
-  },
-  {
-    "Title": "The Thousand-Faced Actor",
-    "FAN FAV": 2.28,
-    "Mean Score": 71,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 921,
-    "Favourites": 21,
-    "AniList URL": "https://anilist.co/manga/193298"
-  },
-  {
     "Title": "When the Black Moon Rises",
     "FAN FAV": 2.28,
     "Mean Score": 71,
@@ -1350,6 +1370,16 @@
     "AniList URL": "https://anilist.co/manga/154793"
   },
   {
+    "Title": "Moralless Scandal",
+    "FAN FAV": 2.27,
+    "Mean Score": 75,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 705,
+    "Favourites": 16,
+    "AniList URL": "https://anilist.co/manga/192079"
+  },
+  {
     "Title": "The Dawn in Moscow",
     "FAN FAV": 2.26,
     "Mean Score": 66,
@@ -1360,22 +1390,12 @@
     "AniList URL": "https://anilist.co/manga/136029"
   },
   {
-    "Title": "A Butterfly Through the Mist",
-    "FAN FAV": 2.26,
-    "Mean Score": 79,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 620,
-    "Favourites": 14,
-    "AniList URL": "https://anilist.co/manga/203419"
-  },
-  {
     "Title": "Pendant of the Nymph",
     "FAN FAV": 2.25,
     "Mean Score": 64,
     "Status": "FINISHED",
     "Start Year": 2019,
-    "Popularity": 621,
+    "Popularity": 622,
     "Favourites": 14,
     "AniList URL": "https://anilist.co/manga/141117"
   },
@@ -1391,11 +1411,11 @@
   },
   {
     "Title": "Beloved by My In-Laws",
-    "FAN FAV": 2.25,
+    "FAN FAV": 2.24,
     "Mean Score": 70,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 623,
+    "Popularity": 624,
     "Favourites": 14,
     "AniList URL": "https://anilist.co/manga/177093"
   },
@@ -1418,16 +1438,6 @@
     "Popularity": 669,
     "Favourites": 15,
     "AniList URL": "https://anilist.co/manga/121947"
-  },
-  {
-    "Title": "Wild Ranker",
-    "FAN FAV": 2.24,
-    "Mean Score": 70,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 893,
-    "Favourites": 20,
-    "AniList URL": "https://anilist.co/manga/193480"
   },
   {
     "Title": "Kindergarten for Divine Beasts",
@@ -1460,12 +1470,22 @@
     "AniList URL": "https://anilist.co/manga/107861"
   },
   {
-    "Title": "Sunyu of the Shadowless",
+    "Title": "Wild Ranker",
     "FAN FAV": 2.23,
+    "Mean Score": 70,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 896,
+    "Favourites": 20,
+    "AniList URL": "https://anilist.co/manga/193480"
+  },
+  {
+    "Title": "Sunyu of the Shadowless",
+    "FAN FAV": 2.22,
     "Mean Score": 65,
     "Status": "RELEASING",
     "Start Year": 2021,
-    "Popularity": 808,
+    "Popularity": 809,
     "Favourites": 18,
     "AniList URL": "https://anilist.co/manga/146155"
   },
@@ -1475,47 +1495,47 @@
     "Mean Score": 75,
     "Status": "FINISHED",
     "Start Year": 2018,
-    "Popularity": 854,
+    "Popularity": 855,
     "Favourites": 19,
     "AniList URL": "https://anilist.co/manga/115099"
   },
   {
     "Title": "The Runaway Extra and the Obsessive Duke",
-    "FAN FAV": 2.22,
+    "FAN FAV": 2.21,
     "Mean Score": 70,
     "Status": "RELEASING",
     "Start Year": 2025,
-    "Popularity": 541,
+    "Popularity": 542,
     "Favourites": 12,
     "AniList URL": "https://anilist.co/manga/195451"
   },
   {
     "Title": "I Will Protect My Tyrant Dad!",
-    "FAN FAV": 2.21,
+    "FAN FAV": 2.2,
     "Mean Score": 71,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 861,
+    "Popularity": 864,
     "Favourites": 19,
     "AniList URL": "https://anilist.co/manga/189149"
   },
   {
     "Title": "I Couldn't Care Less About the Original, I'm Just Trying to Survive",
-    "FAN FAV": 2.2,
+    "FAN FAV": 2.18,
     "Mean Score": 73,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 501,
+    "Popularity": 504,
     "Favourites": 11,
     "AniList URL": "https://anilist.co/manga/189205"
   },
   {
     "Title": "The Killer Whale's Comfort Penguin",
-    "FAN FAV": 2.19,
+    "FAN FAV": 2.18,
     "Mean Score": 72,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 503,
+    "Popularity": 504,
     "Favourites": 11,
     "AniList URL": "https://anilist.co/manga/188114"
   },
@@ -1528,6 +1548,16 @@
     "Popularity": 780,
     "Favourites": 17,
     "AniList URL": "https://anilist.co/manga/146707"
+  },
+  {
+    "Title": "No Marriage is Perfect",
+    "FAN FAV": 2.18,
+    "Mean Score": 60,
+    "Status": "FINISHED",
+    "Start Year": 2022,
+    "Popularity": 872,
+    "Favourites": 19,
+    "AniList URL": "https://anilist.co/manga/153659"
   },
   {
     "Title": "Idol House",
@@ -1565,39 +1595,39 @@
     "Mean Score": 74,
     "Status": "RELEASING",
     "Start Year": 2025,
-    "Popularity": 970,
+    "Popularity": 972,
     "Favourites": 21,
     "AniList URL": "https://anilist.co/manga/189680"
   },
   {
+    "Title": "Unstoppable Hayeong",
+    "FAN FAV": 2.15,
+    "Mean Score": 72,
+    "Status": "FINISHED",
+    "Start Year": 2022,
+    "Popularity": 557,
+    "Favourites": 12,
+    "AniList URL": "https://anilist.co/manga/170572"
+  },
+  {
     "Title": "When You're in Love",
-    "FAN FAV": 2.16,
+    "FAN FAV": 2.15,
     "Mean Score": 60,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 602,
+    "Popularity": 604,
     "Favourites": 13,
     "AniList URL": "https://anilist.co/manga/174359"
   },
   {
     "Title": "How to Turn You Around",
-    "FAN FAV": 2.16,
+    "FAN FAV": 2.15,
     "Mean Score": 72,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 556,
+    "Popularity": 558,
     "Favourites": 12,
     "AniList URL": "https://anilist.co/manga/161560"
-  },
-  {
-    "Title": "Unstoppable Hayeong",
-    "FAN FAV": 2.16,
-    "Mean Score": 72,
-    "Status": "FINISHED",
-    "Start Year": 2022,
-    "Popularity": 556,
-    "Favourites": 12,
-    "AniList URL": "https://anilist.co/manga/170572"
   },
   {
     "Title": "Celeb Lady",
@@ -1605,19 +1635,9 @@
     "Mean Score": 63,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 604,
+    "Popularity": 606,
     "Favourites": 13,
     "AniList URL": "https://anilist.co/manga/181035"
-  },
-  {
-    "Title": "How to Raise a Nine-Tailed Fox",
-    "FAN FAV": 2.14,
-    "Mean Score": 71,
-    "Status": "RELEASING",
-    "Start Year": 2023,
-    "Popularity": 701,
-    "Favourites": 15,
-    "AniList URL": "https://anilist.co/manga/172306"
   },
   {
     "Title": "This Wolf Won't Bite",
@@ -1640,6 +1660,16 @@
     "AniList URL": "https://anilist.co/manga/111106"
   },
   {
+    "Title": "How to Raise a Nine-Tailed Fox",
+    "FAN FAV": 2.13,
+    "Mean Score": 71,
+    "Status": "RELEASING",
+    "Start Year": 2023,
+    "Popularity": 703,
+    "Favourites": 15,
+    "AniList URL": "https://anilist.co/manga/172306"
+  },
+  {
     "Title": "Mr. Kang",
     "FAN FAV": 2.12,
     "Mean Score": 70,
@@ -1660,16 +1690,6 @@
     "AniList URL": "https://anilist.co/manga/168397"
   },
   {
-    "Title": "This Life's Universal Superstar",
-    "FAN FAV": 2.11,
-    "Mean Score": 68,
-    "Status": "FINISHED",
-    "Start Year": 2023,
-    "Popularity": 662,
-    "Favourites": 14,
-    "AniList URL": "https://anilist.co/manga/172142"
-  },
-  {
     "Title": "Vampire Chef",
     "FAN FAV": 2.11,
     "Mean Score": 67,
@@ -1680,16 +1700,6 @@
     "AniList URL": "https://anilist.co/manga/112639"
   },
   {
-    "Title": "Electrifying Confession",
-    "FAN FAV": 2.11,
-    "Mean Score": 70,
-    "Status": "RELEASING",
-    "Start Year": 2024,
-    "Popularity": 806,
-    "Favourites": 17,
-    "AniList URL": "https://anilist.co/manga/184579"
-  },
-  {
     "Title": "My Naughty Deity",
     "FAN FAV": 2.11,
     "Mean Score": 67,
@@ -1698,6 +1708,26 @@
     "Popularity": 522,
     "Favourites": 11,
     "AniList URL": "https://anilist.co/manga/176973"
+  },
+  {
+    "Title": "This Life's Universal Superstar",
+    "FAN FAV": 2.11,
+    "Mean Score": 68,
+    "Status": "FINISHED",
+    "Start Year": 2023,
+    "Popularity": 665,
+    "Favourites": 14,
+    "AniList URL": "https://anilist.co/manga/172142"
+  },
+  {
+    "Title": "Electrifying Confession",
+    "FAN FAV": 2.1,
+    "Mean Score": 70,
+    "Status": "RELEASING",
+    "Start Year": 2024,
+    "Popularity": 809,
+    "Favourites": 17,
+    "AniList URL": "https://anilist.co/manga/184579"
   },
   {
     "Title": "The Magic Genius of the Marquis House",
@@ -1720,16 +1750,6 @@
     "AniList URL": "https://anilist.co/manga/117680"
   },
   {
-    "Title": "The Princess Goes To School",
-    "FAN FAV": 2.1,
-    "Mean Score": 73,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 524,
-    "Favourites": 11,
-    "AniList URL": "https://anilist.co/manga/204275"
-  },
-  {
     "Title": "Beloved Golden Light Gratia",
     "FAN FAV": 2.08,
     "Mean Score": 66,
@@ -1738,6 +1758,16 @@
     "Popularity": 625,
     "Favourites": 13,
     "AniList URL": "https://anilist.co/manga/174746"
+  },
+  {
+    "Title": "The Princess Goes To School",
+    "FAN FAV": 2.08,
+    "Mean Score": 73,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 530,
+    "Favourites": 11,
+    "AniList URL": "https://anilist.co/manga/204275"
   },
   {
     "Title": "The Cellhouse Kingmaker's Playbook",
@@ -1760,59 +1790,49 @@
     "AniList URL": "https://anilist.co/manga/138575"
   },
   {
-    "Title": "No Marriage is Perfect",
-    "FAN FAV": 2.06,
-    "Mean Score": 60,
-    "Status": "FINISHED",
-    "Start Year": 2022,
-    "Popularity": 872,
-    "Favourites": 18,
-    "AniList URL": "https://anilist.co/manga/153659"
-  },
-  {
     "Title": "The Countdown of My Death Is Spamming My Status Window",
-    "FAN FAV": 2.06,
-    "Mean Score": 78,
+    "FAN FAV": 2.05,
+    "Mean Score": 77,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 632,
+    "Popularity": 634,
     "Favourites": 13,
     "AniList URL": "https://anilist.co/manga/186705"
   },
   {
-    "Title": "Kariel the Warrior",
-    "FAN FAV": 2.05,
-    "Mean Score": 75,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 779,
-    "Favourites": 16,
-    "AniList URL": "https://anilist.co/manga/197177"
-  },
-  {
     "Title": "Pick Me, My Queen",
-    "FAN FAV": 2.05,
+    "FAN FAV": 2.04,
     "Mean Score": 63,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 880,
+    "Popularity": 881,
     "Favourites": 18,
     "AniList URL": "https://anilist.co/manga/145558"
   },
   {
+    "Title": "Kariel the Warrior",
+    "FAN FAV": 2.03,
+    "Mean Score": 75,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 788,
+    "Favourites": 16,
+    "AniList URL": "https://anilist.co/manga/197177"
+  },
+  {
     "Title": "The Graymark",
-    "FAN FAV": 2.04,
+    "FAN FAV": 2.03,
     "Mean Score": 77,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 687,
+    "Popularity": 690,
     "Favourites": 14,
     "AniList URL": "https://anilist.co/manga/188184"
   },
   {
     "Title": "Ending This Marriage for Your Happiness",
     "FAN FAV": 2.02,
-    "Mean Score": 71,
+    "Mean Score": 70,
     "Status": "FINISHED",
     "Start Year": 2024,
     "Popularity": 692,
@@ -1831,23 +1851,13 @@
   },
   {
     "Title": "From Acting Genius to Top Idol!",
-    "FAN FAV": 2.01,
+    "FAN FAV": 2,
     "Mean Score": 72,
     "Status": "RELEASING",
     "Start Year": 2023,
-    "Popularity": 746,
+    "Popularity": 749,
     "Favourites": 15,
     "AniList URL": "https://anilist.co/manga/180252"
-  },
-  {
-    "Title": "You're Under My Skin!",
-    "FAN FAV": 1.99,
-    "Mean Score": 79,
-    "Status": "FINISHED",
-    "Start Year": 2021,
-    "Popularity": 805,
-    "Favourites": 16,
-    "AniList URL": "https://anilist.co/manga/152584"
   },
   {
     "Title": "The Wanderer",
@@ -1870,6 +1880,16 @@
     "AniList URL": "https://anilist.co/manga/181538"
   },
   {
+    "Title": "You're Under My Skin!",
+    "FAN FAV": 1.98,
+    "Mean Score": 79,
+    "Status": "FINISHED",
+    "Start Year": 2021,
+    "Popularity": 807,
+    "Favourites": 16,
+    "AniList URL": "https://anilist.co/manga/152584"
+  },
+  {
     "Title": "The Flower That Swallowed the Beast",
     "FAN FAV": 1.98,
     "Mean Score": 68,
@@ -1878,26 +1898,6 @@
     "Popularity": 808,
     "Favourites": 16,
     "AniList URL": "https://anilist.co/manga/186735"
-  },
-  {
-    "Title": "The Peaceful Life Of A Maid Who Hides Her Power And Enjoys It",
-    "FAN FAV": 1.98,
-    "Mean Score": 75,
-    "Status": "RELEASING",
-    "Start Year": 2026,
-    "Popularity": 556,
-    "Favourites": 11,
-    "AniList URL": "https://anilist.co/manga/210185"
-  },
-  {
-    "Title": "Black Dragon Romance",
-    "FAN FAV": 1.98,
-    "Mean Score": 69,
-    "Status": "FINISHED",
-    "Start Year": 2018,
-    "Popularity": 860,
-    "Favourites": 17,
-    "AniList URL": "https://anilist.co/manga/109450"
   },
   {
     "Title": "Delicious Blood",
@@ -1910,14 +1910,14 @@
     "AniList URL": "https://anilist.co/manga/134855"
   },
   {
-    "Title": "Zombie Revelation: 82-08",
+    "Title": "Black Dragon Romance",
     "FAN FAV": 1.97,
-    "Mean Score": 70,
-    "Status": "RELEASING",
-    "Start Year": 2023,
-    "Popularity": 711,
-    "Favourites": 14,
-    "AniList URL": "https://anilist.co/manga/179859"
+    "Mean Score": 69,
+    "Status": "FINISHED",
+    "Start Year": 2018,
+    "Popularity": 861,
+    "Favourites": 17,
+    "AniList URL": "https://anilist.co/manga/109450"
   },
   {
     "Title": "Land of the Crimson Moon",
@@ -1930,14 +1930,14 @@
     "AniList URL": "https://anilist.co/manga/147520"
   },
   {
-    "Title": "Taming My Master Mage",
+    "Title": "Zombie Revelation: 82-08",
     "FAN FAV": 1.96,
-    "Mean Score": 74,
+    "Mean Score": 70,
     "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 714,
+    "Start Year": 2023,
+    "Popularity": 713,
     "Favourites": 14,
-    "AniList URL": "https://anilist.co/manga/188291"
+    "AniList URL": "https://anilist.co/manga/179859"
   },
   {
     "Title": "11336",
@@ -1948,6 +1948,16 @@
     "Popularity": 868,
     "Favourites": 17,
     "AniList URL": "https://anilist.co/manga/175005"
+  },
+  {
+    "Title": "Taming My Master Mage",
+    "FAN FAV": 1.96,
+    "Mean Score": 74,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 715,
+    "Favourites": 14,
+    "AniList URL": "https://anilist.co/manga/188291"
   },
   {
     "Title": "No More Prince",
@@ -1970,26 +1980,6 @@
     "AniList URL": "https://anilist.co/manga/179452"
   },
   {
-    "Title": "Four Options",
-    "FAN FAV": 1.95,
-    "Mean Score": 77,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 769,
-    "Favourites": 15,
-    "AniList URL": "https://anilist.co/manga/196606"
-  },
-  {
-    "Title": "I Think I Married the Wrong Guy",
-    "FAN FAV": 1.95,
-    "Mean Score": 66,
-    "Status": "RELEASING",
-    "Start Year": 2023,
-    "Popularity": 513,
-    "Favourites": 10,
-    "AniList URL": "https://anilist.co/manga/178836"
-  },
-  {
     "Title": "Dear Future You",
     "FAN FAV": 1.95,
     "Mean Score": 72,
@@ -1998,6 +1988,16 @@
     "Popularity": 565,
     "Favourites": 11,
     "AniList URL": "https://anilist.co/manga/104309"
+  },
+  {
+    "Title": "I Think I Married the Wrong Guy",
+    "FAN FAV": 1.95,
+    "Mean Score": 66,
+    "Status": "RELEASING",
+    "Start Year": 2023,
+    "Popularity": 514,
+    "Favourites": 10,
+    "AniList URL": "https://anilist.co/manga/178836"
   },
   {
     "Title": "The Last Straw",
@@ -2010,14 +2010,34 @@
     "AniList URL": "https://anilist.co/manga/170638"
   },
   {
-    "Title": "The Promise Isn't Mine",
+    "Title": "Four Options",
     "FAN FAV": 1.94,
-    "Mean Score": 70,
-    "Status": "FINISHED",
-    "Start Year": 2024,
-    "Popularity": 981,
-    "Favourites": 19,
-    "AniList URL": "https://anilist.co/manga/177170"
+    "Mean Score": 77,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 772,
+    "Favourites": 15,
+    "AniList URL": "https://anilist.co/manga/196606"
+  },
+  {
+    "Title": "The Peaceful Life Of A Maid Who Hides Her Power And Enjoys It",
+    "FAN FAV": 1.94,
+    "Mean Score": 75,
+    "Status": "RELEASING",
+    "Start Year": 2026,
+    "Popularity": 567,
+    "Favourites": 11,
+    "AniList URL": "https://anilist.co/manga/210185"
+  },
+  {
+    "Title": "I Became A Married Man in Another World",
+    "FAN FAV": 1.94,
+    "Mean Score": 80,
+    "Status": "RELEASING",
+    "Start Year": 2026,
+    "Popularity": 722,
+    "Favourites": 14,
+    "AniList URL": "https://anilist.co/manga/211510"
   },
   {
     "Title": "Trophy Husband",
@@ -2030,34 +2050,14 @@
     "AniList URL": "https://anilist.co/manga/163403"
   },
   {
-    "Title": "Adopted by My Enemy",
+    "Title": "The Promise Isn't Mine",
     "FAN FAV": 1.93,
     "Mean Score": 70,
-    "Status": "RELEASING",
+    "Status": "FINISHED",
     "Start Year": 2024,
-    "Popularity": 571,
-    "Favourites": 11,
-    "AniList URL": "https://anilist.co/manga/181066"
-  },
-  {
-    "Title": "Part-Time Grim Reaper",
-    "FAN FAV": 1.93,
-    "Mean Score": 64,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 883,
-    "Favourites": 17,
-    "AniList URL": "https://anilist.co/manga/191133"
-  },
-  {
-    "Title": "Devilish Son-In-Law",
-    "FAN FAV": 1.93,
-    "Mean Score": 71,
-    "Status": "RELEASING",
-    "Start Year": 2024,
-    "Popularity": 987,
+    "Popularity": 982,
     "Favourites": 19,
-    "AniList URL": "https://anilist.co/manga/181429"
+    "AniList URL": "https://anilist.co/manga/177170"
   },
   {
     "Title": "The Newlywed Game: How to Save My Husband",
@@ -2070,14 +2070,44 @@
     "AniList URL": "https://anilist.co/manga/125382"
   },
   {
+    "Title": "Part-Time Grim Reaper",
+    "FAN FAV": 1.92,
+    "Mean Score": 64,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 884,
+    "Favourites": 17,
+    "AniList URL": "https://anilist.co/manga/191133"
+  },
+  {
+    "Title": "Devilish Son-In-Law",
+    "FAN FAV": 1.92,
+    "Mean Score": 71,
+    "Status": "RELEASING",
+    "Start Year": 2024,
+    "Popularity": 989,
+    "Favourites": 19,
+    "AniList URL": "https://anilist.co/manga/181429"
+  },
+  {
     "Title": "My Sister's Private Life",
     "FAN FAV": 1.92,
     "Mean Score": 71,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 676,
+    "Popularity": 677,
     "Favourites": 13,
     "AniList URL": "https://anilist.co/manga/170740"
+  },
+  {
+    "Title": "Adopted by My Enemy",
+    "FAN FAV": 1.92,
+    "Mean Score": 70,
+    "Status": "RELEASING",
+    "Start Year": 2024,
+    "Popularity": 573,
+    "Favourites": 11,
+    "AniList URL": "https://anilist.co/manga/181066"
   },
   {
     "Title": "Trapped With the Male Lead in a Horror Game",
@@ -2085,19 +2115,9 @@
     "Mean Score": 70,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 991,
+    "Popularity": 992,
     "Favourites": 19,
     "AniList URL": "https://anilist.co/manga/180546"
-  },
-  {
-    "Title": "Return of the Namgung Clan's Granddaughter",
-    "FAN FAV": 1.91,
-    "Mean Score": 70,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 679,
-    "Favourites": 13,
-    "AniList URL": "https://anilist.co/manga/197164"
   },
   {
     "Title": "Gorgon",
@@ -2108,6 +2128,16 @@
     "Popularity": 784,
     "Favourites": 15,
     "AniList URL": "https://anilist.co/manga/108954"
+  },
+  {
+    "Title": "Return of the Namgung Clan's Granddaughter",
+    "FAN FAV": 1.9,
+    "Mean Score": 71,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 684,
+    "Favourites": 13,
+    "AniList URL": "https://anilist.co/manga/197164"
   },
   {
     "Title": "The Empress’s Two Wolves",
@@ -2125,7 +2155,7 @@
     "Mean Score": 70,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 582,
+    "Popularity": 583,
     "Favourites": 11,
     "AniList URL": "https://anilist.co/manga/155944"
   },
@@ -2145,19 +2175,9 @@
     "Mean Score": 69,
     "Status": "RELEASING",
     "Start Year": 2023,
-    "Popularity": 531,
+    "Popularity": 533,
     "Favourites": 10,
     "AniList URL": "https://anilist.co/manga/174514"
-  },
-  {
-    "Title": "Reincarnated into a Cursed Game",
-    "FAN FAV": 1.88,
-    "Mean Score": 65,
-    "Status": "FINISHED",
-    "Start Year": 2024,
-    "Popularity": 853,
-    "Favourites": 16,
-    "AniList URL": "https://anilist.co/manga/188440"
   },
   {
     "Title": "Anything But Marriage, Mr. Villain!",
@@ -2165,19 +2185,19 @@
     "Mean Score": 71,
     "Status": "RELEASING",
     "Start Year": 2025,
-    "Popularity": 907,
+    "Popularity": 908,
     "Favourites": 17,
     "AniList URL": "https://anilist.co/manga/188072"
   },
   {
-    "Title": "So I Married the Abandoned Prince",
-    "FAN FAV": 1.86,
+    "Title": "Reincarnated into a Cursed Game",
+    "FAN FAV": 1.87,
     "Mean Score": 65,
     "Status": "FINISHED",
-    "Start Year": 2023,
-    "Popularity": 698,
-    "Favourites": 13,
-    "AniList URL": "https://anilist.co/manga/164600"
+    "Start Year": 2024,
+    "Popularity": 856,
+    "Favourites": 16,
+    "AniList URL": "https://anilist.co/manga/188440"
   },
   {
     "Title": "The Bird Empress",
@@ -2188,6 +2208,16 @@
     "Popularity": 645,
     "Favourites": 12,
     "AniList URL": "https://anilist.co/manga/174726"
+  },
+  {
+    "Title": "So I Married the Abandoned Prince",
+    "FAN FAV": 1.86,
+    "Mean Score": 65,
+    "Status": "FINISHED",
+    "Start Year": 2023,
+    "Popularity": 699,
+    "Favourites": 13,
+    "AniList URL": "https://anilist.co/manga/164600"
   },
   {
     "Title": "The Devil Swordsman's Island",
@@ -2215,19 +2245,9 @@
     "Mean Score": 58,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 756,
+    "Popularity": 757,
     "Favourites": 14,
     "AniList URL": "https://anilist.co/manga/158605"
-  },
-  {
-    "Title": "The Duke's Obsession With His Wife",
-    "FAN FAV": 1.85,
-    "Mean Score": 68,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 919,
-    "Favourites": 17,
-    "AniList URL": "https://anilist.co/manga/188111"
   },
   {
     "Title": "Second Lead Complex",
@@ -2238,6 +2258,16 @@
     "Popularity": 595,
     "Favourites": 11,
     "AniList URL": "https://anilist.co/manga/121474"
+  },
+  {
+    "Title": "The Duke's Obsession With His Wife",
+    "FAN FAV": 1.85,
+    "Mean Score": 68,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 921,
+    "Favourites": 17,
+    "AniList URL": "https://anilist.co/manga/188111"
   },
   {
     "Title": "I Became the Younger Sister of a Regretful Obsessive Male Lead",
@@ -2275,7 +2305,7 @@
     "Mean Score": 61,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 982,
+    "Popularity": 983,
     "Favourites": 18,
     "AniList URL": "https://anilist.co/manga/160710"
   },
@@ -2331,11 +2361,11 @@
   },
   {
     "Title": "My Fake Crush",
-    "FAN FAV": 1.82,
+    "FAN FAV": 1.81,
     "Mean Score": 71,
     "Status": "RELEASING",
     "Start Year": 2025,
-    "Popularity": 659,
+    "Popularity": 662,
     "Favourites": 12,
     "AniList URL": "https://anilist.co/manga/189288"
   },
@@ -2351,11 +2381,11 @@
   },
   {
     "Title": "Defense Breaker",
-    "FAN FAV": 1.81,
+    "FAN FAV": 1.8,
     "Mean Score": 61,
     "Status": "RELEASING",
     "Start Year": 2025,
-    "Popularity": 774,
+    "Popularity": 776,
     "Favourites": 14,
     "AniList URL": "https://anilist.co/manga/196019"
   },
@@ -2450,16 +2480,6 @@
     "AniList URL": "https://anilist.co/manga/128900"
   },
   {
-    "Title": "I Became A Married Man in Another World",
-    "FAN FAV": 1.77,
-    "Mean Score": 80,
-    "Status": "RELEASING",
-    "Start Year": 2026,
-    "Popularity": 678,
-    "Favourites": 12,
-    "AniList URL": "https://anilist.co/manga/211510"
-  },
-  {
     "Title": "Mistaken as the Monster Duke's Wife",
     "FAN FAV": 1.76,
     "Mean Score": 74,
@@ -2470,22 +2490,12 @@
     "AniList URL": "https://anilist.co/manga/181997"
   },
   {
-    "Title": "Marchioness Maron",
-    "FAN FAV": 1.76,
-    "Mean Score": 77,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 739,
-    "Favourites": 13,
-    "AniList URL": "https://anilist.co/manga/197369"
-  },
-  {
     "Title": "The Villains' Little Heiress",
-    "FAN FAV": 1.76,
+    "FAN FAV": 1.75,
     "Mean Score": 73,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 797,
+    "Popularity": 798,
     "Favourites": 14,
     "AniList URL": "https://anilist.co/manga/176310"
   },
@@ -2510,16 +2520,6 @@
     "AniList URL": "https://anilist.co/manga/183232"
   },
   {
-    "Title": "The Book-Eating Actor",
-    "FAN FAV": 1.75,
-    "Mean Score": 62,
-    "Status": "FINISHED",
-    "Start Year": 2025,
-    "Popularity": 571,
-    "Favourites": 10,
-    "AniList URL": "https://anilist.co/manga/189307"
-  },
-  {
     "Title": "Confessions",
     "FAN FAV": 1.75,
     "Mean Score": 71,
@@ -2530,44 +2530,34 @@
     "AniList URL": "https://anilist.co/manga/141488"
   },
   {
+    "Title": "Marchioness Maron",
+    "FAN FAV": 1.75,
+    "Mean Score": 77,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 743,
+    "Favourites": 13,
+    "AniList URL": "https://anilist.co/manga/197369"
+  },
+  {
     "Title": "To You Who Doesn't Love Me",
     "FAN FAV": 1.75,
-    "Mean Score": 46,
+    "Mean Score": 47,
     "Status": "FINISHED",
     "Start Year": 2021,
-    "Popularity": 629,
+    "Popularity": 630,
     "Favourites": 11,
     "AniList URL": "https://anilist.co/manga/139556"
   },
   {
-    "Title": "Everyone's Princess",
+    "Title": "The Book-Eating Actor",
     "FAN FAV": 1.75,
-    "Mean Score": 66,
-    "Status": "RELEASING",
-    "Start Year": 2023,
+    "Mean Score": 62,
+    "Status": "FINISHED",
+    "Start Year": 2025,
     "Popularity": 573,
     "Favourites": 10,
-    "AniList URL": "https://anilist.co/manga/168956"
-  },
-  {
-    "Title": "Does Love need a Translator?",
-    "FAN FAV": 1.74,
-    "Mean Score": 70,
-    "Status": "FINISHED",
-    "Start Year": 2020,
-    "Popularity": 574,
-    "Favourites": 10,
-    "AniList URL": "https://anilist.co/manga/117088"
-  },
-  {
-    "Title": "Blade of Winds and Thunders",
-    "FAN FAV": 1.74,
-    "Mean Score": 67,
-    "Status": "FINISHED",
-    "Start Year": 2022,
-    "Popularity": 574,
-    "Favourites": 10,
-    "AniList URL": "https://anilist.co/manga/148504"
+    "AniList URL": "https://anilist.co/manga/189307"
   },
   {
     "Title": "Living as an Emperor's Fiance",
@@ -2580,24 +2570,34 @@
     "AniList URL": "https://anilist.co/manga/109211"
   },
   {
-    "Title": "Becoming A Family With The Duke and His Dear Son",
+    "Title": "Does Love need a Translator?",
     "FAN FAV": 1.74,
     "Mean Score": 70,
     "Status": "FINISHED",
-    "Start Year": 2024,
-    "Popularity": 920,
-    "Favourites": 16,
-    "AniList URL": "https://anilist.co/manga/182596"
+    "Start Year": 2020,
+    "Popularity": 575,
+    "Favourites": 10,
+    "AniList URL": "https://anilist.co/manga/117088"
   },
   {
-    "Title": "My Sister Picked Up the Male Lead",
+    "Title": "Blade of Winds and Thunders",
     "FAN FAV": 1.74,
-    "Mean Score": 63,
+    "Mean Score": 67,
     "Status": "FINISHED",
-    "Start Year": 2019,
-    "Popularity": 634,
-    "Favourites": 11,
-    "AniList URL": "https://anilist.co/manga/121635"
+    "Start Year": 2022,
+    "Popularity": 575,
+    "Favourites": 10,
+    "AniList URL": "https://anilist.co/manga/148504"
+  },
+  {
+    "Title": "Everyone's Princess",
+    "FAN FAV": 1.74,
+    "Mean Score": 66,
+    "Status": "RELEASING",
+    "Start Year": 2023,
+    "Popularity": 575,
+    "Favourites": 10,
+    "AniList URL": "https://anilist.co/manga/168956"
   },
   {
     "Title": "I'm the One Who Died, but the Hero Went Crazy",
@@ -2620,14 +2620,24 @@
     "AniList URL": "https://anilist.co/manga/123758"
   },
   {
-    "Title": "Here Reigns the Vengeful Villainess",
+    "Title": "My Sister Picked Up the Male Lead",
     "FAN FAV": 1.73,
-    "Mean Score": 69,
+    "Mean Score": 63,
     "Status": "FINISHED",
-    "Start Year": 2023,
-    "Popularity": 577,
-    "Favourites": 10,
-    "AniList URL": "https://anilist.co/manga/184526"
+    "Start Year": 2019,
+    "Popularity": 635,
+    "Favourites": 11,
+    "AniList URL": "https://anilist.co/manga/121635"
+  },
+  {
+    "Title": "Becoming A Family With The Duke and His Dear Son",
+    "FAN FAV": 1.73,
+    "Mean Score": 70,
+    "Status": "FINISHED",
+    "Start Year": 2024,
+    "Popularity": 924,
+    "Favourites": 16,
+    "AniList URL": "https://anilist.co/manga/182596"
   },
   {
     "Title": "I'd Rather Take the Father",
@@ -2640,6 +2650,16 @@
     "AniList URL": "https://anilist.co/manga/191760"
   },
   {
+    "Title": "Here Reigns the Vengeful Villainess",
+    "FAN FAV": 1.73,
+    "Mean Score": 69,
+    "Status": "FINISHED",
+    "Start Year": 2023,
+    "Popularity": 579,
+    "Favourites": 10,
+    "AniList URL": "https://anilist.co/manga/184526"
+  },
+  {
     "Title": "Princess of the Animals",
     "FAN FAV": 1.72,
     "Mean Score": 64,
@@ -2648,16 +2668,6 @@
     "Popularity": 697,
     "Favourites": 12,
     "AniList URL": "https://anilist.co/manga/152574"
-  },
-  {
-    "Title": "My Second Husband",
-    "FAN FAV": 1.72,
-    "Mean Score": 69,
-    "Status": "FINISHED",
-    "Start Year": 2022,
-    "Popularity": 641,
-    "Favourites": 11,
-    "AniList URL": "https://anilist.co/manga/152967"
   },
   {
     "Title": "Bunny and Her Oppas",
@@ -2670,16 +2680,6 @@
     "AniList URL": "https://anilist.co/manga/120903"
   },
   {
-    "Title": "Raffine’s Plan: Save My Favorite Character",
-    "FAN FAV": 1.72,
-    "Mean Score": 67,
-    "Status": "FINISHED",
-    "Start Year": 2023,
-    "Popularity": 758,
-    "Favourites": 13,
-    "AniList URL": "https://anilist.co/manga/168507"
-  },
-  {
     "Title": "The Greatest Wolf of My Life",
     "FAN FAV": 1.71,
     "Mean Score": 70,
@@ -2690,14 +2690,24 @@
     "AniList URL": "https://anilist.co/manga/101197"
   },
   {
-    "Title": "Obsessed With Hazel the Sweet Witch",
+    "Title": "My Second Husband",
     "FAN FAV": 1.71,
-    "Mean Score": 73,
-    "Status": "RELEASING",
-    "Start Year": 2024,
-    "Popularity": 935,
-    "Favourites": 16,
-    "AniList URL": "https://anilist.co/manga/182040"
+    "Mean Score": 69,
+    "Status": "FINISHED",
+    "Start Year": 2022,
+    "Popularity": 642,
+    "Favourites": 11,
+    "AniList URL": "https://anilist.co/manga/152967"
+  },
+  {
+    "Title": "Raffine’s Plan: Save My Favorite Character",
+    "FAN FAV": 1.71,
+    "Mean Score": 67,
+    "Status": "FINISHED",
+    "Start Year": 2023,
+    "Popularity": 759,
+    "Favourites": 13,
+    "AniList URL": "https://anilist.co/manga/168507"
   },
   {
     "Title": "Renia, the Crazy Princess",
@@ -2730,6 +2740,16 @@
     "AniList URL": "https://anilist.co/manga/168354"
   },
   {
+    "Title": "Obsessed With Hazel the Sweet Witch",
+    "FAN FAV": 1.7,
+    "Mean Score": 73,
+    "Status": "RELEASING",
+    "Start Year": 2024,
+    "Popularity": 941,
+    "Favourites": 16,
+    "AniList URL": "https://anilist.co/manga/182040"
+  },
+  {
     "Title": "My Dazzling Downfall",
     "FAN FAV": 1.7,
     "Mean Score": 72,
@@ -2738,16 +2758,6 @@
     "Popularity": 530,
     "Favourites": 9,
     "AniList URL": "https://anilist.co/manga/147098"
-  },
-  {
-    "Title": "It Was All You",
-    "FAN FAV": 1.69,
-    "Mean Score": 67,
-    "Status": "FINISHED",
-    "Start Year": 2021,
-    "Popularity": 649,
-    "Favourites": 11,
-    "AniList URL": "https://anilist.co/manga/133988"
   },
   {
     "Title": "Be By My Side",
@@ -2770,14 +2780,14 @@
     "AniList URL": "https://anilist.co/manga/141105"
   },
   {
-    "Title": "Rookie but One-in-a-Million Actor",
+    "Title": "It Was All You",
     "FAN FAV": 1.69,
-    "Mean Score": 69,
-    "Status": "RELEASING",
-    "Start Year": 2024,
+    "Mean Score": 67,
+    "Status": "FINISHED",
+    "Start Year": 2021,
     "Popularity": 650,
     "Favourites": 11,
-    "AniList URL": "https://anilist.co/manga/183005"
+    "AniList URL": "https://anilist.co/manga/133988"
   },
   {
     "Title": "The Tyrant's Whereabouts",
@@ -2810,12 +2820,22 @@
     "AniList URL": "https://anilist.co/manga/109454"
   },
   {
+    "Title": "Rookie but One-in-a-Million Actor",
+    "FAN FAV": 1.69,
+    "Mean Score": 69,
+    "Status": "RELEASING",
+    "Start Year": 2024,
+    "Popularity": 651,
+    "Favourites": 11,
+    "AniList URL": "https://anilist.co/manga/183005"
+  },
+  {
     "Title": "Hiding the Archduke's Humiliating History",
     "FAN FAV": 1.69,
     "Mean Score": 66,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 888,
+    "Popularity": 889,
     "Favourites": 15,
     "AniList URL": "https://anilist.co/manga/165556"
   },
@@ -2828,16 +2848,6 @@
     "Popularity": 598,
     "Favourites": 10,
     "AniList URL": "https://anilist.co/manga/161920"
-  },
-  {
-    "Title": "Go Deok-Chun-ui Food Truck",
-    "FAN FAV": 1.67,
-    "Mean Score": 69,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 718,
-    "Favourites": 12,
-    "AniList URL": "https://anilist.co/manga/203228"
   },
   {
     "Title": "Love of Mine",
@@ -2860,34 +2870,24 @@
     "AniList URL": "https://anilist.co/manga/127072"
   },
   {
-    "Title": "The Turn-Based Mage",
-    "FAN FAV": 1.66,
-    "Mean Score": 67,
-    "Status": "FINISHED",
-    "Start Year": 2025,
-    "Popularity": 963,
-    "Favourites": 16,
-    "AniList URL": "https://anilist.co/manga/195924"
-  },
-  {
-    "Title": "Archmage Curriculum",
-    "FAN FAV": 1.66,
-    "Mean Score": 77,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 904,
-    "Favourites": 15,
-    "AniList URL": "https://anilist.co/manga/203830"
-  },
-  {
     "Title": "The New Hire is the Demon Lord",
     "FAN FAV": 1.65,
     "Mean Score": 69,
     "Status": "FINISHED",
     "Start Year": 2024,
-    "Popularity": 846,
+    "Popularity": 847,
     "Favourites": 14,
     "AniList URL": "https://anilist.co/manga/181515"
+  },
+  {
+    "Title": "The Turn-Based Mage",
+    "FAN FAV": 1.65,
+    "Mean Score": 67,
+    "Status": "FINISHED",
+    "Start Year": 2025,
+    "Popularity": 969,
+    "Favourites": 16,
+    "AniList URL": "https://anilist.co/manga/195924"
   },
   {
     "Title": "Fiance in Crisis",
@@ -2898,6 +2898,16 @@
     "Popularity": 546,
     "Favourites": 9,
     "AniList URL": "https://anilist.co/manga/145607"
+  },
+  {
+    "Title": "Go Deok-Chun-ui Food Truck",
+    "FAN FAV": 1.64,
+    "Mean Score": 69,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 730,
+    "Favourites": 12,
+    "AniList URL": "https://anilist.co/manga/203228"
   },
   {
     "Title": "My Life As A Loser 2",
@@ -2930,6 +2940,26 @@
     "AniList URL": "https://anilist.co/manga/162887"
   },
   {
+    "Title": "Charming You",
+    "FAN FAV": 1.63,
+    "Mean Score": 57,
+    "Status": "FINISHED",
+    "Start Year": 2021,
+    "Popularity": 553,
+    "Favourites": 9,
+    "AniList URL": "https://anilist.co/manga/150664"
+  },
+  {
+    "Title": "Archmage Curriculum",
+    "FAN FAV": 1.63,
+    "Mean Score": 77,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 922,
+    "Favourites": 15,
+    "AniList URL": "https://anilist.co/manga/203830"
+  },
+  {
     "Title": "I Spy a Married Life",
     "FAN FAV": 1.63,
     "Mean Score": 70,
@@ -2938,16 +2968,6 @@
     "Popularity": 922,
     "Favourites": 15,
     "AniList URL": "https://anilist.co/manga/170543"
-  },
-  {
-    "Title": "Charming You",
-    "FAN FAV": 1.62,
-    "Mean Score": 57,
-    "Status": "FINISHED",
-    "Start Year": 2021,
-    "Popularity": 554,
-    "Favourites": 9,
-    "AniList URL": "https://anilist.co/manga/150664"
   },
   {
     "Title": "I Tamed the Male Lead Who Tried to Kill Me",
@@ -2960,16 +2980,6 @@
     "AniList URL": "https://anilist.co/manga/161618"
   },
   {
-    "Title": "Baby Pharmacist Princess",
-    "FAN FAV": 1.62,
-    "Mean Score": 67,
-    "Status": "FINISHED",
-    "Start Year": 2023,
-    "Popularity": 986,
-    "Favourites": 16,
-    "AniList URL": "https://anilist.co/manga/174730"
-  },
-  {
     "Title": "Will You Be My Male Lead?",
     "FAN FAV": 1.62,
     "Mean Score": 66,
@@ -2978,6 +2988,16 @@
     "Popularity": 678,
     "Favourites": 11,
     "AniList URL": "https://anilist.co/manga/151181"
+  },
+  {
+    "Title": "Baby Pharmacist Princess",
+    "FAN FAV": 1.62,
+    "Mean Score": 67,
+    "Status": "FINISHED",
+    "Start Year": 2023,
+    "Popularity": 987,
+    "Favourites": 16,
+    "AniList URL": "https://anilist.co/manga/174730"
   },
   {
     "Title": "The Sea Captain's Bride",
@@ -3010,16 +3030,6 @@
     "AniList URL": "https://anilist.co/manga/174570"
   },
   {
-    "Title": "What the Evil Dragon Lives For",
-    "FAN FAV": 1.6,
-    "Mean Score": 69,
-    "Status": "FINISHED",
-    "Start Year": 2023,
-    "Popularity": 873,
-    "Favourites": 14,
-    "AniList URL": "https://anilist.co/manga/164602"
-  },
-  {
     "Title": "Unbalance x Unbalance: After Story",
     "FAN FAV": 1.6,
     "Mean Score": 61,
@@ -3028,6 +3038,16 @@
     "Popularity": 686,
     "Favourites": 11,
     "AniList URL": "https://anilist.co/manga/105346"
+  },
+  {
+    "Title": "What the Evil Dragon Lives For",
+    "FAN FAV": 1.6,
+    "Mean Score": 69,
+    "Status": "FINISHED",
+    "Start Year": 2023,
+    "Popularity": 875,
+    "Favourites": 14,
+    "AniList URL": "https://anilist.co/manga/164602"
   },
   {
     "Title": "Shadow Bride",
@@ -3065,7 +3085,7 @@
     "Mean Score": 60,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 569,
+    "Popularity": 570,
     "Favourites": 9,
     "AniList URL": "https://anilist.co/manga/155298"
   },
@@ -3075,7 +3095,7 @@
     "Mean Score": 68,
     "Status": "FINISHED",
     "Start Year": 2024,
-    "Popularity": 764,
+    "Popularity": 766,
     "Favourites": 12,
     "AniList URL": "https://anilist.co/manga/181589"
   },
@@ -3095,7 +3115,7 @@
     "Mean Score": 71,
     "Status": "FINISHED",
     "Start Year": 2019,
-    "Popularity": 639,
+    "Popularity": 640,
     "Favourites": 10,
     "AniList URL": "https://anilist.co/manga/101112"
   },
@@ -3141,11 +3161,11 @@
   },
   {
     "Title": "Don't Give the Book Your Heart",
-    "FAN FAV": 1.55,
+    "FAN FAV": 1.54,
     "Mean Score": 63,
     "Status": "FINISHED",
     "Start Year": 2021,
-    "Popularity": 906,
+    "Popularity": 907,
     "Favourites": 14,
     "AniList URL": "https://anilist.co/manga/135544"
   },
@@ -3161,21 +3181,21 @@
   },
   {
     "Title": "Race to Steal the Emperor's Heart",
-    "FAN FAV": 1.53,
+    "FAN FAV": 1.52,
     "Mean Score": 67,
     "Status": "FINISHED",
     "Start Year": 2021,
-    "Popularity": 655,
+    "Popularity": 656,
     "Favourites": 10,
     "AniList URL": "https://anilist.co/manga/153078"
   },
   {
     "Title": "Escape the Original Male Lead!",
-    "FAN FAV": 1.53,
+    "FAN FAV": 1.52,
     "Mean Score": 61,
     "Status": "RELEASING",
     "Start Year": 2023,
-    "Popularity": 852,
+    "Popularity": 853,
     "Favourites": 13,
     "AniList URL": "https://anilist.co/manga/164598"
   },
@@ -3210,24 +3230,24 @@
     "AniList URL": "https://anilist.co/manga/139340"
   },
   {
-    "Title": "My Brother and His Gift",
-    "FAN FAV": 1.51,
-    "Mean Score": 74,
-    "Status": "RELEASING",
-    "Start Year": 2023,
-    "Popularity": 529,
-    "Favourites": 8,
-    "AniList URL": "https://anilist.co/manga/186688"
-  },
-  {
     "Title": "The Villainous Tyrant has Returned",
     "FAN FAV": 1.51,
     "Mean Score": 68,
     "Status": "FINISHED",
     "Start Year": 2024,
-    "Popularity": 992,
+    "Popularity": 994,
     "Favourites": 15,
     "AniList URL": "https://anilist.co/manga/180411"
+  },
+  {
+    "Title": "My Brother and His Gift",
+    "FAN FAV": 1.51,
+    "Mean Score": 74,
+    "Status": "RELEASING",
+    "Start Year": 2023,
+    "Popularity": 531,
+    "Favourites": 8,
+    "AniList URL": "https://anilist.co/manga/186688"
   },
   {
     "Title": "The Invincible of the East",
@@ -3240,16 +3260,6 @@
     "AniList URL": "https://anilist.co/manga/172392"
   },
   {
-    "Title": "The Regressed Doctor Just Wanted to Live Quietly",
-    "FAN FAV": 1.51,
-    "Mean Score": 73,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 598,
-    "Favourites": 9,
-    "AniList URL": "https://anilist.co/manga/188731"
-  },
-  {
     "Title": "Faking It In Style",
     "FAN FAV": 1.5,
     "Mean Score": 68,
@@ -3258,6 +3268,26 @@
     "Popularity": 997,
     "Favourites": 15,
     "AniList URL": "https://anilist.co/manga/128170"
+  },
+  {
+    "Title": "Only I Have an EX-Grade Summon",
+    "FAN FAV": 1.5,
+    "Mean Score": 73,
+    "Status": "RELEASING",
+    "Start Year": 2026,
+    "Popularity": 865,
+    "Favourites": 13,
+    "AniList URL": "https://anilist.co/manga/210414"
+  },
+  {
+    "Title": "The Regressed Doctor Just Wanted to Live Quietly",
+    "FAN FAV": 1.5,
+    "Mean Score": 73,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 599,
+    "Favourites": 9,
+    "AniList URL": "https://anilist.co/manga/188731"
   },
   {
     "Title": "High School Queen",
@@ -3295,7 +3325,7 @@
     "Mean Score": 69,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 943,
+    "Popularity": 945,
     "Favourites": 14,
     "AniList URL": "https://anilist.co/manga/182595"
   },
@@ -3305,29 +3335,9 @@
     "Mean Score": 59,
     "Status": "FINISHED",
     "Start Year": 2019,
-    "Popularity": 609,
+    "Popularity": 610,
     "Favourites": 9,
     "AniList URL": "https://anilist.co/manga/127051"
-  },
-  {
-    "Title": "My Stepdaughter is a Bunny",
-    "FAN FAV": 1.47,
-    "Mean Score": 62,
-    "Status": "RELEASING",
-    "Start Year": 2024,
-    "Popularity": 611,
-    "Favourites": 9,
-    "AniList URL": "https://anilist.co/manga/180470"
-  },
-  {
-    "Title": "Only I Have an EX-Grade Summon",
-    "FAN FAV": 1.47,
-    "Mean Score": 73,
-    "Status": "RELEASING",
-    "Start Year": 2026,
-    "Popularity": 815,
-    "Favourites": 12,
-    "AniList URL": "https://anilist.co/manga/210414"
   },
   {
     "Title": "The Grand Duke of the North",
@@ -3340,6 +3350,16 @@
     "AniList URL": "https://anilist.co/manga/182589"
   },
   {
+    "Title": "My Stepdaughter is a Bunny",
+    "FAN FAV": 1.47,
+    "Mean Score": 62,
+    "Status": "RELEASING",
+    "Start Year": 2024,
+    "Popularity": 613,
+    "Favourites": 9,
+    "AniList URL": "https://anilist.co/manga/180470"
+  },
+  {
     "Title": "The Vanished Duchess",
     "FAN FAV": 1.47,
     "Mean Score": 60,
@@ -3348,16 +3368,6 @@
     "Popularity": 613,
     "Favourites": 9,
     "AniList URL": "https://anilist.co/manga/151050"
-  },
-  {
-    "Title": "The Male Lead is Mine!",
-    "FAN FAV": 1.46,
-    "Mean Score": 63,
-    "Status": "FINISHED",
-    "Start Year": 2022,
-    "Popularity": 888,
-    "Favourites": 13,
-    "AniList URL": "https://anilist.co/manga/150066"
   },
   {
     "Title": "Good Luck, Hero!",
@@ -3380,6 +3390,16 @@
     "AniList URL": "https://anilist.co/manga/131258"
   },
   {
+    "Title": "The Male Lead is Mine!",
+    "FAN FAV": 1.46,
+    "Mean Score": 63,
+    "Status": "FINISHED",
+    "Start Year": 2022,
+    "Popularity": 889,
+    "Favourites": 13,
+    "AniList URL": "https://anilist.co/manga/150066"
+  },
+  {
     "Title": "As If Love Doesn't Exist",
     "FAN FAV": 1.46,
     "Mean Score": 64,
@@ -3395,7 +3415,7 @@
     "Mean Score": 70,
     "Status": "FINISHED",
     "Start Year": 2020,
-    "Popularity": 619,
+    "Popularity": 620,
     "Favourites": 9,
     "AniList URL": "https://anilist.co/manga/130608"
   },
@@ -3420,16 +3440,6 @@
     "AniList URL": "https://anilist.co/manga/171661"
   },
   {
-    "Title": "Rewriting My Tragic Ending",
-    "FAN FAV": 1.44,
-    "Mean Score": 64,
-    "Status": "FINISHED",
-    "Start Year": 2023,
-    "Popularity": 623,
-    "Favourites": 9,
-    "AniList URL": "https://anilist.co/manga/173451"
-  },
-  {
     "Title": "The Unintentional Villainess",
     "FAN FAV": 1.44,
     "Mean Score": 63,
@@ -3438,6 +3448,16 @@
     "Popularity": 623,
     "Favourites": 9,
     "AniList URL": "https://anilist.co/manga/178741"
+  },
+  {
+    "Title": "Rewriting My Tragic Ending",
+    "FAN FAV": 1.44,
+    "Mean Score": 64,
+    "Status": "FINISHED",
+    "Start Year": 2023,
+    "Popularity": 624,
+    "Favourites": 9,
+    "AniList URL": "https://anilist.co/manga/173451"
   },
   {
     "Title": "Red Hot Revenge",
@@ -3458,16 +3478,6 @@
     "Popularity": 695,
     "Favourites": 10,
     "AniList URL": "https://anilist.co/manga/164421"
-  },
-  {
-    "Title": "Demonic Beast Hunter Survival Guide",
-    "FAN FAV": 1.44,
-    "Mean Score": 74,
-    "Status": "RELEASING",
-    "Start Year": 2026,
-    "Popularity": 765,
-    "Favourites": 11,
-    "AniList URL": "https://anilist.co/manga/208364"
   },
   {
     "Title": "Monster Princess of the Snowy Mountain",
@@ -3510,6 +3520,16 @@
     "AniList URL": "https://anilist.co/manga/125313"
   },
   {
+    "Title": "Demonic Beast Hunter Survival Guide",
+    "FAN FAV": 1.42,
+    "Mean Score": 74,
+    "Status": "RELEASING",
+    "Start Year": 2026,
+    "Popularity": 772,
+    "Favourites": 11,
+    "AniList URL": "https://anilist.co/manga/208364"
+  },
+  {
     "Title": "Surviving as a Prince’s Fiancée",
     "FAN FAV": 1.42,
     "Mean Score": 56,
@@ -3540,16 +3560,6 @@
     "AniList URL": "https://anilist.co/manga/159987"
   },
   {
-    "Title": "I Just Want My Happy Ending!",
-    "FAN FAV": 1.42,
-    "Mean Score": 67,
-    "Status": "RELEASING",
-    "Start Year": 2023,
-    "Popularity": 565,
-    "Favourites": 8,
-    "AniList URL": "https://anilist.co/manga/178053"
-  },
-  {
     "Title": "Mage Again",
     "FAN FAV": 1.41,
     "Mean Score": 72,
@@ -3558,6 +3568,16 @@
     "Popularity": 990,
     "Favourites": 14,
     "AniList URL": "https://anilist.co/manga/138659"
+  },
+  {
+    "Title": "I Just Want My Happy Ending!",
+    "FAN FAV": 1.41,
+    "Mean Score": 67,
+    "Status": "RELEASING",
+    "Start Year": 2023,
+    "Popularity": 566,
+    "Favourites": 8,
+    "AniList URL": "https://anilist.co/manga/178053"
   },
   {
     "Title": "A Tipsy Marriage Proposal for the Emperor",
@@ -3570,12 +3590,22 @@
     "AniList URL": "https://anilist.co/manga/171189"
   },
   {
+    "Title": "The Fake Saintess Awaits Her Exit",
+    "FAN FAV": 1.41,
+    "Mean Score": 65,
+    "Status": "FINISHED",
+    "Start Year": 2023,
+    "Popularity": 637,
+    "Favourites": 9,
+    "AniList URL": "https://anilist.co/manga/180221"
+  },
+  {
     "Title": "The Archvillain's Young Patron",
     "FAN FAV": 1.41,
     "Mean Score": 64,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 850,
+    "Popularity": 851,
     "Favourites": 12,
     "AniList URL": "https://anilist.co/manga/158603"
   },
@@ -3585,19 +3615,9 @@
     "Mean Score": 64,
     "Status": "RELEASING",
     "Start Year": 2023,
-    "Popularity": 567,
+    "Popularity": 568,
     "Favourites": 8,
     "AniList URL": "https://anilist.co/manga/173938"
-  },
-  {
-    "Title": "The Fake Saintess Awaits Her Exit",
-    "FAN FAV": 1.41,
-    "Mean Score": 65,
-    "Status": "FINISHED",
-    "Start Year": 2023,
-    "Popularity": 638,
-    "Favourites": 9,
-    "AniList URL": "https://anilist.co/manga/180221"
   },
   {
     "Title": "God Tribe",
@@ -3605,19 +3625,9 @@
     "Mean Score": 68,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 923,
+    "Popularity": 924,
     "Favourites": 13,
     "AniList URL": "https://anilist.co/manga/151371"
-  },
-  {
-    "Title": "A Red Laurel to My Emperor",
-    "FAN FAV": 1.4,
-    "Mean Score": 65,
-    "Status": "RELEASING",
-    "Start Year": 2022,
-    "Popularity": 784,
-    "Favourites": 11,
-    "AniList URL": "https://anilist.co/manga/156156"
   },
   {
     "Title": "You Mustn’t, Your Majesty!",
@@ -3628,6 +3638,16 @@
     "Popularity": 927,
     "Favourites": 13,
     "AniList URL": "https://anilist.co/manga/163085"
+  },
+  {
+    "Title": "A Red Laurel to My Emperor",
+    "FAN FAV": 1.4,
+    "Mean Score": 65,
+    "Status": "RELEASING",
+    "Start Year": 2022,
+    "Popularity": 785,
+    "Favourites": 11,
+    "AniList URL": "https://anilist.co/manga/156156"
   },
   {
     "Title": "The World of Dating",
@@ -3665,7 +3685,7 @@
     "Mean Score": 68,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 932,
+    "Popularity": 933,
     "Favourites": 13,
     "AniList URL": "https://anilist.co/manga/148307"
   },
@@ -3675,17 +3695,17 @@
     "Mean Score": 61,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 646,
+    "Popularity": 649,
     "Favourites": 9,
     "AniList URL": "https://anilist.co/manga/146990"
   },
   {
     "Title": "The Villainess is Everyone's Favorite",
-    "FAN FAV": 1.39,
+    "FAN FAV": 1.38,
     "Mean Score": 73,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 577,
+    "Popularity": 578,
     "Favourites": 8,
     "AniList URL": "https://anilist.co/manga/188116"
   },
@@ -3715,19 +3735,9 @@
     "Mean Score": 67,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 726,
+    "Popularity": 727,
     "Favourites": 10,
     "AniList URL": "https://anilist.co/manga/163061"
-  },
-  {
-    "Title": "Survival Marriage",
-    "FAN FAV": 1.37,
-    "Mean Score": 70,
-    "Status": "FINISHED",
-    "Start Year": 2020,
-    "Popularity": 510,
-    "Favourites": 7,
-    "AniList URL": "https://anilist.co/manga/127434"
   },
   {
     "Title": "Her Majesty, the Witch",
@@ -3740,12 +3750,22 @@
     "AniList URL": "https://anilist.co/manga/139461"
   },
   {
-    "Title": "Hero of All Trades",
+    "Title": "Survival Marriage",
     "FAN FAV": 1.37,
     "Mean Score": 70,
+    "Status": "FINISHED",
+    "Start Year": 2020,
+    "Popularity": 512,
+    "Favourites": 7,
+    "AniList URL": "https://anilist.co/manga/127434"
+  },
+  {
+    "Title": "Hero of All Trades",
+    "FAN FAV": 1.37,
+    "Mean Score": 71,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 876,
+    "Popularity": 878,
     "Favourites": 12,
     "AniList URL": "https://anilist.co/manga/189357"
   },
@@ -3770,22 +3790,12 @@
     "AniList URL": "https://anilist.co/manga/162816"
   },
   {
-    "Title": "Rasud",
-    "FAN FAV": 1.36,
-    "Mean Score": 71,
-    "Status": "RELEASING",
-    "Start Year": 2020,
-    "Popularity": 513,
-    "Favourites": 7,
-    "AniList URL": "https://anilist.co/manga/130927"
-  },
-  {
     "Title": "I Became the Villain's Trainer",
     "FAN FAV": 1.36,
     "Mean Score": 61,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 881,
+    "Popularity": 882,
     "Favourites": 12,
     "AniList URL": "https://anilist.co/manga/150866"
   },
@@ -3800,6 +3810,16 @@
     "AniList URL": "https://anilist.co/manga/175975"
   },
   {
+    "Title": "Rasud",
+    "FAN FAV": 1.36,
+    "Mean Score": 71,
+    "Status": "RELEASING",
+    "Start Year": 2020,
+    "Popularity": 515,
+    "Favourites": 7,
+    "AniList URL": "https://anilist.co/manga/130927"
+  },
+  {
     "Title": "I Became a Millionaire's daughter",
     "FAN FAV": 1.36,
     "Mean Score": 64,
@@ -3810,16 +3830,6 @@
     "AniList URL": "https://anilist.co/manga/117003"
   },
   {
-    "Title": "Melody: The Crazy Flower Blooms",
-    "FAN FAV": 1.36,
-    "Mean Score": 70,
-    "Status": "FINISHED",
-    "Start Year": 2022,
-    "Popularity": 958,
-    "Favourites": 13,
-    "AniList URL": "https://anilist.co/manga/152089"
-  },
-  {
     "Title": "This Wasn't My Plan",
     "FAN FAV": 1.36,
     "Mean Score": 65,
@@ -3828,6 +3838,16 @@
     "Popularity": 516,
     "Favourites": 7,
     "AniList URL": "https://anilist.co/manga/154687"
+  },
+  {
+    "Title": "Melody: The Crazy Flower Blooms",
+    "FAN FAV": 1.36,
+    "Mean Score": 70,
+    "Status": "FINISHED",
+    "Start Year": 2022,
+    "Popularity": 959,
+    "Favourites": 13,
+    "AniList URL": "https://anilist.co/manga/152089"
   },
   {
     "Title": "Methods to Save the Villain Who Was Abandoned by the Heroine",
@@ -3860,16 +3880,6 @@
     "AniList URL": "https://anilist.co/manga/125247"
   },
   {
-    "Title": "It's Okay If There's No Male Lead",
-    "FAN FAV": 1.34,
-    "Mean Score": 58,
-    "Status": "CANCELLED",
-    "Start Year": 2023,
-    "Popularity": 597,
-    "Favourites": 8,
-    "AniList URL": "https://anilist.co/manga/164596"
-  },
-  {
     "Title": "Touch Your Heart",
     "FAN FAV": 1.34,
     "Mean Score": 68,
@@ -3890,14 +3900,14 @@
     "AniList URL": "https://anilist.co/manga/163444"
   },
   {
-    "Title": "An Insincere Idol's Blank Slate",
-    "FAN FAV": 1.33,
-    "Mean Score": 68,
-    "Status": "RELEASING",
-    "Start Year": 2024,
-    "Popularity": 527,
-    "Favourites": 7,
-    "AniList URL": "https://anilist.co/manga/186907"
+    "Title": "It's Okay If There's No Male Lead",
+    "FAN FAV": 1.34,
+    "Mean Score": 58,
+    "Status": "CANCELLED",
+    "Start Year": 2023,
+    "Popularity": 598,
+    "Favourites": 8,
+    "AniList URL": "https://anilist.co/manga/164596"
   },
   {
     "Title": "Red And Mad",
@@ -3930,14 +3940,14 @@
     "AniList URL": "https://anilist.co/manga/155198"
   },
   {
-    "Title": "Not That Villainess!",
+    "Title": "An Insincere Idol's Blank Slate",
     "FAN FAV": 1.32,
-    "Mean Score": 67,
+    "Mean Score": 68,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 529,
+    "Popularity": 530,
     "Favourites": 7,
-    "AniList URL": "https://anilist.co/manga/184481"
+    "AniList URL": "https://anilist.co/manga/186907"
   },
   {
     "Title": "How Dare You",
@@ -3950,14 +3960,14 @@
     "AniList URL": "https://anilist.co/manga/134387"
   },
   {
-    "Title": "Reveries of the Moonlight",
+    "Title": "Not That Villainess!",
     "FAN FAV": 1.32,
-    "Mean Score": 68,
+    "Mean Score": 67,
     "Status": "RELEASING",
-    "Start Year": 2026,
-    "Popularity": 683,
-    "Favourites": 9,
-    "AniList URL": "https://anilist.co/manga/207220"
+    "Start Year": 2024,
+    "Popularity": 532,
+    "Favourites": 7,
+    "AniList URL": "https://anilist.co/manga/184481"
   },
   {
     "Title": "Surviving in the Emperor's Bed",
@@ -3975,7 +3985,7 @@
     "Mean Score": 63,
     "Status": "FINISHED",
     "Start Year": 2021,
-    "Popularity": 763,
+    "Popularity": 764,
     "Favourites": 10,
     "AniList URL": "https://anilist.co/manga/147141"
   },
@@ -3985,7 +3995,7 @@
     "Mean Score": 59,
     "Status": "FINISHED",
     "Start Year": 2020,
-    "Popularity": 994,
+    "Popularity": 995,
     "Favourites": 13,
     "AniList URL": "https://anilist.co/manga/120221"
   },
@@ -3998,16 +4008,6 @@
     "Popularity": 539,
     "Favourites": 7,
     "AniList URL": "https://anilist.co/manga/163321"
-  },
-  {
-    "Title": "The Doomed House's Contract Daughter",
-    "FAN FAV": 1.3,
-    "Mean Score": 67,
-    "Status": "RELEASING",
-    "Start Year": 2024,
-    "Popularity": 771,
-    "Favourites": 10,
-    "AniList URL": "https://anilist.co/manga/184478"
   },
   {
     "Title": "Kidults",
@@ -4030,6 +4030,16 @@
     "AniList URL": "https://anilist.co/manga/158604"
   },
   {
+    "Title": "The Doomed House's Contract Daughter",
+    "FAN FAV": 1.3,
+    "Mean Score": 67,
+    "Status": "RELEASING",
+    "Start Year": 2024,
+    "Popularity": 772,
+    "Favourites": 10,
+    "AniList URL": "https://anilist.co/manga/184478"
+  },
+  {
     "Title": "Arma",
     "FAN FAV": 1.29,
     "Mean Score": 66,
@@ -4040,24 +4050,24 @@
     "AniList URL": "https://anilist.co/manga/120805"
   },
   {
-    "Title": "Why Yuria Hid Her Wealth",
+    "Title": "Reveries of the Moonlight",
     "FAN FAV": 1.29,
     "Mean Score": 68,
     "Status": "RELEASING",
-    "Start Year": 2024,
-    "Popularity": 854,
-    "Favourites": 11,
-    "AniList URL": "https://anilist.co/manga/187426"
+    "Start Year": 2026,
+    "Popularity": 696,
+    "Favourites": 9,
+    "AniList URL": "https://anilist.co/manga/207220"
   },
   {
-    "Title": "Evil Knight",
+    "Title": "Why Yuria Hid Her Wealth",
     "FAN FAV": 1.29,
-    "Mean Score": 53,
-    "Status": "FINISHED",
-    "Start Year": 2020,
-    "Popularity": 622,
-    "Favourites": 8,
-    "AniList URL": "https://anilist.co/manga/123145"
+    "Mean Score": 69,
+    "Status": "RELEASING",
+    "Start Year": 2024,
+    "Popularity": 856,
+    "Favourites": 11,
+    "AniList URL": "https://anilist.co/manga/187426"
   },
   {
     "Title": "The Screen-Writer with a spoiler Cheat",
@@ -4070,6 +4080,16 @@
     "AniList URL": "https://anilist.co/manga/168758"
   },
   {
+    "Title": "Evil Knight",
+    "FAN FAV": 1.28,
+    "Mean Score": 53,
+    "Status": "FINISHED",
+    "Start Year": 2020,
+    "Popularity": 623,
+    "Favourites": 8,
+    "AniList URL": "https://anilist.co/manga/123145"
+  },
+  {
     "Title": "Winning Shot!",
     "FAN FAV": 1.28,
     "Mean Score": 72,
@@ -4078,16 +4098,6 @@
     "Popularity": 547,
     "Favourites": 7,
     "AniList URL": "https://anilist.co/manga/142885"
-  },
-  {
-    "Title": "Lucid Encounter",
-    "FAN FAV": 1.28,
-    "Mean Score": 69,
-    "Status": "FINISHED",
-    "Start Year": 2021,
-    "Popularity": 626,
-    "Favourites": 8,
-    "AniList URL": "https://anilist.co/manga/139553"
   },
   {
     "Title": "The Runaway Lead Lives Next Door",
@@ -4100,12 +4110,22 @@
     "AniList URL": "https://anilist.co/manga/162820"
   },
   {
-    "Title": "Too Cute to Handle",
+    "Title": "Lucid Encounter",
     "FAN FAV": 1.28,
+    "Mean Score": 69,
+    "Status": "FINISHED",
+    "Start Year": 2021,
+    "Popularity": 627,
+    "Favourites": 8,
+    "AniList URL": "https://anilist.co/manga/139553"
+  },
+  {
+    "Title": "Too Cute to Handle",
+    "FAN FAV": 1.27,
     "Mean Score": 61,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 627,
+    "Popularity": 628,
     "Favourites": 8,
     "AniList URL": "https://anilist.co/manga/164413"
   },
@@ -4120,14 +4140,14 @@
     "AniList URL": "https://anilist.co/manga/110289"
   },
   {
-    "Title": "The Merman Trapped in My Lake",
+    "Title": "Carnelian: the Sille Dragon Odyssey",
     "FAN FAV": 1.27,
-    "Mean Score": 68,
+    "Mean Score": 61,
     "Status": "RELEASING",
-    "Start Year": 2024,
-    "Popularity": 552,
-    "Favourites": 7,
-    "AniList URL": "https://anilist.co/manga/186768"
+    "Start Year": 2023,
+    "Popularity": 631,
+    "Favourites": 8,
+    "AniList URL": "https://anilist.co/manga/171128"
   },
   {
     "Title": "Villain Fiancé is in My Way of Happiness",
@@ -4140,24 +4160,14 @@
     "AniList URL": "https://anilist.co/manga/178048"
   },
   {
-    "Title": "Carnelian: the Sille Dragon Odyssey",
-    "FAN FAV": 1.27,
-    "Mean Score": 61,
-    "Status": "RELEASING",
-    "Start Year": 2023,
-    "Popularity": 632,
-    "Favourites": 8,
-    "AniList URL": "https://anilist.co/manga/171128"
-  },
-  {
-    "Title": "I Became the Scoundrel of the Cheon Family",
+    "Title": "The Merman Trapped in My Lake",
     "FAN FAV": 1.26,
     "Mean Score": 68,
     "Status": "RELEASING",
-    "Start Year": 2026,
-    "Popularity": 870,
-    "Favourites": 11,
-    "AniList URL": "https://anilist.co/manga/207193"
+    "Start Year": 2024,
+    "Popularity": 554,
+    "Favourites": 7,
+    "AniList URL": "https://anilist.co/manga/186768"
   },
   {
     "Title": "I Thought My Husband Was Supposed to Die?",
@@ -4165,7 +4175,7 @@
     "Mean Score": 70,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 872,
+    "Popularity": 873,
     "Favourites": 11,
     "AniList URL": "https://anilist.co/manga/178049"
   },
@@ -4180,16 +4190,6 @@
     "AniList URL": "https://anilist.co/manga/151032"
   },
   {
-    "Title": "The Eldest Son of the Marquis House Is a Martial Artist",
-    "FAN FAV": 1.26,
-    "Mean Score": 62,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 795,
-    "Favourites": 10,
-    "AniList URL": "https://anilist.co/manga/199570"
-  },
-  {
     "Title": "Time to Call Off This Engagement",
     "FAN FAV": 1.26,
     "Mean Score": 56,
@@ -4200,26 +4200,6 @@
     "AniList URL": "https://anilist.co/manga/147177"
   },
   {
-    "Title": "The Iron Overlord of Sichuan",
-    "FAN FAV": 1.25,
-    "Mean Score": 66,
-    "Status": "RELEASING",
-    "Start Year": 2026,
-    "Popularity": 718,
-    "Favourites": 9,
-    "AniList URL": "https://anilist.co/manga/205773"
-  },
-  {
-    "Title": "The Grand Duke’s Bride is a Warrior from Hell",
-    "FAN FAV": 1.25,
-    "Mean Score": 69,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 878,
-    "Favourites": 11,
-    "AniList URL": "https://anilist.co/manga/193514"
-  },
-  {
     "Title": "Beibi Deuraegon",
     "FAN FAV": 1.25,
     "Mean Score": 63,
@@ -4228,6 +4208,16 @@
     "Popularity": 559,
     "Favourites": 7,
     "AniList URL": "https://anilist.co/manga/141686"
+  },
+  {
+    "Title": "The Eldest Son of the Marquis House Is a Martial Artist",
+    "FAN FAV": 1.25,
+    "Mean Score": 62,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 799,
+    "Favourites": 10,
+    "AniList URL": "https://anilist.co/manga/199570"
   },
   {
     "Title": "The Cutest Little Villainess",
@@ -4245,9 +4235,19 @@
     "Mean Score": 62,
     "Status": "FINISHED",
     "Start Year": 2025,
-    "Popularity": 800,
+    "Popularity": 801,
     "Favourites": 10,
     "AniList URL": "https://anilist.co/manga/191841"
+  },
+  {
+    "Title": "The Iron Overlord of Sichuan",
+    "FAN FAV": 1.25,
+    "Mean Score": 66,
+    "Status": "RELEASING",
+    "Start Year": 2026,
+    "Popularity": 721,
+    "Favourites": 9,
+    "AniList URL": "https://anilist.co/manga/205773"
   },
   {
     "Title": "Loser Coin",
@@ -4290,24 +4290,34 @@
     "AniList URL": "https://anilist.co/manga/154653"
   },
   {
+    "Title": "The Grand Duke’s Bride is a Warrior from Hell",
+    "FAN FAV": 1.24,
+    "Mean Score": 69,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 885,
+    "Favourites": 11,
+    "AniList URL": "https://anilist.co/manga/193514"
+  },
+  {
     "Title": "I Confessed to the Boss!",
     "FAN FAV": 1.24,
     "Mean Score": 69,
     "Status": "FINISHED",
     "Start Year": 2021,
-    "Popularity": 724,
+    "Popularity": 725,
     "Favourites": 9,
     "AniList URL": "https://anilist.co/manga/151182"
   },
   {
-    "Title": "The Empress Wants To Avoid the Emperor",
+    "Title": "I Became the Scoundrel of the Cheon Family",
     "FAN FAV": 1.24,
-    "Mean Score": 62,
+    "Mean Score": 67,
     "Status": "RELEASING",
-    "Start Year": 2023,
-    "Popularity": 969,
-    "Favourites": 12,
-    "AniList URL": "https://anilist.co/manga/176027"
+    "Start Year": 2026,
+    "Popularity": 889,
+    "Favourites": 11,
+    "AniList URL": "https://anilist.co/manga/207193"
   },
   {
     "Title": "While I'm Back in Time, I'll Get My Revenge",
@@ -4318,6 +4328,16 @@
     "Popularity": 889,
     "Favourites": 11,
     "AniList URL": "https://anilist.co/manga/156583"
+  },
+  {
+    "Title": "The Empress Wants To Avoid the Emperor",
+    "FAN FAV": 1.24,
+    "Mean Score": 62,
+    "Status": "RELEASING",
+    "Start Year": 2023,
+    "Popularity": 970,
+    "Favourites": 12,
+    "AniList URL": "https://anilist.co/manga/176027"
   },
   {
     "Title": "What's Wrong With Your Online Life?",
@@ -4331,23 +4351,13 @@
   },
   {
     "Title": "Agnyeo Meikeo",
-    "FAN FAV": 1.24,
+    "FAN FAV": 1.23,
     "Mean Score": 69,
     "Status": "FINISHED",
     "Start Year": 2018,
-    "Popularity": 809,
+    "Popularity": 810,
     "Favourites": 10,
     "AniList URL": "https://anilist.co/manga/123213"
-  },
-  {
-    "Title": "My Second Life as an Idol",
-    "FAN FAV": 1.24,
-    "Mean Score": 65,
-    "Status": "RELEASING",
-    "Start Year": 2023,
-    "Popularity": 890,
-    "Favourites": 11,
-    "AniList URL": "https://anilist.co/manga/162474"
   },
   {
     "Title": "I Tamed a Tyrant and Ran Away",
@@ -4360,6 +4370,16 @@
     "AniList URL": "https://anilist.co/manga/123080"
   },
   {
+    "Title": "My Second Life as an Idol",
+    "FAN FAV": 1.23,
+    "Mean Score": 65,
+    "Status": "RELEASING",
+    "Start Year": 2023,
+    "Popularity": 891,
+    "Favourites": 11,
+    "AniList URL": "https://anilist.co/manga/162474"
+  },
+  {
     "Title": "Protecting the Witch's Son",
     "FAN FAV": 1.23,
     "Mean Score": 69,
@@ -4368,26 +4388,6 @@
     "Popularity": 649,
     "Favourites": 8,
     "AniList URL": "https://anilist.co/manga/167158"
-  },
-  {
-    "Title": "My Status Window Went on Strike",
-    "FAN FAV": 1.22,
-    "Mean Score": 65,
-    "Status": "RELEASING",
-    "Start Year": 2024,
-    "Popularity": 572,
-    "Favourites": 7,
-    "AniList URL": "https://anilist.co/manga/189358"
-  },
-  {
-    "Title": "I Raise Skeletons",
-    "FAN FAV": 1.22,
-    "Mean Score": 60,
-    "Status": "RELEASING",
-    "Start Year": 2024,
-    "Popularity": 737,
-    "Favourites": 9,
-    "AniList URL": "https://anilist.co/manga/186158"
   },
   {
     "Title": "Falling into the Arms of a Mad Villain",
@@ -4400,12 +4400,32 @@
     "AniList URL": "https://anilist.co/manga/170152"
   },
   {
-    "Title": "I'm a Villainess, but I'm Good at Cooking",
+    "Title": "I Raise Skeletons",
     "FAN FAV": 1.22,
+    "Mean Score": 60,
+    "Status": "RELEASING",
+    "Start Year": 2024,
+    "Popularity": 738,
+    "Favourites": 9,
+    "AniList URL": "https://anilist.co/manga/186158"
+  },
+  {
+    "Title": "My Status Window Went on Strike",
+    "FAN FAV": 1.22,
+    "Mean Score": 65,
+    "Status": "RELEASING",
+    "Start Year": 2024,
+    "Popularity": 575,
+    "Favourites": 7,
+    "AniList URL": "https://anilist.co/manga/189358"
+  },
+  {
+    "Title": "I'm a Villainess, but I'm Good at Cooking",
+    "FAN FAV": 1.21,
     "Mean Score": 68,
     "Status": "RELEASING",
     "Start Year": 2023,
-    "Popularity": 656,
+    "Popularity": 659,
     "Favourites": 8,
     "AniList URL": "https://anilist.co/manga/172313"
   },
@@ -4450,22 +4470,12 @@
     "AniList URL": "https://anilist.co/manga/136849"
   },
   {
-    "Title": "Player of the Fallen Noble Family",
-    "FAN FAV": 1.21,
-    "Mean Score": 64,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 829,
-    "Favourites": 10,
-    "AniList URL": "https://anilist.co/manga/202580"
-  },
-  {
     "Title": "Golden Print",
     "FAN FAV": 1.2,
     "Mean Score": 68,
     "Status": "RELEASING",
     "Start Year": 2022,
-    "Popularity": 830,
+    "Popularity": 831,
     "Favourites": 10,
     "AniList URL": "https://anilist.co/manga/165562"
   },
@@ -4498,6 +4508,16 @@
     "Popularity": 500,
     "Favourites": 6,
     "AniList URL": "https://anilist.co/manga/133361"
+  },
+  {
+    "Title": "Raising the Second Male Lead’s Son",
+    "FAN FAV": 1.2,
+    "Mean Score": 65,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 500,
+    "Favourites": 6,
+    "AniList URL": "https://anilist.co/manga/188422"
   },
   {
     "Title": "A Life-Changing Turn",
@@ -4540,6 +4560,16 @@
     "AniList URL": "https://anilist.co/manga/122195"
   },
   {
+    "Title": "Player of the Fallen Noble Family",
+    "FAN FAV": 1.19,
+    "Mean Score": 64,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 837,
+    "Favourites": 10,
+    "AniList URL": "https://anilist.co/manga/202580"
+  },
+  {
     "Title": "The Library Needs a Witch",
     "FAN FAV": 1.19,
     "Mean Score": 55,
@@ -4548,16 +4578,6 @@
     "Popularity": 586,
     "Favourites": 7,
     "AniList URL": "https://anilist.co/manga/112174"
-  },
-  {
-    "Title": "Veteran of the Apocalypse",
-    "FAN FAV": 1.19,
-    "Mean Score": 70,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 755,
-    "Favourites": 9,
-    "AniList URL": "https://anilist.co/manga/202345"
   },
   {
     "Title": "Past Lives of the Thunder God",
@@ -4610,6 +4630,16 @@
     "AniList URL": "https://anilist.co/manga/142076"
   },
   {
+    "Title": "Veteran of the Apocalypse",
+    "FAN FAV": 1.18,
+    "Mean Score": 70,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 760,
+    "Favourites": 9,
+    "AniList URL": "https://anilist.co/manga/202345"
+  },
+  {
     "Title": "Welcome to Sylvia's Garden",
     "FAN FAV": 1.18,
     "Mean Score": 67,
@@ -4625,7 +4655,7 @@
     "Mean Score": 59,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 761,
+    "Popularity": 762,
     "Favourites": 9,
     "AniList URL": "https://anilist.co/manga/172067"
   },
@@ -4670,16 +4700,6 @@
     "AniList URL": "https://anilist.co/manga/155439"
   },
   {
-    "Title": "My Beloved Baby Sister",
-    "FAN FAV": 1.18,
-    "Mean Score": 64,
-    "Status": "FINISHED",
-    "Start Year": 2023,
-    "Popularity": 936,
-    "Favourites": 11,
-    "AniList URL": "https://anilist.co/manga/169278"
-  },
-  {
     "Title": "Lily the Vicious Villainess",
     "FAN FAV": 1.18,
     "Mean Score": 58,
@@ -4710,14 +4730,24 @@
     "AniList URL": "https://anilist.co/manga/117898"
   },
   {
-    "Title": "Youngest Daughter of the Ultimate Martial Master Namgung Family",
-    "FAN FAV": 1.16,
+    "Title": "My Beloved Baby Sister",
+    "FAN FAV": 1.17,
     "Mean Score": 64,
-    "Status": "RELEASING",
-    "Start Year": 2024,
-    "Popularity": 519,
+    "Status": "FINISHED",
+    "Start Year": 2023,
+    "Popularity": 938,
+    "Favourites": 11,
+    "AniList URL": "https://anilist.co/manga/169278"
+  },
+  {
+    "Title": "Miss Overprotected",
+    "FAN FAV": 1.17,
+    "Mean Score": 60,
+    "Status": "FINISHED",
+    "Start Year": 2022,
+    "Popularity": 514,
     "Favourites": 6,
-    "AniList URL": "https://anilist.co/manga/186025"
+    "AniList URL": "https://anilist.co/manga/154181"
   },
   {
     "Title": "Master of Villains",
@@ -4728,6 +4758,16 @@
     "Popularity": 953,
     "Favourites": 11,
     "AniList URL": "https://anilist.co/manga/145854"
+  },
+  {
+    "Title": "Youngest Daughter of the Ultimate Martial Master Namgung Family",
+    "FAN FAV": 1.15,
+    "Mean Score": 64,
+    "Status": "RELEASING",
+    "Start Year": 2024,
+    "Popularity": 520,
+    "Favourites": 6,
+    "AniList URL": "https://anilist.co/manga/186025"
   },
   {
     "Title": "Life as the Maid of the Prisoner Prince",
@@ -4745,17 +4785,17 @@
     "Mean Score": 61,
     "Status": "RELEASING",
     "Start Year": 2023,
-    "Popularity": 607,
+    "Popularity": 608,
     "Favourites": 7,
     "AniList URL": "https://anilist.co/manga/171717"
   },
   {
     "Title": "The Knight Becomes a Black Flower",
-    "FAN FAV": 1.15,
+    "FAN FAV": 1.14,
     "Mean Score": 66,
     "Status": "FINISHED",
     "Start Year": 2024,
-    "Popularity": 523,
+    "Popularity": 525,
     "Favourites": 6,
     "AniList URL": "https://anilist.co/manga/181530"
   },
@@ -4765,7 +4805,7 @@
     "Mean Score": 65,
     "Status": "FINISHED",
     "Start Year": 2024,
-    "Popularity": 526,
+    "Popularity": 527,
     "Favourites": 6,
     "AniList URL": "https://anilist.co/manga/180563"
   },
@@ -4790,16 +4830,6 @@
     "AniList URL": "https://anilist.co/manga/123068"
   },
   {
-    "Title": "Do You Need Salvation?",
-    "FAN FAV": 1.12,
-    "Mean Score": 70,
-    "Status": "FINISHED",
-    "Start Year": 2024,
-    "Popularity": 534,
-    "Favourites": 6,
-    "AniList URL": "https://anilist.co/manga/188267"
-  },
-  {
     "Title": "I Listened to My Husband and Brought In a Lover",
     "FAN FAV": 1.12,
     "Mean Score": 65,
@@ -4808,6 +4838,16 @@
     "Popularity": 980,
     "Favourites": 11,
     "AniList URL": "https://anilist.co/manga/176017"
+  },
+  {
+    "Title": "Do You Need Salvation?",
+    "FAN FAV": 1.12,
+    "Mean Score": 70,
+    "Status": "FINISHED",
+    "Start Year": 2024,
+    "Popularity": 535,
+    "Favourites": 6,
+    "AniList URL": "https://anilist.co/manga/188267"
   },
   {
     "Title": "I Don't Trust My Twin Sister",
@@ -4835,7 +4875,7 @@
     "Mean Score": 62,
     "Status": "FINISHED",
     "Start Year": 2021,
-    "Popularity": 990,
+    "Popularity": 991,
     "Favourites": 11,
     "AniList URL": "https://anilist.co/manga/136046"
   },
@@ -4875,7 +4915,7 @@
     "Mean Score": 69,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 905,
+    "Popularity": 906,
     "Favourites": 10,
     "AniList URL": "https://anilist.co/manga/184163"
   },
@@ -4885,17 +4925,17 @@
     "Mean Score": 65,
     "Status": "FINISHED",
     "Start Year": 2020,
-    "Popularity": 997,
+    "Popularity": 999,
     "Favourites": 11,
     "AniList URL": "https://anilist.co/manga/130919"
   },
   {
     "Title": "The Fateful Invitation",
     "FAN FAV": 1.1,
-    "Mean Score": 66,
+    "Mean Score": 65,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 909,
+    "Popularity": 910,
     "Favourites": 10,
     "AniList URL": "https://anilist.co/manga/156580"
   },
@@ -4910,16 +4950,6 @@
     "AniList URL": "https://anilist.co/manga/130119"
   },
   {
-    "Title": "The Little Lady Tames the Leads",
-    "FAN FAV": 1.09,
-    "Mean Score": 63,
-    "Status": "FINISHED",
-    "Start Year": 2021,
-    "Popularity": 823,
-    "Favourites": 9,
-    "AniList URL": "https://anilist.co/manga/146029"
-  },
-  {
     "Title": "Abella's Dessert Cafe",
     "FAN FAV": 1.09,
     "Mean Score": 60,
@@ -4928,6 +4958,16 @@
     "Popularity": 823,
     "Favourites": 9,
     "AniList URL": "https://anilist.co/manga/155417"
+  },
+  {
+    "Title": "The Little Lady Tames the Leads",
+    "FAN FAV": 1.09,
+    "Mean Score": 63,
+    "Status": "FINISHED",
+    "Start Year": 2021,
+    "Popularity": 824,
+    "Favourites": 9,
+    "AniList URL": "https://anilist.co/manga/146029"
   },
   {
     "Title": "God of Cooking",
@@ -4950,16 +4990,6 @@
     "AniList URL": "https://anilist.co/manga/145546"
   },
   {
-    "Title": "The Forgotten Princess Just Wants Peace",
-    "FAN FAV": 1.08,
-    "Mean Score": 60,
-    "Status": "FINISHED",
-    "Start Year": 2021,
-    "Popularity": 927,
-    "Favourites": 10,
-    "AniList URL": "https://anilist.co/manga/137387"
-  },
-  {
     "Title": "Clothing Bin of Love",
     "FAN FAV": 1.08,
     "Mean Score": 67,
@@ -4970,24 +5000,24 @@
     "AniList URL": "https://anilist.co/manga/138653"
   },
   {
+    "Title": "The Forgotten Princess Just Wants Peace",
+    "FAN FAV": 1.08,
+    "Mean Score": 60,
+    "Status": "FINISHED",
+    "Start Year": 2021,
+    "Popularity": 929,
+    "Favourites": 10,
+    "AniList URL": "https://anilist.co/manga/137387"
+  },
+  {
     "Title": "Hilde Takes House Arpeggio",
     "FAN FAV": 1.07,
     "Mean Score": 62,
     "Status": "RELEASING",
     "Start Year": 2023,
-    "Popularity": 931,
+    "Popularity": 933,
     "Favourites": 10,
     "AniList URL": "https://anilist.co/manga/163056"
-  },
-  {
-    "Title": "Together With the Gods of Music",
-    "FAN FAV": 1.07,
-    "Mean Score": 69,
-    "Status": "RELEASING",
-    "Start Year": 2023,
-    "Popularity": 559,
-    "Favourites": 6,
-    "AniList URL": "https://anilist.co/manga/188307"
   },
   {
     "Title": "By the Way, Dragon Mistress!",
@@ -4995,29 +5025,19 @@
     "Mean Score": 63,
     "Status": "FINISHED",
     "Start Year": 2019,
-    "Popularity": 933,
+    "Popularity": 934,
     "Favourites": 10,
     "AniList URL": "https://anilist.co/manga/109456"
   },
   {
-    "Title": "The Demon God",
+    "Title": "Together With the Gods of Music",
     "FAN FAV": 1.07,
-    "Mean Score": 61,
+    "Mean Score": 69,
     "Status": "RELEASING",
-    "Start Year": 2026,
-    "Popularity": 843,
-    "Favourites": 9,
-    "AniList URL": "https://anilist.co/manga/206966"
-  },
-  {
-    "Title": "World's Best Gonryun Tavern",
-    "FAN FAV": 1.07,
-    "Mean Score": 66,
-    "Status": "RELEASING",
-    "Start Year": 2024,
-    "Popularity": 657,
-    "Favourites": 7,
-    "AniList URL": "https://anilist.co/manga/202153"
+    "Start Year": 2023,
+    "Popularity": 561,
+    "Favourites": 6,
+    "AniList URL": "https://anilist.co/manga/188307"
   },
   {
     "Title": "Maria: The Deposed Empress",
@@ -5030,14 +5050,24 @@
     "AniList URL": "https://anilist.co/manga/186969"
   },
   {
-    "Title": "The Berserker's Second Playthrough",
+    "Title": "The Demon God",
     "FAN FAV": 1.06,
-    "Mean Score": 70,
+    "Mean Score": 61,
     "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 661,
+    "Start Year": 2026,
+    "Popularity": 849,
+    "Favourites": 9,
+    "AniList URL": "https://anilist.co/manga/206966"
+  },
+  {
+    "Title": "World's Best Gonryun Tavern",
+    "FAN FAV": 1.06,
+    "Mean Score": 66,
+    "Status": "RELEASING",
+    "Start Year": 2024,
+    "Popularity": 662,
     "Favourites": 7,
-    "AniList URL": "https://anilist.co/manga/205085"
+    "AniList URL": "https://anilist.co/manga/202153"
   },
   {
     "Title": "Falling for a Dying Princess",
@@ -5055,7 +5085,7 @@
     "Mean Score": 74,
     "Status": "RELEASING",
     "Start Year": 2023,
-    "Popularity": 665,
+    "Popularity": 666,
     "Favourites": 7,
     "AniList URL": "https://anilist.co/manga/174236"
   },
@@ -5070,6 +5100,16 @@
     "AniList URL": "https://anilist.co/manga/123100"
   },
   {
+    "Title": "The Berserker's Second Playthrough",
+    "FAN FAV": 1.04,
+    "Mean Score": 70,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 672,
+    "Favourites": 7,
+    "AniList URL": "https://anilist.co/manga/205085"
+  },
+  {
     "Title": "The Masters Have Subscribed",
     "FAN FAV": 1.04,
     "Mean Score": 71,
@@ -5078,16 +5118,6 @@
     "Popularity": 963,
     "Favourites": 10,
     "AniList URL": "https://anilist.co/manga/189627"
-  },
-  {
-    "Title": "Our High School Music Genius is Paganini's Reincarnate",
-    "FAN FAV": 1.03,
-    "Mean Score": 72,
-    "Status": "RELEASING",
-    "Start Year": 2024,
-    "Popularity": 581,
-    "Favourites": 6,
-    "AniList URL": "https://anilist.co/manga/188352"
   },
   {
     "Title": "I've Become the Devil's Master",
@@ -5100,12 +5130,22 @@
     "AniList URL": "https://anilist.co/manga/173484"
   },
   {
+    "Title": "Our High School Music Genius is Paganini's Reincarnate",
+    "FAN FAV": 1.03,
+    "Mean Score": 72,
+    "Status": "RELEASING",
+    "Start Year": 2024,
+    "Popularity": 582,
+    "Favourites": 6,
+    "AniList URL": "https://anilist.co/manga/188352"
+  },
+  {
     "Title": "The Hip Guy",
     "FAN FAV": 1.03,
     "Mean Score": 66,
     "Status": "FINISHED",
     "Start Year": 2020,
-    "Popularity": 679,
+    "Popularity": 681,
     "Favourites": 7,
     "AniList URL": "https://anilist.co/manga/132602"
   },
@@ -5115,19 +5155,9 @@
     "Mean Score": 62,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 874,
+    "Popularity": 876,
     "Favourites": 9,
     "AniList URL": "https://anilist.co/manga/188572"
-  },
-  {
-    "Title": "The Goddess of Abundance and Her Troublemaker Apostle",
-    "FAN FAV": 1.03,
-    "Mean Score": 72,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 878,
-    "Favourites": 9,
-    "AniList URL": "https://anilist.co/manga/198410"
   },
   {
     "Title": "Divorce Proposal",
@@ -5135,7 +5165,7 @@
     "Mean Score": 72,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 587,
+    "Popularity": 588,
     "Favourites": 6,
     "AniList URL": "https://anilist.co/manga/182512"
   },
@@ -5155,7 +5185,7 @@
     "Mean Score": 68,
     "Status": "FINISHED",
     "Start Year": 2019,
-    "Popularity": 785,
+    "Popularity": 786,
     "Favourites": 8,
     "AniList URL": "https://anilist.co/manga/121633"
   },
@@ -5165,9 +5195,19 @@
     "Mean Score": 65,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 688,
+    "Popularity": 689,
     "Favourites": 7,
     "AniList URL": "https://anilist.co/manga/162809"
+  },
+  {
+    "Title": "The Goddess of Abundance and Her Troublemaker Apostle",
+    "FAN FAV": 1.02,
+    "Mean Score": 71,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 886,
+    "Favourites": 9,
+    "AniList URL": "https://anilist.co/manga/198410"
   },
   {
     "Title": "I Picked It Up From Another World",
@@ -5185,7 +5225,7 @@
     "Mean Score": 68,
     "Status": "RELEASING",
     "Start Year": 2025,
-    "Popularity": 592,
+    "Popularity": 594,
     "Favourites": 6,
     "AniList URL": "https://anilist.co/manga/193904"
   },
@@ -5201,11 +5241,11 @@
   },
   {
     "Title": "A Genius Writer's Random Workplace",
-    "FAN FAV": 1.01,
+    "FAN FAV": 1,
     "Mean Score": 68,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 994,
+    "Popularity": 996,
     "Favourites": 10,
     "AniList URL": "https://anilist.co/manga/180362"
   },
@@ -5215,7 +5255,7 @@
     "Mean Score": 63,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 598,
+    "Popularity": 599,
     "Favourites": 6,
     "AniList URL": "https://anilist.co/manga/155460"
   },
@@ -5255,29 +5295,9 @@
     "Mean Score": 64,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 501,
+    "Popularity": 502,
     "Favourites": 5,
     "AniList URL": "https://anilist.co/manga/174743"
-  },
-  {
-    "Title": "The God of War Is Leveling Up",
-    "FAN FAV": 1,
-    "Mean Score": 60,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 501,
-    "Favourites": 5,
-    "AniList URL": "https://anilist.co/manga/203323"
-  },
-  {
-    "Title": "Circle Zero: Otherworldly Hero Business",
-    "FAN FAV": 1,
-    "Mean Score": 61,
-    "Status": "RELEASING",
-    "Start Year": 2020,
-    "Popularity": 904,
-    "Favourites": 9,
-    "AniList URL": "https://anilist.co/manga/120307"
   },
   {
     "Title": "Why Are You So Obsessed with Rejecting Love?",
@@ -5288,6 +5308,16 @@
     "Popularity": 603,
     "Favourites": 6,
     "AniList URL": "https://anilist.co/manga/129581"
+  },
+  {
+    "Title": "Circle Zero: Otherworldly Hero Business",
+    "FAN FAV": 0.99,
+    "Mean Score": 61,
+    "Status": "RELEASING",
+    "Start Year": 2020,
+    "Popularity": 905,
+    "Favourites": 9,
+    "AniList URL": "https://anilist.co/manga/120307"
   },
   {
     "Title": "The Wicked Ladies-In-Waiting",
@@ -5310,12 +5340,32 @@
     "AniList URL": "https://anilist.co/manga/117310"
   },
   {
+    "Title": "The Demon King Is 18",
+    "FAN FAV": 0.99,
+    "Mean Score": 69,
+    "Status": "RELEASING",
+    "Start Year": 2026,
+    "Popularity": 505,
+    "Favourites": 5,
+    "AniList URL": "https://anilist.co/manga/207303"
+  },
+  {
+    "Title": "The God of War Is Leveling Up",
+    "FAN FAV": 0.99,
+    "Mean Score": 60,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 507,
+    "Favourites": 5,
+    "AniList URL": "https://anilist.co/manga/203323"
+  },
+  {
     "Title": "The Dying Emperor's Personal Physician",
     "FAN FAV": 0.98,
     "Mean Score": 67,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 510,
+    "Popularity": 511,
     "Favourites": 5,
     "AniList URL": "https://anilist.co/manga/187457"
   },
@@ -5340,16 +5390,6 @@
     "AniList URL": "https://anilist.co/manga/184314"
   },
   {
-    "Title": "Miss Overprotected",
-    "FAN FAV": 0.97,
-    "Mean Score": 60,
-    "Status": "FINISHED",
-    "Start Year": 2022,
-    "Popularity": 514,
-    "Favourites": 5,
-    "AniList URL": "https://anilist.co/manga/154181"
-  },
-  {
     "Title": "Stealing the Lady's Heart",
     "FAN FAV": 0.96,
     "Mean Score": 62,
@@ -5370,34 +5410,24 @@
     "AniList URL": "https://anilist.co/manga/120438"
   },
   {
-    "Title": "The Bad Son",
-    "FAN FAV": 0.96,
-    "Mean Score": 68,
-    "Status": "FINISHED",
-    "Start Year": 2024,
-    "Popularity": 728,
-    "Favourites": 7,
-    "AniList URL": "https://anilist.co/manga/184111"
-  },
-  {
     "Title": "He's Just My Brother, Your Grace!",
     "FAN FAV": 0.96,
     "Mean Score": 67,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 936,
+    "Popularity": 937,
     "Favourites": 9,
     "AniList URL": "https://anilist.co/manga/156911"
   },
   {
-    "Title": "Date a Ranker",
+    "Title": "The Bad Son",
     "FAN FAV": 0.96,
-    "Mean Score": 66,
-    "Status": "RELEASING",
+    "Mean Score": 68,
+    "Status": "FINISHED",
     "Start Year": 2024,
-    "Popularity": 522,
-    "Favourites": 5,
-    "AniList URL": "https://anilist.co/manga/188478"
+    "Popularity": 729,
+    "Favourites": 7,
+    "AniList URL": "https://anilist.co/manga/184111"
   },
   {
     "Title": "Hoegwijado Mot Kkaen Tap Deungbanhamnida",
@@ -5415,7 +5445,7 @@
     "Mean Score": 64,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 950,
+    "Popularity": 951,
     "Favourites": 9,
     "AniList URL": "https://anilist.co/manga/144320"
   },
@@ -5470,16 +5500,6 @@
     "AniList URL": "https://anilist.co/manga/118938"
   },
   {
-    "Title": "Bowblade: The Descendants of Bowblade",
-    "FAN FAV": 0.93,
-    "Mean Score": 70,
-    "Status": "FINISHED",
-    "Start Year": 2022,
-    "Popularity": 857,
-    "Favourites": 8,
-    "AniList URL": "https://anilist.co/manga/161756"
-  },
-  {
     "Title": "The God of Pro-Wrestling",
     "FAN FAV": 0.93,
     "Mean Score": 67,
@@ -5488,6 +5508,16 @@
     "Popularity": 857,
     "Favourites": 8,
     "AniList URL": "https://anilist.co/manga/133465"
+  },
+  {
+    "Title": "Bowblade: The Descendants of Bowblade",
+    "FAN FAV": 0.93,
+    "Mean Score": 70,
+    "Status": "FINISHED",
+    "Start Year": 2022,
+    "Popularity": 858,
+    "Favourites": 8,
+    "AniList URL": "https://anilist.co/manga/161756"
   },
   {
     "Title": "Zenith",
@@ -5501,23 +5531,13 @@
   },
   {
     "Title": "The Villainess's Princely Predicament",
-    "FAN FAV": 0.93,
+    "FAN FAV": 0.92,
     "Mean Score": 63,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 972,
+    "Popularity": 973,
     "Favourites": 9,
     "AniList URL": "https://anilist.co/manga/150068"
-  },
-  {
-    "Title": "Why Are You Sorry, Darling?",
-    "FAN FAV": 0.92,
-    "Mean Score": 64,
-    "Status": "RELEASING",
-    "Start Year": 2024,
-    "Popularity": 757,
-    "Favourites": 7,
-    "AniList URL": "https://anilist.co/manga/186026"
   },
   {
     "Title": "Back to 2002",
@@ -5528,6 +5548,16 @@
     "Popularity": 541,
     "Favourites": 5,
     "AniList URL": "https://anilist.co/manga/155488"
+  },
+  {
+    "Title": "Why Are You Sorry, Darling?",
+    "FAN FAV": 0.92,
+    "Mean Score": 64,
+    "Status": "RELEASING",
+    "Start Year": 2024,
+    "Popularity": 758,
+    "Favourites": 7,
+    "AniList URL": "https://anilist.co/manga/186026"
   },
   {
     "Title": "For Stella",
@@ -5555,19 +5585,9 @@
     "Mean Score": 60,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 876,
+    "Popularity": 877,
     "Favourites": 8,
     "AniList URL": "https://anilist.co/manga/156855"
-  },
-  {
-    "Title": "Catching Two Birds with One Sweet Princess",
-    "FAN FAV": 0.91,
-    "Mean Score": 48,
-    "Status": "FINISHED",
-    "Start Year": 2021,
-    "Popularity": 550,
-    "Favourites": 5,
-    "AniList URL": "https://anilist.co/manga/140297"
   },
   {
     "Title": "I'll Protect You, Daddy!",
@@ -5580,6 +5600,16 @@
     "AniList URL": "https://anilist.co/manga/174270"
   },
   {
+    "Title": "Catching Two Birds with One Sweet Princess",
+    "FAN FAV": 0.91,
+    "Mean Score": 48,
+    "Status": "FINISHED",
+    "Start Year": 2021,
+    "Popularity": 551,
+    "Favourites": 5,
+    "AniList URL": "https://anilist.co/manga/140297"
+  },
+  {
     "Title": "The Heavenly Demon Will Give You a Massage",
     "FAN FAV": 0.91,
     "Mean Score": 71,
@@ -5588,16 +5618,6 @@
     "Popularity": 994,
     "Favourites": 9,
     "AniList URL": "https://anilist.co/manga/180566"
-  },
-  {
-    "Title": "Initializing the Sect System",
-    "FAN FAV": 0.9,
-    "Mean Score": 62,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 999,
-    "Favourites": 9,
-    "AniList URL": "https://anilist.co/manga/201393"
   },
   {
     "Title": "Saving a Mercenary Unit from Bankruptcy",
@@ -5700,26 +5720,6 @@
     "AniList URL": "https://anilist.co/manga/130538"
   },
   {
-    "Title": "I Tamed the Monster Prince",
-    "FAN FAV": 0.87,
-    "Mean Score": 71,
-    "Status": "RELEASING",
-    "Start Year": 2025,
-    "Popularity": 575,
-    "Favourites": 5,
-    "AniList URL": "https://anilist.co/manga/193570"
-  },
-  {
-    "Title": "The Secret of House Francesca",
-    "FAN FAV": 0.87,
-    "Mean Score": 66,
-    "Status": "FINISHED",
-    "Start Year": 2022,
-    "Popularity": 920,
-    "Favourites": 8,
-    "AniList URL": "https://anilist.co/manga/160150"
-  },
-  {
     "Title": "The Last Golden Child",
     "FAN FAV": 0.87,
     "Mean Score": 68,
@@ -5730,12 +5730,22 @@
     "AniList URL": "https://anilist.co/manga/140100"
   },
   {
+    "Title": "The Secret of House Francesca",
+    "FAN FAV": 0.87,
+    "Mean Score": 66,
+    "Status": "FINISHED",
+    "Start Year": 2022,
+    "Popularity": 922,
+    "Favourites": 8,
+    "AniList URL": "https://anilist.co/manga/160150"
+  },
+  {
     "Title": "The Fabled Warrior",
     "FAN FAV": 0.87,
     "Mean Score": 64,
     "Status": "FINISHED",
     "Start Year": 2020,
-    "Popularity": 692,
+    "Popularity": 693,
     "Favourites": 6,
     "AniList URL": "https://anilist.co/manga/137724"
   },
@@ -5748,6 +5758,16 @@
     "Popularity": 816,
     "Favourites": 7,
     "AniList URL": "https://anilist.co/manga/138660"
+  },
+  {
+    "Title": "I Tamed the Monster Prince",
+    "FAN FAV": 0.86,
+    "Mean Score": 70,
+    "Status": "RELEASING",
+    "Start Year": 2025,
+    "Popularity": 584,
+    "Favourites": 5,
+    "AniList URL": "https://anilist.co/manga/193570"
   },
   {
     "Title": "Elizabeth",
@@ -5835,7 +5855,7 @@
     "Mean Score": 66,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 995,
+    "Popularity": 998,
     "Favourites": 8,
     "AniList URL": "https://anilist.co/manga/180666"
   },
@@ -5851,11 +5871,11 @@
   },
   {
     "Title": "Rookie Employee Kim Cheol-Su",
-    "FAN FAV": 0.8,
+    "FAN FAV": 0.79,
     "Mean Score": 65,
     "Status": "RELEASING",
     "Start Year": 2023,
-    "Popularity": 503,
+    "Popularity": 504,
     "Favourites": 4,
     "AniList URL": "https://anilist.co/manga/188642"
   },
@@ -5915,7 +5935,7 @@
     "Mean Score": 60,
     "Status": "FINISHED",
     "Start Year": 2021,
-    "Popularity": 646,
+    "Popularity": 647,
     "Favourites": 5,
     "AniList URL": "https://anilist.co/manga/145389"
   },
@@ -5930,12 +5950,22 @@
     "AniList URL": "https://anilist.co/manga/175773"
   },
   {
+    "Title": "Date a Ranker",
+    "FAN FAV": 0.76,
+    "Mean Score": 66,
+    "Status": "RELEASING",
+    "Start Year": 2024,
+    "Popularity": 523,
+    "Favourites": 4,
+    "AniList URL": "https://anilist.co/manga/188478"
+  },
+  {
     "Title": "To Hell With the Status Window",
-    "FAN FAV": 0.77,
+    "FAN FAV": 0.76,
     "Mean Score": 55,
     "Status": "RELEASING",
     "Start Year": 2026,
-    "Popularity": 653,
+    "Popularity": 656,
     "Favourites": 5,
     "AniList URL": "https://anilist.co/manga/205446"
   },
@@ -5955,7 +5985,7 @@
     "Mean Score": 62,
     "Status": "FINISHED",
     "Start Year": 2024,
-    "Popularity": 925,
+    "Popularity": 926,
     "Favourites": 7,
     "AniList URL": "https://anilist.co/manga/179313"
   },
@@ -5975,7 +6005,7 @@
     "Mean Score": 62,
     "Status": "FINISHED",
     "Start Year": 2018,
-    "Popularity": 668,
+    "Popularity": 669,
     "Favourites": 5,
     "AniList URL": "https://anilist.co/manga/121789"
   },
@@ -6050,16 +6080,6 @@
     "AniList URL": "https://anilist.co/manga/133497"
   },
   {
-    "Title": "The Spy Life in the Demonic Sect",
-    "FAN FAV": 0.71,
-    "Mean Score": 70,
-    "Status": "RELEASING",
-    "Start Year": 2024,
-    "Popularity": 561,
-    "Favourites": 4,
-    "AniList URL": "https://anilist.co/manga/196407"
-  },
-  {
     "Title": "Legend of Mir: Gold Armored Sword Dragon",
     "FAN FAV": 0.71,
     "Mean Score": 55,
@@ -6070,12 +6090,22 @@
     "AniList URL": "https://anilist.co/manga/130327"
   },
   {
+    "Title": "The Spy Life in the Demonic Sect",
+    "FAN FAV": 0.7,
+    "Mean Score": 70,
+    "Status": "RELEASING",
+    "Start Year": 2024,
+    "Popularity": 568,
+    "Favourites": 4,
+    "AniList URL": "https://anilist.co/manga/196407"
+  },
+  {
     "Title": "The Noble Pirate",
     "FAN FAV": 0.7,
     "Mean Score": 63,
     "Status": "FINISHED",
     "Start Year": 2021,
-    "Popularity": 571,
+    "Popularity": 572,
     "Favourites": 4,
     "AniList URL": "https://anilist.co/manga/150305"
   },
@@ -6125,7 +6155,7 @@
     "Mean Score": 63,
     "Status": "RELEASING",
     "Start Year": 2023,
-    "Popularity": 604,
+    "Popularity": 605,
     "Favourites": 4,
     "AniList URL": "https://anilist.co/manga/169867"
   },
@@ -6155,7 +6185,7 @@
     "Mean Score": 65,
     "Status": "FINISHED",
     "Start Year": 2024,
-    "Popularity": 623,
+    "Popularity": 622,
     "Favourites": 4,
     "AniList URL": "https://anilist.co/manga/186498"
   },
@@ -6165,7 +6195,7 @@
     "Mean Score": 59,
     "Status": "FINISHED",
     "Start Year": 2021,
-    "Popularity": 781,
+    "Popularity": 782,
     "Favourites": 5,
     "AniList URL": "https://anilist.co/manga/142192"
   },
@@ -6175,7 +6205,7 @@
     "Mean Score": 64,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 938,
+    "Popularity": 939,
     "Favourites": 6,
     "AniList URL": "https://anilist.co/manga/170408"
   },
@@ -6205,7 +6235,7 @@
     "Mean Score": 61,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 646,
+    "Popularity": 647,
     "Favourites": 4,
     "AniList URL": "https://anilist.co/manga/153294"
   },
@@ -6225,19 +6255,9 @@
     "Mean Score": 60,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 831,
+    "Popularity": 830,
     "Favourites": 5,
     "AniList URL": "https://anilist.co/manga/151047"
-  },
-  {
-    "Title": "Something's Wrong With My Inventory",
-    "FAN FAV": 0.6,
-    "Mean Score": 63,
-    "Status": "RELEASING",
-    "Start Year": 2024,
-    "Popularity": 999,
-    "Favourites": 6,
-    "AniList URL": "https://anilist.co/manga/179556"
   },
   {
     "Title": "Surviving a Fantasy Adventure Comic",
@@ -6275,7 +6295,7 @@
     "Mean Score": 62,
     "Status": "FINISHED",
     "Start Year": 2024,
-    "Popularity": 702,
+    "Popularity": 704,
     "Favourites": 4,
     "AniList URL": "https://anilist.co/manga/188182"
   },
@@ -6285,7 +6305,7 @@
     "Mean Score": 62,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 529,
+    "Popularity": 530,
     "Favourites": 3,
     "AniList URL": "https://anilist.co/manga/155204"
   },
@@ -6301,11 +6321,11 @@
   },
   {
     "Title": "Dungeon Food Truck Boss",
-    "FAN FAV": 0.55,
+    "FAN FAV": 0.54,
     "Mean Score": 61,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 547,
+    "Popularity": 551,
     "Favourites": 3,
     "AniList URL": "https://anilist.co/manga/191385"
   },
@@ -6315,7 +6335,7 @@
     "Mean Score": 60,
     "Status": "FINISHED",
     "Start Year": 2021,
-    "Popularity": 927,
+    "Popularity": 928,
     "Favourites": 5,
     "AniList URL": "https://anilist.co/manga/143761"
   },
@@ -6355,7 +6375,7 @@
     "Mean Score": 68,
     "Status": "RELEASING",
     "Start Year": 2023,
-    "Popularity": 576,
+    "Popularity": 577,
     "Favourites": 3,
     "AniList URL": "https://anilist.co/manga/188366"
   },
@@ -6375,7 +6395,7 @@
     "Mean Score": 60,
     "Status": "FINISHED",
     "Start Year": 2021,
-    "Popularity": 834,
+    "Popularity": 835,
     "Favourites": 4,
     "AniList URL": "https://anilist.co/manga/131474"
   },
@@ -6392,10 +6412,10 @@
   {
     "Title": "The Hero's Ready to Retire",
     "FAN FAV": 0.47,
-    "Mean Score": 66,
+    "Mean Score": 65,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 640,
+    "Popularity": 642,
     "Favourites": 3,
     "AniList URL": "https://anilist.co/manga/184529"
   },
@@ -6405,7 +6425,7 @@
     "Mean Score": 58,
     "Status": "FINISHED",
     "Start Year": 2020,
-    "Popularity": 647,
+    "Popularity": 646,
     "Favourites": 3,
     "AniList URL": "https://anilist.co/manga/137795"
   },
@@ -6425,7 +6445,7 @@
     "Mean Score": 63,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 684,
+    "Popularity": 685,
     "Favourites": 3,
     "AniList URL": "https://anilist.co/manga/180308"
   },
@@ -6455,7 +6475,7 @@
     "Mean Score": 57,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 767,
+    "Popularity": 768,
     "Favourites": 3,
     "AniList URL": "https://anilist.co/manga/172391"
   },
@@ -6465,17 +6485,17 @@
     "Mean Score": 62,
     "Status": "FINISHED",
     "Start Year": 2022,
-    "Popularity": 512,
+    "Popularity": 513,
     "Favourites": 2,
     "AniList URL": "https://anilist.co/manga/180314"
   },
   {
     "Title": "Another World Dump Truck",
-    "FAN FAV": 0.39,
+    "FAN FAV": 0.38,
     "Mean Score": 59,
     "Status": "RELEASING",
     "Start Year": 2023,
-    "Popularity": 519,
+    "Popularity": 520,
     "Favourites": 2,
     "AniList URL": "https://anilist.co/manga/172085"
   },
@@ -6485,7 +6505,7 @@
     "Mean Score": 63,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 795,
+    "Popularity": 796,
     "Favourites": 3,
     "AniList URL": "https://anilist.co/manga/174745"
   },
@@ -6515,7 +6535,7 @@
     "Mean Score": 68,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 839,
+    "Popularity": 841,
     "Favourites": 3,
     "AniList URL": "https://anilist.co/manga/180275"
   },
@@ -6535,7 +6555,7 @@
     "Mean Score": 63,
     "Status": "FINISHED",
     "Start Year": 2019,
-    "Popularity": 571,
+    "Popularity": 573,
     "Favourites": 2,
     "AniList URL": "https://anilist.co/manga/201721"
   },
@@ -6545,27 +6565,27 @@
     "Mean Score": 61,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 573,
+    "Popularity": 577,
     "Favourites": 2,
     "AniList URL": "https://anilist.co/manga/195063"
   },
   {
     "Title": "How To Survive Downsizing",
     "FAN FAV": 0.32,
-    "Mean Score": 63,
+    "Mean Score": 62,
     "Status": "FINISHED",
     "Start Year": 2024,
-    "Popularity": 618,
+    "Popularity": 622,
     "Favourites": 2,
     "AniList URL": "https://anilist.co/manga/193090"
   },
   {
     "Title": "Over the Top",
-    "FAN FAV": 0.29,
+    "FAN FAV": 0.28,
     "Mean Score": 55,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 701,
+    "Popularity": 702,
     "Favourites": 2,
     "AniList URL": "https://anilist.co/manga/172384"
   },
@@ -6595,7 +6615,7 @@
     "Mean Score": 67,
     "Status": "RELEASING",
     "Start Year": 2024,
-    "Popularity": 945,
+    "Popularity": 947,
     "Favourites": 2,
     "AniList URL": "https://anilist.co/manga/179127"
   },
@@ -6625,7 +6645,7 @@
     "Mean Score": 61,
     "Status": "FINISHED",
     "Start Year": 2023,
-    "Popularity": 786,
+    "Popularity": 787,
     "Favourites": 1,
     "AniList URL": "https://anilist.co/manga/170052"
   }

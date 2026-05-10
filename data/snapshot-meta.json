@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-05-09T08:34:48.983Z",
+  "lastUpdated": "2026-05-10T09:22:00.768Z",
   "source": "Daily AniList refresh",
-  "totalEntries": 4448,
+  "totalEntries": 4452,
   "defaultPage": "discovery",
   "defaultTab": "relevant",
   "defaultWindow": "7d",
@@ -92,9 +92,9 @@
       "Ojou-sama",
       "Crossdressing",
       "Office Lady",
+      "Post-Apocalyptic",
       "Conspiracy",
       "Office",
-      "Post-Apocalyptic",
       "Ensemble Cast",
       "Amnesia",
       "Medicine",
@@ -112,8 +112,8 @@
       "Vampire",
       "Zombie",
       "Female Harem",
-      "Military",
       "Nudity",
+      "Military",
       "Kuudere",
       "Rehabilitation",
       "Curses",
@@ -121,21 +121,21 @@
       "Witch",
       "Mythology",
       "Body Swapping",
+      "Tomboy",
       "Chibi",
-      "Death Game",
-      "Tomboy"
+      "Death Game"
     ]
   },
   "lanes": {
     "mainstream": 444,
-    "established": 1082,
-    "rising": 1223,
-    "underground": 1024,
-    "tooEarly": 675
+    "established": 1085,
+    "rising": 1221,
+    "underground": 1036,
+    "tooEarly": 666
   },
   "statuses": {
-    "FINISHED": 2652,
-    "RELEASING": 1754,
+    "RELEASING": 1757,
+    "FINISHED": 2653,
     "NOT_YET_RELEASED": 8,
     "CANCELLED": 34
   }

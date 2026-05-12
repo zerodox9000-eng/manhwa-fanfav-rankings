@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-05-11T12:59:22.559Z",
+  "lastUpdated": "2026-05-12T11:18:57.799Z",
   "source": "Daily AniList refresh",
-  "totalEntries": 4453,
+  "totalEntries": 4458,
   "defaultPage": "discovery",
   "defaultTab": "relevant",
   "defaultWindow": "7d",
@@ -64,9 +64,9 @@
       "Time Skip",
       "College",
       "Primarily Teen Cast",
+      "Boys' Love",
       "Marriage",
       "Wuxia",
-      "Boys' Love",
       "Video Games",
       "Gore",
       "Crime",
@@ -108,11 +108,11 @@
       "Assassins",
       "Gangs",
       "Twins",
+      "Nudity",
       "Slavery",
       "Vampire",
       "Zombie",
       "Female Harem",
-      "Nudity",
       "Military",
       "Kuudere",
       "Parenthood",
@@ -128,15 +128,15 @@
   },
   "lanes": {
     "mainstream": 444,
-    "established": 1089,
-    "rising": 1221,
-    "underground": 1034,
+    "established": 1090,
+    "rising": 1222,
+    "underground": 1037,
     "tooEarly": 665
   },
   "statuses": {
-    "FINISHED": 2654,
-    "RELEASING": 1757,
-    "NOT_YET_RELEASED": 8,
+    "FINISHED": 2655,
+    "RELEASING": 1760,
+    "NOT_YET_RELEASED": 9,
     "CANCELLED": 34
   }
 }

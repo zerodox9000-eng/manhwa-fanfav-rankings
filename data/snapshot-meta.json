@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-05-12T11:18:57.799Z",
+  "lastUpdated": "2026-05-13T11:49:00.696Z",
   "source": "Daily AniList refresh",
-  "totalEntries": 4458,
+  "totalEntries": 4467,
   "defaultPage": "discovery",
   "defaultTab": "relevant",
   "defaultWindow": "7d",
@@ -61,8 +61,8 @@
       "Dungeon",
       "Family Life",
       "Survival",
-      "Time Skip",
       "College",
+      "Time Skip",
       "Primarily Teen Cast",
       "Boys' Love",
       "Marriage",
@@ -107,8 +107,8 @@
       "Disability",
       "Assassins",
       "Gangs",
-      "Twins",
       "Nudity",
+      "Twins",
       "Slavery",
       "Vampire",
       "Zombie",
@@ -127,16 +127,16 @@
     ]
   },
   "lanes": {
-    "mainstream": 444,
-    "established": 1090,
+    "mainstream": 446,
+    "established": 1091,
     "rising": 1222,
-    "underground": 1037,
-    "tooEarly": 665
+    "underground": 1036,
+    "tooEarly": 672
   },
   "statuses": {
     "FINISHED": 2655,
-    "RELEASING": 1760,
-    "NOT_YET_RELEASED": 9,
+    "RELEASING": 1768,
+    "NOT_YET_RELEASED": 10,
     "CANCELLED": 34
   }
 }

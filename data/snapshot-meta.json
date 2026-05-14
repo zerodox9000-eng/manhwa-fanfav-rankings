@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-05-13T11:49:00.696Z",
+  "lastUpdated": "2026-05-14T11:16:43.435Z",
   "source": "Daily AniList refresh",
-  "totalEntries": 4467,
+  "totalEntries": 4476,
   "defaultPage": "discovery",
   "defaultTab": "relevant",
   "defaultWindow": "7d",
@@ -105,9 +105,9 @@
       "Tsundere",
       "Delinquents",
       "Disability",
+      "Nudity",
       "Assassins",
       "Gangs",
-      "Nudity",
       "Twins",
       "Slavery",
       "Vampire",
@@ -127,15 +127,15 @@
     ]
   },
   "lanes": {
-    "mainstream": 446,
-    "established": 1091,
+    "mainstream": 447,
+    "established": 1092,
     "rising": 1222,
     "underground": 1036,
-    "tooEarly": 672
+    "tooEarly": 679
   },
   "statuses": {
-    "FINISHED": 2655,
-    "RELEASING": 1768,
+    "FINISHED": 2659,
+    "RELEASING": 1773,
     "NOT_YET_RELEASED": 10,
     "CANCELLED": 34
   }

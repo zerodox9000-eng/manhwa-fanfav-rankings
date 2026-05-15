@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-05-14T11:16:43.435Z",
+  "lastUpdated": "2026-05-15T11:20:09.522Z",
   "source": "Daily AniList refresh",
-  "totalEntries": 4476,
+  "totalEntries": 4481,
   "defaultPage": "discovery",
   "defaultTab": "relevant",
   "defaultWindow": "7d",
@@ -80,8 +80,8 @@
       "Yandere",
       "Acting",
       "Ghost",
-      "Virtual World",
       "Idol",
+      "Virtual World",
       "Adoption",
       "Shapeshifting",
       "Coming of Age",
@@ -98,14 +98,14 @@
       "Ensemble Cast",
       "Amnesia",
       "Medicine",
+      "Guns",
       "Primarily Male Cast",
       "Religion",
       "Gender Bending",
-      "Guns",
       "Tsundere",
+      "Nudity",
       "Delinquents",
       "Disability",
-      "Nudity",
       "Assassins",
       "Gangs",
       "Twins",
@@ -127,16 +127,16 @@
     ]
   },
   "lanes": {
-    "mainstream": 447,
-    "established": 1092,
-    "rising": 1222,
-    "underground": 1036,
-    "tooEarly": 679
+    "mainstream": 448,
+    "established": 1091,
+    "rising": 1221,
+    "underground": 1040,
+    "tooEarly": 681
   },
   "statuses": {
-    "FINISHED": 2659,
-    "RELEASING": 1773,
-    "NOT_YET_RELEASED": 10,
+    "FINISHED": 2658,
+    "RELEASING": 1780,
+    "NOT_YET_RELEASED": 9,
     "CANCELLED": 34
   }
 }

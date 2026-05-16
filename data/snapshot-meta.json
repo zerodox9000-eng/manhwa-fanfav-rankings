@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-05-15T11:20:09.522Z",
+  "lastUpdated": "2026-05-16T08:41:31.133Z",
   "source": "Daily AniList refresh",
-  "totalEntries": 4481,
+  "totalEntries": 4485,
   "defaultPage": "discovery",
   "defaultTab": "relevant",
   "defaultWindow": "7d",
@@ -89,8 +89,8 @@
       "War",
       "Age Gap",
       "Fake Relationship",
-      "Ojou-sama",
       "Crossdressing",
+      "Ojou-sama",
       "Conspiracy",
       "Office Lady",
       "Post-Apocalyptic",
@@ -102,8 +102,8 @@
       "Primarily Male Cast",
       "Religion",
       "Gender Bending",
-      "Tsundere",
       "Nudity",
+      "Tsundere",
       "Delinquents",
       "Disability",
       "Assassins",
@@ -131,11 +131,11 @@
     "established": 1091,
     "rising": 1221,
     "underground": 1040,
-    "tooEarly": 681
+    "tooEarly": 685
   },
   "statuses": {
-    "FINISHED": 2658,
-    "RELEASING": 1780,
+    "FINISHED": 2664,
+    "RELEASING": 1778,
     "NOT_YET_RELEASED": 9,
     "CANCELLED": 34
   }

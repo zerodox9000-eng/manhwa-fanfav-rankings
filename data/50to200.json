@@ -300,6 +300,16 @@
     "AniList URL": "https://anilist.co/manga/204433"
   },
   {
+    "Title": "Unraveling Rumors",
+    "FAN FAV": 4,
+    "Mean Score": 65,
+    "Status": "FINISHED",
+    "Start Year": 2021,
+    "Popularity": 125,
+    "Favourites": 5,
+    "AniList URL": "https://anilist.co/manga/173629"
+  },
+  {
     "Title": "The Saintess's Mandatory Filter",
     "FAN FAV": 4,
     "Mean Score": 58,
@@ -640,6 +650,16 @@
     "AniList URL": "https://anilist.co/manga/195062"
   },
   {
+    "Title": "Madoae-reul Saranghaneun Beop",
+    "FAN FAV": 3.51,
+    "Mean Score": 50,
+    "Status": "RELEASING",
+    "Start Year": 2026,
+    "Popularity": 57,
+    "Favourites": 2,
+    "AniList URL": "https://anilist.co/manga/211213"
+  },
+  {
     "Title": "Love in Session",
     "FAN FAV": 3.45,
     "Mean Score": 73,
@@ -890,16 +910,6 @@
     "AniList URL": "https://anilist.co/manga/180543"
   },
   {
-    "Title": "Unraveling Rumors",
-    "FAN FAV": 3.2,
-    "Mean Score": 65,
-    "Status": "FINISHED",
-    "Start Year": 2021,
-    "Popularity": 125,
-    "Favourites": 4,
-    "AniList URL": "https://anilist.co/manga/173629"
-  },
-  {
     "Title": "When Pride Fell at My Feet",
     "FAN FAV": 3.19,
     "Mean Score": 69,
@@ -1008,16 +1018,6 @@
     "Popularity": 194,
     "Favourites": 6,
     "AniList URL": "https://anilist.co/manga/210331"
-  },
-  {
-    "Title": "This wild mouse has taken Cinderella",
-    "FAN FAV": 3.09,
-    "Mean Score": 73,
-    "Status": "FINISHED",
-    "Start Year": 2023,
-    "Popularity": 97,
-    "Favourites": 3,
-    "AniList URL": "https://anilist.co/manga/175996"
   },
   {
     "Title": "I'm Not Letting My Duke Die!",
@@ -2140,7 +2140,7 @@
     "AniList URL": "https://anilist.co/manga/184480"
   },
   {
-    "Title": "I Will Return My New Brother",
+    "Title": "I'm Returning My Stepbrother",
     "FAN FAV": 2.41,
     "Mean Score": 63,
     "Status": "RELEASING",
@@ -2798,6 +2798,16 @@
     "Popularity": 145,
     "Favourites": 3,
     "AniList URL": "https://anilist.co/manga/193148"
+  },
+  {
+    "Title": "This wild mouse has taken Cinderella",
+    "FAN FAV": 2.06,
+    "Mean Score": 73,
+    "Status": "FINISHED",
+    "Start Year": 2023,
+    "Popularity": 97,
+    "Favourites": 2,
+    "AniList URL": "https://anilist.co/manga/175996"
   },
   {
     "Title": "Hwansaenghaetdeoni Danjongui Bomonain",
@@ -3570,16 +3580,6 @@
     "AniList URL": "https://anilist.co/manga/190020"
   },
   {
-    "Title": "Madoae-reul Saranghaneun Beop",
-    "FAN FAV": 1.75,
-    "Mean Score": 50,
-    "Status": "RELEASING",
-    "Start Year": 2026,
-    "Popularity": 57,
-    "Favourites": 1,
-    "AniList URL": "https://anilist.co/manga/211213"
-  },
-  {
     "Title": "Ankle Breaker",
     "FAN FAV": 1.74,
     "Mean Score": 76,
@@ -3920,6 +3920,16 @@
     "AniList URL": "https://anilist.co/manga/203698"
   },
   {
+    "Title": "Lunar Lover",
+    "FAN FAV": 1.64,
+    "Mean Score": 60,
+    "Status": "FINISHED",
+    "Start Year": 2017,
+    "Popularity": 61,
+    "Favourites": 1,
+    "AniList URL": "https://anilist.co/manga/108620"
+  },
+  {
     "Title": "To Face the Tiger",
     "FAN FAV": 1.64,
     "Mean Score": 57,
@@ -4070,16 +4080,6 @@
     "AniList URL": "https://anilist.co/manga/186682"
   },
   {
-    "Title": "Lunar Lover",
-    "FAN FAV": 1.61,
-    "Mean Score": 60,
-    "Status": "FINISHED",
-    "Start Year": 2017,
-    "Popularity": 62,
-    "Favourites": 1,
-    "AniList URL": "https://anilist.co/manga/108620"
-  },
-  {
     "Title": "Hell 58",
     "FAN FAV": 1.6,
     "Mean Score": 60,
@@ -4140,16 +4140,6 @@
     "AniList URL": "https://anilist.co/manga/175961"
   },
   {
-    "Title": "His Women's University",
-    "FAN FAV": 1.58,
-    "Mean Score": 73,
-    "Status": "FINISHED",
-    "Start Year": 2018,
-    "Popularity": 190,
-    "Favourites": 3,
-    "AniList URL": "https://anilist.co/manga/113202"
-  },
-  {
     "Title": "Gwihwanjaui Hidden Gongnyang Streaming",
     "FAN FAV": 1.58,
     "Mean Score": 72,
@@ -4188,6 +4178,16 @@
     "Popularity": 127,
     "Favourites": 2,
     "AniList URL": "https://anilist.co/manga/159503"
+  },
+  {
+    "Title": "His Women's University",
+    "FAN FAV": 1.57,
+    "Mean Score": 73,
+    "Status": "FINISHED",
+    "Start Year": 2018,
+    "Popularity": 191,
+    "Favourites": 3,
+    "AniList URL": "https://anilist.co/manga/113202"
   },
   {
     "Title": "The Scandal",
@@ -6970,6 +6970,16 @@
     "AniList URL": "https://anilist.co/manga/171892"
   },
   {
+    "Title": "Dépaysement",
+    "FAN FAV": 0.8,
+    "Mean Score": 75,
+    "Status": "RELEASING",
+    "Start Year": 2026,
+    "Popularity": 125,
+    "Favourites": 1,
+    "AniList URL": "https://anilist.co/manga/210772"
+  },
+  {
     "Title": "Adolescent Love",
     "FAN FAV": 0.79,
     "Mean Score": 64,
@@ -8228,16 +8238,6 @@
     "Popularity": 56,
     "Favourites": 0,
     "AniList URL": "https://anilist.co/manga/177531"
-  },
-  {
-    "Title": "Dépaysement",
-    "FAN FAV": 0,
-    "Mean Score": 75,
-    "Status": "RELEASING",
-    "Start Year": 2026,
-    "Popularity": 125,
-    "Favourites": 0,
-    "AniList URL": "https://anilist.co/manga/210772"
   },
   {
     "Title": "The Youngest Member Filming a Parenting Show is Adorable",

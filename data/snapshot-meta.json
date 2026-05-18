@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-05-17T09:31:58.391Z",
+  "lastUpdated": "2026-05-18T14:56:20.553Z",
   "source": "Daily AniList refresh",
-  "totalEntries": 4487,
+  "totalEntries": 4496,
   "defaultPage": "discovery",
   "defaultTab": "relevant",
   "defaultWindow": "7d",
@@ -21,8 +21,8 @@
       "Horror",
       "Sci-Fi",
       "Sports",
-      "Music",
       "Hentai",
+      "Music",
       "Ecchi",
       "Mahou Shoujo",
       "Mecha"
@@ -60,11 +60,11 @@
       "Gods",
       "Dungeon",
       "Family Life",
+      "Boys' Love",
       "Survival",
       "College",
       "Time Skip",
       "Primarily Teen Cast",
-      "Boys' Love",
       "Marriage",
       "Wuxia",
       "Video Games",
@@ -99,10 +99,10 @@
       "Amnesia",
       "Medicine",
       "Guns",
+      "Nudity",
       "Primarily Male Cast",
       "Religion",
       "Gender Bending",
-      "Nudity",
       "Tsundere",
       "Delinquents",
       "Disability",
@@ -127,16 +127,16 @@
     ]
   },
   "lanes": {
-    "mainstream": 448,
-    "established": 1094,
+    "mainstream": 449,
+    "established": 1098,
     "rising": 1226,
-    "underground": 1040,
-    "tooEarly": 679
+    "underground": 1037,
+    "tooEarly": 686
   },
   "statuses": {
     "FINISHED": 2665,
-    "RELEASING": 1779,
-    "NOT_YET_RELEASED": 9,
+    "RELEASING": 1787,
+    "NOT_YET_RELEASED": 10,
     "CANCELLED": 34
   }
 }

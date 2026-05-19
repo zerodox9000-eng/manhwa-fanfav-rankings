@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-05-18T14:56:20.553Z",
+  "lastUpdated": "2026-05-19T06:42:27.522Z",
   "source": "Daily AniList refresh",
-  "totalEntries": 4496,
+  "totalEntries": 4501,
   "defaultPage": "discovery",
   "defaultTab": "relevant",
   "defaultWindow": "7d",
@@ -83,8 +83,8 @@
       "Idol",
       "Virtual World",
       "Adoption",
-      "Shapeshifting",
       "Coming of Age",
+      "Shapeshifting",
       "Found Family",
       "War",
       "Age Gap",
@@ -109,10 +109,10 @@
       "Assassins",
       "Gangs",
       "Twins",
+      "Female Harem",
       "Slavery",
       "Vampire",
       "Zombie",
-      "Female Harem",
       "Military",
       "Kuudere",
       "Parenthood",
@@ -131,12 +131,12 @@
     "established": 1098,
     "rising": 1226,
     "underground": 1037,
-    "tooEarly": 686
+    "tooEarly": 691
   },
   "statuses": {
     "FINISHED": 2665,
-    "RELEASING": 1787,
-    "NOT_YET_RELEASED": 10,
+    "RELEASING": 1791,
+    "NOT_YET_RELEASED": 11,
     "CANCELLED": 34
   }
 }
